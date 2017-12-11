@@ -1,7 +1,57 @@
 /* Common CSS to be used throughout the App*/
 .text-white{
-    color:#ffffff;
+    color:#fff !important;
 }
 .text-light{
-    color:#dddddd;
+    color:#9E9E9E !important;
+}
+.text-bold{
+    font-weight: bold !important;
+}
+.background-black{
+    background-color: #1e1e1e !important;
+}
+.background-white{
+    background-color: #ffffff !important;
+}
+.single-event-wrap{
+    padding:20px 10px;
+}
+.event-card-left-part{
+    padding:20px;
+}
+.event-register-button{
+    width: 100%;
+    padding: 10px 0;
+}
+.event-register-button:hover{
+    background-color: #000;
+}
+.prize-medal{
+    margin:auto;
+    width:80%;
+}
+.event-register-div{
+    padding: 40px 25px;
+}
+.event-right-detail-item{
+    border-top:solid 1px #323232;
+    border-bottom:solid 1px #323232;
+    padding:20px 25px;
+}
+.item-right-tag{
+    float: left;
+}
+.item-right-detail{
+    text-align: right;
+}
+
+
+@media (min-width:769px){
+    .event-card-left-part{
+        padding:40px;
+    }
+    .single-event-wrap{
+        padding:40px 70px;
+    }
 }

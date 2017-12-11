@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   overflow-x: hidden !important;
   background-color: #f2f2f2;
 }
@@ -50,6 +49,66 @@ body {
 }
 .width-100{
   width: 100% !important;
+}
+.text-italic{
+  font-style: italic;
+}
+.text-size-11{
+    font-size: 1.1rem !important;
+}
+.text-size-12{
+    font-size: 1.2rem !important;
+}
+.text-size-13{
+    font-size: 1.3rem !important;
+}
+.text-size-14{
+    font-size: 1.4rem !important;
+}
+.text-size-15{
+    font-size: 1.5rem !important;
+}
+.text-size-16{
+    font-size: 1.6rem !important;
+}
+.text-size-17{
+    font-size: 1.7rem !important;
+}
+.text-size-18{
+    font-size: 1.8rem !important;
+}
+.text-size-19{
+    font-size: 1.9rem !important;
+}
+.text-size-20{
+    font-size: 2rem !important;
+}
+.text-size-21{
+    font-size: 2.1rem !important;
+}
+.text-size-22{
+    font-size: 2.2rem !important;
+}
+.text-size-23{
+    font-size: 2.3rem !important;
+}
+.text-size-24{
+    font-size: 2.4rem !important;
+}
+.text-size-25{
+    font-size: 2.5rem !important;
+}
+.text-size-26{
+    font-size: 2.6rem !important;
+}
+.text-size-27{
+    font-size: 2.7rem !important;
+}
+.text-size-28{
+    font-size: 2.8rem !important;
+}
+.text-size-29{
+    font-size: 2.9rem !important;
 }
 
 
