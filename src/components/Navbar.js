@@ -3,7 +3,7 @@ import React from 'react'
 class Navbar extends React.Component{
   render(){
     return(
-      <div>
+      <div style={{textAlign:'right'}}>
         Navbar
       </div>
     )
