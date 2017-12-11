@@ -10,6 +10,7 @@ import Snackbar from 'material-ui/Snackbar';
 import SingleEvent from './components/SingleEvent';
 import Home from './components/Home';
 import './App.css';
+import Events from './components/Events';
 
 class App extends Component {
 
@@ -29,6 +30,7 @@ class App extends Component {
 
         <Route exact path='/' component={Home}/>
         <Route exact path='/events/pillow-fight' component={SingleEvent}/>
+        <Route exact path='/events' component={Events}/>
 
 
         <Snackbar
