@@ -1,11 +1,16 @@
 import React from 'react'
-
+import './Navbar.css'
 class Navbar extends React.Component{
   render(){
     return(
-      <div style={{textAlign:'right'}}>
-        Navbar
-      </div>
+        <nav style={{color:this.props.fontColor}}>
+          <ul>
+            <li>Events</li>
+            <li>Schedule</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
     )
   }
 }

@@ -1,0 +1,20 @@
+nav{
+  z-index: 2;
+  padding: 20px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+nav ul{
+  display: inline-flex;
+  padding: 0px;
+  list-style: none;
+}
+
+nav ul li{
+  padding: 10px;
+}

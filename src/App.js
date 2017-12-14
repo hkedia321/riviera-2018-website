@@ -30,6 +30,8 @@ class App extends Component {
 
         <Route exact path='/' component={Home}/>
         <Route exact path='/events/pillow-fight' component={SingleEvent}/>
+
+        {/* Following line is Merchandize */}
         <Route exact path='/events' component={Events}/>
 
 

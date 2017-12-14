@@ -1,0 +1,19 @@
+.homepage{
+  font-family: Roboto;
+  background: #242424;
+  min-height: 100vh;
+}
+
+.header{
+  z-index: 1;
+  height: 400px;
+  position: absolute;
+  top:0px;
+  width: 100%;
+  background: linear-gradient(180deg,#004E67,#242424);
+}
+
+.register-button-container{
+  width: 100%;
+  text-align: center;
+}
