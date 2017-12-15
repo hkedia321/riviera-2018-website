@@ -12,11 +12,41 @@ const styles={
 }
 
 class Featured extends React.Component {
+    state={
+        phenomenonOpacity:1
+    }
+    managePhenomenon(e){
+        const scrollPosition=document.getElementById('featured').scrollLeft
+        const magnitude=100-scrollPosition
+        console.log('Scroll Position:',scrollPosition,'magnitude',magnitude)
+        if(magnitude<0 && this.state.phenomenonOpacity>0){
+            this.setState({
+                phenomenonOpacity:this.state.phenomenonOpacity-0.033
+            })
+        }
+        else if(magnitude>0 && this.state.phenomenonOpacity<1){
+            this.setState({
+                phenomenonOpacity:this.state.phenomenonOpacity+0.1
+            })
+        }
+
+        if(scrollPosition>400){
+            this.setState({
+                phenomenonOpacity:0
+            })
+        }
+        if(scrollPosition===0){
+            this.setState({
+                phenomenonOpacity:1
+            })
+        }
+    }
   render(){
+        console.log('Opacity',this.state.phenomenonOpacity)
     return(
-      <div className='featured-container' style={{zIndex:2}}>
+      <div className='featured-container' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
         <div className="item">
-          <div className="phenomenon">
+          <div className="phenomenon" style={{opacity:this.state.phenomenonOpacity}}>
             <h2>The phenomenon</h2>
               <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
           </div>

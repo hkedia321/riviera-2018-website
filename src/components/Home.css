@@ -50,14 +50,14 @@
 .featured-container .phenomenon{
   margin: 10px;
   width: 400px;
-  position: relative;
+  position: absolute;
   left: 100px;
 }
 
 .featured-container .event-card{
   height: 180px;
   position: relative;
-  left: 200px;
+  left: 600px;
   right: 200px;
   z-index: 2;
   background: #323232;
