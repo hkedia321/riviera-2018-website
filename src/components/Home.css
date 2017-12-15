@@ -1,14 +1,14 @@
 .homepage{
   font-family: Roboto;
   background: #242424;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 .header{
   z-index: 1;
   height: 400px;
-  position: absolute;
-  top:0px;
+  position: relative;
+  top:-100px;
   width: 100%;
   background: linear-gradient(180deg,#004E67,#242424);
 }
@@ -17,3 +17,45 @@
   width: 100%;
   text-align: center;
 }
+/* Following method rotate the container to implement horizontal scrolling */
+
+/*
+.featured-container{
+  position: relative;
+  top:100px;
+  left: 0px;
+  width: 200px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: rotate(-90deg) translateY(-100px);
+  transform-origin: right top;
+}
+
+.featured-container .phenomenon{
+  margin:30px;
+  width:200px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}*/
+
+.featured-container{
+  min-width: 100%;
+  min-height: 200px;
+  color:#fff;
+}
+
+.featured-container .phenomenon{
+  margin:30px;
+  width: 400px;
+  height: 100%;
+}
+
+.featured-container .event-card{
+    background: #323232;
+    margin-top:20px;
+    text-align: center;
+
+    margin:10px;
+    height: 100px;
+  }

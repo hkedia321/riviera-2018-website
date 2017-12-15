@@ -4,7 +4,7 @@ nav{
   text-align: right;
   font-weight: bold;
   font-size: 14px;
-  position: absolute;
+  position: relative;
   top: 0px;
   right: 0px;
 }
