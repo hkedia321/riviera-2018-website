@@ -13,6 +13,7 @@ import Navbar from './Navbar'
 import Header from './Home/Header'
 import Button from './Button'
 import Featured from './Home/Featured'
+import StudentAmbassador from './Home/StudentAmbassador'
 
 class Home extends Component {
     constructor(props) {
@@ -37,6 +38,7 @@ class Home extends Component {
                 {/* The Phenomenon and featured events */}
                 <Featured/>
                 {/* Student Ambassador */}
+                <StudentAmbassador/>
                 {/* Footer */}
             </div>
         );
