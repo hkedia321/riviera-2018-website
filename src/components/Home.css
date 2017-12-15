@@ -40,27 +40,27 @@
 }*/
 
 .featured-container{
-  min-width: 100%;
-  min-height: 200px;
-  color:#fff;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  overflow-x: scroll;
+  color: #ffffff;
 }
 
 .featured-container .phenomenon{
-  margin:30px;
+  margin: 10px;
   width: 400px;
-  height: 100%;
+  position: relative;
+  left: 100px;
 }
 
 .featured-container .event-card{
-    background: #323232;
-    margin-top:20px;
-    text-align: center;
-    margin:10px;
-    height: 100%;
-  }
-
-.scroll-horizontal{
+  height: 180px;
+  position: relative;
+  left: 200px;
+  right: 200px;
   z-index: 2;
+  background: #323232;
 }
 
 .student-ambassador{

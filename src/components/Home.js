@@ -23,9 +23,9 @@ class Home extends Component {
     render() {
         return (
             <div className="homepage">
-              <div className='full-width-column'>
-                <Navbar fontColor='#fff'/>
-              </div>
+                  <div className='full-width-column'>
+                    <Navbar fontColor='#fff'/>
+                  </div>
                 {/* Navbar */}
                 {/* Header */}
                 <div className='full-width-column'>

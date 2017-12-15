@@ -1,5 +1,4 @@
 import React from 'react'
-import HorizontalScroll from 'react-scroll-horizontal'
 
 const styles={
   featuredContainer:{
@@ -15,44 +14,75 @@ const styles={
 class Featured extends React.Component {
   render(){
     return(
-      <div className='featured-container'>
-        <div style={styles.parent}>
-          <HorizontalScroll reverseScroll={true}>
-            <div className='phenomenon'>
-              <h2>The phenomenon</h2>
+      <div className='featured-container' style={{zIndex:2}}>
+        <div className="item">
+          <div className="phenomenon">
+            <h2>The phenomenon</h2>
               <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
-            </div>
-              <div style={styles.child}>
-                <div className="event-card">
-                  Hello!
-                </div>
-              </div>
-              <div style={styles.child}>
-                <div className="event-card">
-                  Hello!
-                </div>
-              </div>
-              <div style={styles.child}>
-                <div className="event-card">
-                  Hello!
-                </div>
-              </div>
-              <div style={styles.child}>
-                <div className="event-card">
-                  Hello!
-                </div>
-              </div>
-              <div style={styles.child}>
-                <div className="event-card">
-                  Hello!
-                </div>
-              </div>
-              <div style={styles.child}>
-                <div className="event-card">
-                  Hello!
-                </div>
-              </div>
-          </HorizontalScroll>
+          </div>
+        </div>
+        <div className="item">
+          <div className="event-card">
+          Hello!
+        </div>
+        </div>
+        <div className="item">
+          <div className="event-card">
+          Hello!
+        </div>
+        </div>
+        <div className="item">
+          <div className="event-card">
+          Hello!
+        </div>
+        </div>
+        <div className="item">
+          <div className="event-card">
+          Hello!
+        </div>
+        </div>
+        <div className="item">
+          <div className="event-card">
+          Hello!
+        </div>
+        </div>
+        <div>
+          {/*<HorizontalScroll reverseScroll={true}>*/}
+            {/*<div className='phenomenon'>*/}
+              {/*<h2>The phenomenon</h2>*/}
+              {/*<p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>*/}
+            {/*</div>*/}
+              {/*<div style={styles.child}>*/}
+                {/*<div className="event-card">*/}
+                  {/*Hello!*/}
+                {/*</div>*/}
+              {/*</div>*/}
+              {/*<div style={styles.child}>*/}
+                {/*<div className="event-card">*/}
+                  {/*Hello!*/}
+                {/*</div>*/}
+              {/*</div>*/}
+              {/*<div style={styles.child}>*/}
+                {/*<div className="event-card">*/}
+                  {/*Hello!*/}
+                {/*</div>*/}
+              {/*</div>*/}
+              {/*<div style={styles.child}>*/}
+                {/*<div className="event-card">*/}
+                  {/*Hello!*/}
+                {/*</div>*/}
+              {/*</div>*/}
+              {/*<div style={styles.child}>*/}
+                {/*<div className="event-card">*/}
+                  {/*Hello!*/}
+                {/*</div>*/}
+              {/*</div>*/}
+              {/*<div style={styles.child}>*/}
+                {/*<div className="event-card">*/}
+                  {/*Hello!*/}
+                {/*</div>*/}
+              {/*</div>*/}
+          {/*</HorizontalScroll>*/}
         </div>
       </div>
     )
