@@ -1,6 +1,6 @@
 nav{
   z-index: 2000;
-  padding: 20px;
+  padding: 10px 20px;
   text-align: right;
   font-weight: 600;
   font-size: 1.1rem;
@@ -21,6 +21,7 @@ nav{
   padding-bottom: 0px;
   cursor: pointer;
   display: inline-block;
+  margin: 0 5px;
   margin-bottom: 10px;
   -webkit-transition: all .25s;
   -o-transition: all .25s;
@@ -28,6 +29,11 @@ nav{
   border-bottom: 2px solid transparent;
 }
 .main-nav-item:hover{
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #fff;
+}
+.main-nav-div .active .main-nav-item{
   padding-bottom: 10px;
   margin-bottom: 0px;
   border-bottom: 2px solid #fff;

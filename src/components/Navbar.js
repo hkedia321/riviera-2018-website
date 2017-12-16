@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from './../actions';
@@ -24,7 +25,7 @@ class Navbar extends React.Component{
     const html = document.documentElement;
     let scroll = html.scrollTop;
     console.log("Scroll:"+scroll);
-    let pc=scroll/600;
+    let pc=scroll/500;
     let bg=pc>1?1:pc;
     this.setState({
       navbarBgTransparent:bg
@@ -41,11 +42,11 @@ class Navbar extends React.Component{
     return(
       <nav style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
         <div className="main-nav-div">
-          <Link to="/events"><span className="main-nav-item">Events</span></Link>
-          <Link to="/schedule"><span className="main-nav-item">Schedule</span></Link>
-          <Link to="/proshows"><span className="main-nav-item" >Proshows</span></Link>
-          <Link to="/faq"><span className="main-nav-item">FAQ</span></Link>
-          <Link to="/contact"><span className="main-nav-item">Contact</span></Link>
+          <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
+          <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
+          <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
+          <NavLink to="/faq"><span className="main-nav-item">FAQ</span></NavLink>
+          <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
     )

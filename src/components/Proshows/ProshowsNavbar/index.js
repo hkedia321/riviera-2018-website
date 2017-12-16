@@ -36,7 +36,8 @@ class ProshowsNavbar extends Component {
         });
         return (
             <div className="proshows-navbar-component">
-                <br/>
+
+                <br/><br/><br/><br/>
                 <span className={class1} onClick={()=>this.handleTabChange(1)}>
                     Day 1
                 </span>
