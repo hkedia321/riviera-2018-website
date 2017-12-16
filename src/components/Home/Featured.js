@@ -26,7 +26,7 @@ class Featured extends React.Component {
         }
         else if(magnitude>0 && this.state.phenomenonOpacity<1){
             this.setState({
-                phenomenonOpacity:this.state.phenomenonOpacity+0.1
+                phenomenonOpacity:this.state.phenomenonOpacity+0.033
             })
         }
 
@@ -48,7 +48,7 @@ class Featured extends React.Component {
         <div className="item">
           <div className="phenomenon" style={{opacity:this.state.phenomenonOpacity}}>
             <h2>The phenomenon</h2>
-              <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
+            <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
           </div>
         </div>
         <div className="item">

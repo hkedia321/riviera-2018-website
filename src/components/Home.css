@@ -54,13 +54,26 @@
   left: 100px;
 }
 
+.featured-container .phenomenon h2{
+  font-weight: 100;
+}
+
 .featured-container .event-card{
   height: 180px;
   position: relative;
   left: 600px;
-  right: 200px;
   z-index: 2;
   background: #323232;
+}
+
+@media (max-width: 600px) {
+  .featured-container .phenomenon{
+    left: 5px;
+    width: 300px;
+  }
+  .featured-container .event-card{
+    left: 300px;
+  }
 }
 
 .student-ambassador{
