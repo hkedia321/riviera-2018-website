@@ -55,7 +55,7 @@
 }
 
 .featured-container .phenomenon h2{
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .event-card{
@@ -99,9 +99,46 @@
 }
 
 .student-ambassador h1{
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .student-ambassador h4{
   color:#6A6A6A;
+}
+
+footer{
+  background: #232323;
+  color: #ffffff;
+  padding: 10px;
+}
+
+footer h1{
+  font-weight: 300;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 100px;
+
+}
+
+footer button{
+  background: #0091C5;
+  padding: 10px;
+  color: #ffffff;
+  width: 50%;
+  border:none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media(max-width: 600px){
+  footer h1,h4{
+    margin-left:20px;
+  }
+  footer button{
+    width:97%;
+  }
 }
