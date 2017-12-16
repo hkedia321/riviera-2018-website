@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
+    "classnames": "^2.2.5",
     "history": "^4.6.1",
     "material-ui": "^0.18.1",
     "prop-types": "^15.5.10",

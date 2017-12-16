@@ -1,0 +1,16 @@
+.proshows-nav-item{
+    display: inline-block;
+    margin: 10px;
+    padding: 7px 14px;
+    color: #a5a5a5;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.proshows-nav-item-active{
+    background-color: #3499c3;
+    color: #fff;
+    position: relative;
+}
+.proshows-nav-item-active:after{
+
+}

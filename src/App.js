@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import * as actions from './actions';
 import Snackbar from 'material-ui/Snackbar';
 import SingleEvent from './components/SingleEvent';
+import Proshows from './components/Proshows/Proshow.js';
 import Home from './components/Home';
 import './App.css';
 
@@ -38,6 +39,7 @@ class App extends Component {
         <Route exact path='/merchandise' component={EventsOld}/>
 
         <Route exact path='/events' component={Events}/>
+        <Route exact path='/proshows' component={Proshows}/>
 
 
         <Snackbar
