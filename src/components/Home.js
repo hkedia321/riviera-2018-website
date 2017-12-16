@@ -14,6 +14,7 @@ import Header from './Home/Header'
 import Button from './Button'
 import Featured from './Home/Featured'
 import StudentAmbassador from './Home/StudentAmbassador'
+import Footer from './Home/Footer'
 
 class Home extends Component {
     constructor(props) {
@@ -40,6 +41,7 @@ class Home extends Component {
                 {/* Student Ambassador */}
                 <StudentAmbassador/>
                 {/* Footer */}
+                <Footer/>
             </div>
         );
     }
