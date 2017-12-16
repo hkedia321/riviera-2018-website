@@ -15,6 +15,11 @@
     left: 400px;
 }
 
+@media(max-width: 600px){
+    .event-categories .event-card{
+        left: 50px;
+    }
+}
 
 .events-list{
     background: #242424;
