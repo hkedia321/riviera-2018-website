@@ -23,7 +23,7 @@ class SingleEvent extends Component {
                 <Grid>
                     <Row>
                         <Col xs={12} mdOffset={0} md={12}>
-                            <Card className="event-card background-black text-white">
+                            <Card className="single-event-card background-black text-white">
                                 <Grid>
                                     <Row>
                                         <Col xs={12} md={8} className="event-card-left-part">

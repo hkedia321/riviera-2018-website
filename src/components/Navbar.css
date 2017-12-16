@@ -2,19 +2,21 @@ nav{
   z-index: 2;
   padding: 20px;
   text-align: right;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 1.1rem;
   position: relative;
   top: 0px;
   right: 0px;
 }
 
-nav ul{
+.main-nav-div{
   display: inline-flex;
   padding: 0px;
   list-style: none;
 }
 
-nav ul li{
+.main-nav-item{
   padding: 10px;
+  cursor: pointer;
+  display: inline-block;
 }
