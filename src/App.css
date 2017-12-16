@@ -45,7 +45,10 @@
 .item-right-detail{
     text-align: right;
 }
-
+a{
+    color: inherit;
+    font-style: normal;
+}
 
 @media (min-width:769px){
     .event-card-left-part{
