@@ -10,7 +10,10 @@ import Snackbar from 'material-ui/Snackbar';
 import SingleEvent from './components/SingleEvent';
 import Home from './components/Home';
 import './App.css';
-import Events from './components/Events';
+
+
+import EventsOld from './components/EventsOld';
+import Events from './components/Events'
 
 class App extends Component {
 
@@ -31,7 +34,9 @@ class App extends Component {
         <Route exact path='/' component={Home}/>
         <Route exact path='/events/pillow-fight' component={SingleEvent}/>
 
-        {/* Following line is Merchandize */}
+        {/* Following line is Merchandise */}
+        <Route exact path='/merchandise' component={EventsOld}/>
+
         <Route exact path='/events' component={Events}/>
 
 
