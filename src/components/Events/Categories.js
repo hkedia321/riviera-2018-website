@@ -47,29 +47,102 @@ class Categories extends React.Component {
       <div className='featured-container event-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
         <div className="item">
           <div className="event-card">
-          Hello!
+          <div className="category-title">
+            Adventure Sports
+          </div>
         </div>
         </div>
         <div className="item">
           <div className="event-card">
-          Hello!
+          <div className="category-title">
+            Cyber Engage
+          </div>
         </div>
         </div>
         <div className="item">
           <div className="event-card">
-          Hello!
+          <div className="category-title">
+            Dance
+          </div>
         </div>
         </div>
         <div className="item">
           <div className="event-card">
-          Hello!
+          <div className="category-title">
+            Drama
+          </div>
         </div>
         </div>
         <div className="item">
           <div className="event-card">
-          Hello!
+          <div className="category-title">
+            Informals
+          </div>
         </div>
         </div>
+        <div className="item">
+            <div className="event-card">
+                <div className="category-title">
+                    Music
+                </div>
+            </div>
+        </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                    Pre-Riviera
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                    Premium
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                    Quiz Events
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                    Words with English
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                    Words with Hindi
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                      Words with Telugu
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                      Words with Tamil
+                  </div>
+              </div>
+          </div>
+          <div className="item">
+              <div className="event-card">
+                  <div className="category-title">
+                    Workshops
+                  </div>
+              </div>
+          </div>
         <div>
         </div>
       </div>
