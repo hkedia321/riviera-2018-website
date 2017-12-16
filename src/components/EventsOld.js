@@ -9,14 +9,14 @@ import Listing from './EventsOld/Listing'
 class Events extends React.Component{
   render(){
     return(
-      <div className='events-page'>
+      <div className='merchandise-page'>
         {/* Navbar */}
         <Navbar/>
         {/* Events Slider */}
-        <Slider className='events-slider'/>
+        <Slider className='merchandise-slider'/>
 
         {/* Events Listing */}
-        <Listing className='events-listing'/>
+        <Listing className='merchandise-listing'/>
       </div>
     )
   }

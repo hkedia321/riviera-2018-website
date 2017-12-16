@@ -5,7 +5,7 @@ class Listing extends React.Component {
     return(
       <div className={this.props.className}>
         <div className='title'>All Events</div>
-        <table className='events-table'>
+        <table className='merchandise-table'>
           <tbody>
             <tr className='table-header'>
               <th>#</th><th>Event Name</th><th>Organizer</th><th>Team/Single</th><th>Price</th>

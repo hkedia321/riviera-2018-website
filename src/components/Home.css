@@ -58,12 +58,23 @@
   font-weight: 100;
 }
 
+.event-card{
+  background: #232323;
+  width: auto;
+  width: 200px;
+  margin-top:20px;
+  padding: 20px;
+  text-align: center;
+  margin-right:20px;
+}
+
 .featured-container .event-card{
   height: 180px;
   position: relative;
   left: 600px;
   z-index: 2;
   background: #323232;
+
 }
 
 @media (max-width: 600px) {
