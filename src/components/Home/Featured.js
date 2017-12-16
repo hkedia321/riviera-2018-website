@@ -1,4 +1,5 @@
 import React from 'react'
+import FontAwesome from 'react-fontawesome'
 
 const styles={
   featuredContainer:{
@@ -15,10 +16,10 @@ class Featured extends React.Component {
     state={
         phenomenonOpacity:1
     }
-    managePhenomenon(e){
+    managePhenomenon(){
         const scrollPosition=document.getElementById('featured').scrollLeft
         const magnitude=100-scrollPosition
-        console.log('Scroll Position:',scrollPosition,'magnitude',magnitude)
+
         if(magnitude<0 && this.state.phenomenonOpacity>0){
             this.setState({
                 phenomenonOpacity:this.state.phenomenonOpacity-0.033
@@ -41,79 +42,57 @@ class Featured extends React.Component {
             })
         }
     }
+    scrollLeft=()=>{
+        document.getElementById('featured').scrollBy({
+            left:600,
+            top:0,
+            behavior:'smooth'
+        })
+    }
+    scrollRight=()=>{
+        document.getElementById('featured').scrollBy({
+            left:-600,
+            top:0,
+            behavior:'smooth'
+        })
+    }
   render(){
         console.log('Opacity',this.state.phenomenonOpacity)
     return(
       <div className='featured-container' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
-        <div className="item">
-          <div className="phenomenon" style={{opacity:this.state.phenomenonOpacity}}>
-            <h2>The phenomenon</h2>
-            <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
-          </div>
-        </div>
-        <div className="item">
-          <div className="event-card">
-          Hello!
-        </div>
-        </div>
-        <div className="item">
-          <div className="event-card">
-          Hello!
-        </div>
-        </div>
-        <div className="item">
-          <div className="event-card">
-          Hello!
-        </div>
-        </div>
-        <div className="item">
-          <div className="event-card">
-          Hello!
-        </div>
-        </div>
-        <div className="item">
-          <div className="event-card">
-          Hello!
-        </div>
-        </div>
-        <div>
-          {/*<HorizontalScroll reverseScroll={true}>*/}
-            {/*<div className='phenomenon'>*/}
-              {/*<h2>The phenomenon</h2>*/}
-              {/*<p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>*/}
-            {/*</div>*/}
-              {/*<div style={styles.child}>*/}
-                {/*<div className="event-card">*/}
-                  {/*Hello!*/}
-                {/*</div>*/}
-              {/*</div>*/}
-              {/*<div style={styles.child}>*/}
-                {/*<div className="event-card">*/}
-                  {/*Hello!*/}
-                {/*</div>*/}
-              {/*</div>*/}
-              {/*<div style={styles.child}>*/}
-                {/*<div className="event-card">*/}
-                  {/*Hello!*/}
-                {/*</div>*/}
-              {/*</div>*/}
-              {/*<div style={styles.child}>*/}
-                {/*<div className="event-card">*/}
-                  {/*Hello!*/}
-                {/*</div>*/}
-              {/*</div>*/}
-              {/*<div style={styles.child}>*/}
-                {/*<div className="event-card">*/}
-                  {/*Hello!*/}
-                {/*</div>*/}
-              {/*</div>*/}
-              {/*<div style={styles.child}>*/}
-                {/*<div className="event-card">*/}
-                  {/*Hello!*/}
-                {/*</div>*/}
-              {/*</div>*/}
-          {/*</HorizontalScroll>*/}
-        </div>
+            <div className="arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
+            <div className="item">
+              <div className="phenomenon" style={{opacity:this.state.phenomenonOpacity}}>
+                <h2>The phenomenon</h2>
+                <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="event-card">
+                  Hello!
+              </div>
+            </div>
+            <div className="item">
+              <div className="event-card">
+              Hello!
+            </div>
+            </div>
+            <div className="item">
+              <div className="event-card">
+              Hello!
+            </div>
+            </div>
+            <div className="item">
+              <div className="event-card">
+              Hello!
+            </div>
+            </div>
+            <div className="item">
+              <div className="event-card">
+              Hello!
+            </div>
+            </div>
+            <div className="arrow right" onClick={()=>{this.scrollLeft()}}><FontAwesome name="chevron-right"/></div>
       </div>
     )
   }
