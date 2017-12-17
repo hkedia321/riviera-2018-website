@@ -14,33 +14,37 @@ const styles={
 
 class Featured extends React.Component {
     state={
-        phenomenonOpacity:1
+        phenomenonOpacity:1,
+        phenomenonClass:'visible'
     }
     managePhenomenon(){
         const scrollPosition=document.getElementById('featured').scrollLeft
-        const magnitude=100-scrollPosition
-
-        if(magnitude<0 && this.state.phenomenonOpacity>0){
-            this.setState({
-                phenomenonOpacity:this.state.phenomenonOpacity-0.033
-            })
-        }
-        else if(magnitude>0 && this.state.phenomenonOpacity<1){
-            this.setState({
-                phenomenonOpacity:this.state.phenomenonOpacity+0.033
-            })
-        }
-
-        if(scrollPosition>400){
-            this.setState({
-                phenomenonOpacity:0
-            })
-        }
-        if(scrollPosition===0){
-            this.setState({
-                phenomenonOpacity:1
-            })
-        }
+        const magnitude=scrollPosition-1000
+        console.log('Featured Scroll:',scrollPosition)
+        this.setState({
+          phenomenonOpacity:1-scrollPosition/100
+        })
+        // if(magnitude<0 && this.state.phenomenonOpacity>0){
+        //     this.setState({
+        //         phenomenonOpacity:this.state.phenomenonOpacity-0.033
+        //     })
+        // }
+        // else if(magnitude>0 && this.state.phenomenonOpacity<1){
+        //     this.setState({
+        //         phenomenonOpacity:this.state.phenomenonOpacity+0.033
+        //     })
+        // }
+        //
+        // if(scrollPosition>400){
+        //     this.setState({
+        //         phenomenonOpacity:0
+        //     })
+        // }
+        // if(scrollPosition===0){
+        //     this.setState({
+        //         phenomenonOpacity:1
+        //     })
+        // }
     }
     scrollLeft=()=>{
         document.getElementById('featured').scrollBy({
@@ -62,34 +66,33 @@ class Featured extends React.Component {
       <div className='featured-container' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
             <div className="arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
             <div className="item">
-              <div className="phenomenon" style={{opacity:this.state.phenomenonOpacity}}>
+              <div className={'phenomenon '+this.state.phenomenonClass} style={{opacity:this.state.phenomenonOpacity}}>
                 <h2>The phenomenon</h2>
                 <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
               </div>
             </div>
             <div className="item">
-              <div className="event-card">
-                  Hello!
+              <div className="event-card events-specific-card">
+                  <div className='overlay-layer'></div>
+                  <div className='category-title'>Events</div>
               </div>
             </div>
             <div className="item">
-              <div className="event-card">
-              Hello!
+              <div className="event-card sports">
+                  <div className='overlay-layer'></div>
+                  <div className='category-title'>Sports</div>
             </div>
             </div>
             <div className="item">
-              <div className="event-card">
-              Hello!
-            </div>
-            </div>
-            <div className="item">
-              <div className="event-card">
-              Hello!
-            </div>
+                <div className="event-card proshows">
+                    <div className='overlay-layer'></div>
+                    <div className='category-title'>Proshows</div>
+                </div>
             </div>
             <div className="item">
-              <div className="event-card">
-              Hello!
+              <div className="event-card previous">
+                  <div className='overlay-layer'></div>
+                  <div className='category-title'>Previous Events</div>
             </div>
             </div>
             <div className="arrow right" onClick={()=>{this.scrollLeft()}}><FontAwesome name="chevron-right"/></div>

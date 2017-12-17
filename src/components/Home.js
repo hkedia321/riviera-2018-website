@@ -24,10 +24,10 @@ class Home extends Component {
     render() {
         return (
             <div className="homepage">
+                {/* Navbar */}
                   <div className='full-width-column'>
                     <Navbar fontColor='#fff'/>
                   </div>
-                {/* Navbar */}
                 {/* Header */}
                 <div className='full-width-column'>
                   <Header/>
