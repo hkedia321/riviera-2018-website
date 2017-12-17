@@ -7,6 +7,7 @@ import {
 import { connect } from 'react-redux';
 import * as actions from './../../actions';
 import {Card} from 'material-ui/Card';
+import Navbar from './../Navbar'
 import RaisedButton from 'material-ui/RaisedButton';
 import Selena from './../../images/selena.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -28,6 +29,7 @@ class Proshows extends Component {
 
         return (
             <div className="proshows-component">
+                <Navbar fontColor='#fff'/>
                 <Grid fluid className="padding-0">
                     <Row>
                         <Col className="padding-0" xs={12} md={6}>

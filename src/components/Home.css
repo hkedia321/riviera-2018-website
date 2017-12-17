@@ -117,12 +117,11 @@ footer h1{
   font-weight: 300;
 }
 
-a{
+footer a{
   color: #fff;
   text-decoration: none;
   padding: 10px;
   margin-top: 100px;
-
 }
 
 footer button{
@@ -143,7 +142,6 @@ footer button{
     width:97%;
   }
 }
-
 .arrow{
   position: absolute;
   cursor: pointer;
