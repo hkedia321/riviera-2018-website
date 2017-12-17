@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {
-  BrowserRouter as Router,
   Route,
-  Switch
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from './actions';
@@ -11,8 +9,6 @@ import SingleEvent from './components/SingleEvent';
 import Proshows from './components/Proshows/Proshow.js';
 import Home from './components/Home';
 import './App.css';
-
-
 import EventsOld from './components/EventsOld';
 import Events from './components/Events'
 
@@ -25,7 +21,7 @@ class App extends Component {
   render() {
     var snackbarOpen=false;
     var snackbarMessage="";
-    if(typeof this.props.message.payload !=='undefined' && this.props.message.payload.show==true){
+    if(typeof this.props.message.payload !=='undefined' && this.props.message.payload.show===true){
       snackbarOpen=this.props.message.payload.show
       snackbarMessage = this.props.message.payload.message;
     }

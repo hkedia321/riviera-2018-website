@@ -1,9 +1,4 @@
 import React, {Component} from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch
-} from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from './../actions';
 import {Card} from 'material-ui/Card';
@@ -11,10 +6,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import medal23 from './../images/medal23.png';
 class SingleEvent extends Component {
-    constructor(props) {
-        super(props);
-
-    }
     render() {
 
         return (

@@ -12,7 +12,6 @@ import registerServiceWorker from './registerServiceWorker';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './index.css';
 import { createStore, applyMiddleware } from 'redux';
-import { reducer as formReducer } from 'redux-form';
 import reducers from './reducers';
 import reduxThunk from 'redux-thunk';
 
