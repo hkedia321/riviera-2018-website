@@ -186,7 +186,7 @@ footer button{
 }
 .arrow{
   position: absolute;
-  top:950px;
+  top:120vh;
   cursor: pointer;
   padding: 20px;
   background: rgba(0,0,0,0.5);
