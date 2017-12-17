@@ -10,23 +10,7 @@ import axios from 'axios'
 
 class Events extends React.Component{
     state={
-      events:[
-        {
-          'CATEGORY NAME':'',
-          'CLUB NAME':'',
-          'COORDINATOR 1':'',
-          'COORDINATOR 2':'',
-          'DESCRIPTION':'',
-          'EMAIL':'',
-          'EVENT NAME':'',
-          'PHONE':'',
-          'Prize Money':'',
-          'REG NO 1':'',
-          'REG NO 2':'',
-          'Reg fees After GST':'',
-          'Team Event (yes/no)':''
-        }
-      ],
+      events:[],
       loading:false
     }
     fetchEvents=(category)=>{

@@ -1,5 +1,5 @@
 .events{
-    
+
 }
 
 .events .event-card{
@@ -12,7 +12,6 @@
   box-shadow: 0px 0px 10px 0px #000;
   transition: all 0.5s;
 }
-
 .events .category-title{
   font-size:24px;
   display: flex;
@@ -21,6 +20,7 @@
   align-items: center;
   padding-top:80px;
 }
+
 
 .event-categories{
     background: #C3C3C3;
@@ -55,4 +55,12 @@
 
 .events-list h4{
     color:#6A6A6A;
+}
+
+.events-list table{
+  margin-right:20px;
+}
+
+.events-list tr{
+  
 }
