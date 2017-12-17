@@ -26,22 +26,27 @@ class Events extends React.Component{
           'Reg fees After GST':'',
           'Team Event (yes/no)':''
         }
-      ]
+      ],
+      loading:false
     }
     fetchEvents=(category)=>{
-      console.log('Called')
+      this.setState({
+        loading:true
+      })
       axios({
         method:'get',
-        url:'https://riviera18.herokuapp.com/?event_category=adventure%20sports'
+        url:`https://riviera18.herokuapp.com/?event_category=${category}`
       }).then((response)=>{
+        console.log(response)
         console.log(response.data.event_list)
         this.setState({
-          events:response.data.event_list
+          events:response.data.event_list,
+          loading:false
         })
       }).catch((error)=>{
         console.error(error)
       })
-    } 
+    }
     render(){
         return(
             <div className="events">
@@ -49,7 +54,10 @@ class Events extends React.Component{
                 <Categories fetchEvents={this.fetchEvents}/>
 
                 {/* List of Events */}
-                <EventsList events={this.state.events}/>
+                <EventsList
+                  events={this.state.events}
+                  loading={this.state.loading}
+                />
 
             </div>
         )
