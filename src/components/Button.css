@@ -8,10 +8,15 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
       clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
       padding: 10px;
+      transition: all 0.5s;
     }
     .rajat-button:hover{
       background-color: white;
       cursor: pointer;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      padding-top: 15px;
+      padding-bottom: 0px;
+      transition: all 0.5s;
     }
     .rajat-button:hover > span{
       color: #2297c2;

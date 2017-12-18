@@ -18,11 +18,11 @@ class SingleEvent extends Component {
                                 <Grid>
                                     <Row>
                                         <Col xs={12} md={8} className="event-card-left-part">
-                                            <h1 className="margin-top-0">Treasure Hunt</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet rutrum diam. Maecenas at felis turpis. Vivamus eros nunc, pretium in facilisis sit amet, posuere non felis. Vestibulum tincidunt est maximus quam aliquam, non elementum leo pharetra. Nulla molestie lacus at cursus blandit. Maecenas egestas odio sem, in blandit augue vestibulum eu. Aliquam dapibus ante nec eros venenatis semper. Integer euismod dictum urna eget luctus. Morbi suscipit sollicitudin consequat.</p>
+                                            <h1 className="margin-top-0">{this.props.eventName}</h1>
+                                            <p>{this.props.eventDescription}</p>
                                             <br/><br/>
                                             <div className="text-light text-bold">Organizer</div>
-                                            <div className="">Innovators Quest</div>
+                                            <div className="">{this.props.eventOrganiser}</div>
                                             <br/><br/>
                                             <div className="text-light text-bold">Prizes</div>
                                             <br/>

@@ -10,14 +10,15 @@
   top:-100px;
   width: 100%;
   background: linear-gradient(180deg,#004E67,#242424);
-  /*background-image: url('../images/header.jpg');*/
+  background-image: url('../images/header.jpg');
   background-size: cover;
 }
 
 .register-button-container{
   width: 100%;
   position: relative;
-  top:-100px;
+  top:-250px;
+  z-index: 10;
   display: flex;
   justify-content: center;
 }

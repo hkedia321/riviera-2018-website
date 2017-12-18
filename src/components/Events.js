@@ -12,7 +12,8 @@ class Events extends React.Component{
     state={
       events:[],
       loading:false,
-      event_category:''
+      event_category:'',
+      redirectToEvent:false
     }
     componentDidMount(){
       this.fetchEvents('adventure%20sports')
@@ -36,6 +37,7 @@ class Events extends React.Component{
         console.error(error)
       })
     }
+
     render(){
         return(
             <div className="events">
@@ -47,6 +49,7 @@ class Events extends React.Component{
                   event_category={this.state.event_category}
                   events={this.state.events}
                   loading={this.state.loading}
+                  selectEvent={this.props.selectEvent}
                 />
 
             </div>

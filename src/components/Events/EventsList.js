@@ -36,6 +36,13 @@ class EventsList extends React.Component {
                   <TableRow key={event['EVENT NAME']} selectable={false} style={{color:'#fff'}}>
                     <TableRowColumn>{event['EVENT NAME']}</TableRowColumn>
                     <TableRowColumn>{event['CLUB NAME']}</TableRowColumn>
+                    <TableRowColumn><button onClick={()=>{
+                      console.log('Clicked')
+                      this.props.selectEvent({
+                        eventName:event['EVENT NAME'],
+                        eventDescription:event['DESCRIPTION'],
+                        eventOrganiser:event['CLUB NAME']
+                      })}}>View Details</button></TableRowColumn>
                     <TableRowColumn>{event['DESCRIPTION']}</TableRowColumn>
                   </TableRow>
                 ))}
