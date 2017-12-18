@@ -49,7 +49,7 @@ class EventsList extends React.Component {
             {this.props.loading?
               <div>Loading...</div>
               :
-              <div>Select a Category from above</div>
+              <div>{this.props.event_category?<span>No Events found</span>:<span>Select a Category from above</span>}</div>
             }
           </div>
         }

@@ -1,4 +1,5 @@
 import React from 'react'
+import FontAwesome from 'react-fontawesome'
 
 const styles={
   featuredContainer:{
@@ -18,33 +19,27 @@ class Categories extends React.Component {
     managePhenomenon(e){
         const scrollPosition=document.getElementById('featured').scrollLeft
         const magnitude=100-scrollPosition
-        console.log('Scroll Position:',scrollPosition,'magnitude',magnitude)
-        if(magnitude<0 && this.state.phenomenonOpacity>0){
-            this.setState({
-                phenomenonOpacity:this.state.phenomenonOpacity-0.033
-            })
-        }
-        else if(magnitude>0 && this.state.phenomenonOpacity<1){
-            this.setState({
-                phenomenonOpacity:this.state.phenomenonOpacity+0.033
-            })
-        }
 
-        if(scrollPosition>400){
-            this.setState({
-                phenomenonOpacity:0
-            })
-        }
-        if(scrollPosition===0){
-            this.setState({
-                phenomenonOpacity:1
-            })
-        }
+    }
+    scrollLeft=()=>{
+      document.getElementById('featured').scrollBy({
+          left:600,
+          top:0,
+          behavior:'smooth'
+      })
+    }
+    scrollRight=()=>{
+      document.getElementById('featured').scrollBy({
+          left:-600,
+          top:0,
+          behavior:'smooth'
+      })
     }
   render(){
         console.log('Opacity',this.state.phenomenonOpacity)
     return(
       <div className='featured-container event-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
+        <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
         <div className="item" onClick={()=>this.props.fetchEvents('adventure%20sports')}>
           <div className="event-card">
           <div className="category-title">
@@ -141,8 +136,9 @@ class Categories extends React.Component {
                   <div className="category-title">
                     Workshops
                   </div>
-              </div>  
+              </div>
           </div>
+          <div className="arrow event-category-arrow right" onClick={()=>{this.scrollLeft()}}><FontAwesome name="chevron-right"/></div>
         <div>
         </div>
       </div>
