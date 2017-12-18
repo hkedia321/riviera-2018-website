@@ -11,7 +11,11 @@ import axios from 'axios'
 class Events extends React.Component{
     state={
       events:[],
-      loading:false
+      loading:false,
+      event_category:''
+    }
+    componentDidMount(){
+      this.fetchEvents('adventure%20sports')
     }
     fetchEvents=(category)=>{
       this.setState({
@@ -24,6 +28,7 @@ class Events extends React.Component{
         console.log(response)
         console.log(response.data.event_list)
         this.setState({
+          event_category:response.data.event_category,
           events:response.data.event_list,
           loading:false
         })
@@ -39,6 +44,7 @@ class Events extends React.Component{
 
                 {/* List of Events */}
                 <EventsList
+                  event_category={this.state.event_category}
                   events={this.state.events}
                   loading={this.state.loading}
                 />

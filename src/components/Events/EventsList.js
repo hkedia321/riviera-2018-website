@@ -20,6 +20,8 @@ class EventsList extends React.Component {
           {this.props.loading?
             <div>Loading...</div>
             :
+            <div>
+              <h1>{this.props.event_category}</h1>
             <Table
               selectable={false}
               style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
@@ -39,6 +41,7 @@ class EventsList extends React.Component {
                 ))}
               </TableBody>
             </Table>
+            </div>
           }
           </div>
           :
