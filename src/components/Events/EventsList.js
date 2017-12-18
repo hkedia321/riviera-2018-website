@@ -31,19 +31,21 @@ class EventsList extends React.Component {
                   <TableRowColumn style={{fontWeight:'bold'}}>Event Name</TableRowColumn>
                   <TableRowColumn style={{fontWeight:'bold'}}>Club Name</TableRowColumn>
                   <TableRowColumn style={{fontWeight:'bold'}}>Description</TableRowColumn>
+                  <TableRowColumn style={{fontWeight:'bold'}}>More Details</TableRowColumn>
                 </TableRow>
                 {events.map((event)=>(
                   <TableRow key={event['EVENT NAME']} selectable={false} style={{color:'#fff'}}>
                     <TableRowColumn>{event['EVENT NAME']}</TableRowColumn>
                     <TableRowColumn>{event['CLUB NAME']}</TableRowColumn>
-                    <TableRowColumn><button onClick={()=>{
-                      console.log('Clicked')
-                      this.props.selectEvent({
-                        eventName:event['EVENT NAME'],
-                        eventDescription:event['DESCRIPTION'],
-                        eventOrganiser:event['CLUB NAME']
-                      })}}>View Details</button></TableRowColumn>
                     <TableRowColumn>{event['DESCRIPTION']}</TableRowColumn>
+                    <TableRowColumn>
+                      <a
+                        style={{
+                          border:'0px',
+                          padding:'10px'
+                        }}
+                        href={`/event/${this.props.event_category}/${event['EVENT NAME']}`}
+                        >View Details</a></TableRowColumn>
                   </TableRow>
                 ))}
               </TableBody>
