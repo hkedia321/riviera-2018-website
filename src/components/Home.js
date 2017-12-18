@@ -15,6 +15,7 @@ import Button from './Button'
 import Featured from './Home/Featured'
 import StudentAmbassador from './Home/StudentAmbassador'
 import Footer from './Home/Footer'
+import Countdown from './Home/Countdown'
 
 class Home extends Component {
     constructor(props) {
@@ -40,6 +41,8 @@ class Home extends Component {
                 <Featured/>
                 {/* Student Ambassador */}
                 <StudentAmbassador/>
+                {/* Countdown */}
+                <Countdown/>
                 {/* Footer */}
                 <Footer/>
             </div>

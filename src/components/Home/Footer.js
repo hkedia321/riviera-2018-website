@@ -1,6 +1,7 @@
 import React from 'react'
 import {Row,Col} from 'react-flexbox-grid'
 import {Link} from 'react-router-dom'
+import FontAwesome from 'react-fontawesome'
 
 class Footer extends React.Component {
   render(){
@@ -8,8 +9,12 @@ class Footer extends React.Component {
       <footer>
         <Row>
           <Col sm={8} xs={12}>
-            <h1>Stay Connected & Excited</h1>
-            <h4 style={{position:'relative',top:'-10px'}}>#riviera18</h4>
+            <h1 style={{paddingLeft:'20px'}}>Stay Connected & Excited</h1>
+            <h4 style={{position:'relative',top:'-10px',paddingLeft:'20px'}}>#riviera18</h4>
+            <h4>
+              <FontAwesome name='facebook' style={{paddingLeft:'20px'}}/>
+              <FontAwesome name='twitter' style={{paddingLeft:'20px'}}/>
+            </h4>
           </Col>
           <Col sm={4} xs={12}>
             <Row>

@@ -1,0 +1,23 @@
+.react-count-down {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.react-count-down .prefix {
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #0091C5;
+}
+
+.react-count-down .date {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #666;
+}
