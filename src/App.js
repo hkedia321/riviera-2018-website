@@ -60,7 +60,7 @@ class App extends Component {
       <div className="app-wrap">
 
         <Route exact path='/' component={Home}/>
-        <Route exact path='/event/' render={()=>(
+        <Route exact path='/event/:category/:event_name' render={()=>(
           <SingleEvent
             eventName={this.state.selectedEvent.name}
             eventDescription={this.state.selectedEvent.description}
