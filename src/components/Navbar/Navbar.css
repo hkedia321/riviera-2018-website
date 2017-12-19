@@ -28,7 +28,7 @@ nav{
   transition: all .25s;
   border-bottom: 2px solid transparent;
 }
-.main-nav-item:hover{
+.main-nav-div .main-nav-item:hover{
   padding-bottom: 10px;
   margin-bottom: 0px;
   border-bottom: 2px solid #fff;
@@ -37,4 +37,56 @@ nav{
   padding-bottom: 10px;
   margin-bottom: 0px;
   border-bottom: 2px solid #fff;
+}
+
+.mobile-nav-header-bar{
+  z-index: 2000;
+  padding: 10px 20px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  box-sizing: border-box;
+  background-color: rgba(25,25,25,0.7);
+}
+
+.hamburger{
+  outline: none;
+  float: left;
+}
+.mobile-nav-sidebar{
+  position: fixed;
+  width: 250px;
+  height: calc(100vh - 58px);
+  background-color: #13262c;
+  top: 58px;
+  left: -250px;
+  color: #fff;
+  z-index: 10001;
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+.navbar-logo{
+  width:100px;
+}
+.mobile-nav-sidebar .main-nav-item{
+  display: block;
+  margin:0px;
+  text-decoration: none;
+  padding:20px 15px;
+  font-size: 1.1rem;
+}
+.mobile-nav-sidebar a{
+  text-decoration: none;
+}
+.mobile-nav-sidebar .active .main-nav-item{
+  background-color: rgba(0,0,0,0.4);
+}
+.mobile-nav-sidebar .main-nav-item:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+.sidebar-is-active{
+  left: 0px !important;
 }

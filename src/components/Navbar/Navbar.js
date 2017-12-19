@@ -10,13 +10,17 @@ import {
 import { connect } from 'react-redux';
 import * as actions from './../../actions';
 import PropTypes from 'prop-types';
+import logo from '../../images/Riviera2017-white1.png';
+import classNames from 'classnames';
+
 import 'jquery';
 import './hamburger.css';
 class Navbar extends React.Component{
   constructor(props) {
     super(props);
     this.state={
-      navbarBgTransparent:"0"
+      navbarBgTransparent:"0",
+      navbarOpen:false,
     }
   }
   handleNav = (place) =>{
@@ -38,8 +42,22 @@ class Navbar extends React.Component{
   componentWillUnmount() {
     window.removeEventListener('scroll', this.managePhenomenon);
 }
+handleClick = () =>{
+  this.setState({
+    navbarOpen:!this.state.navbarOpen
+  })
+}
   render(){
     const bg=`rgba(36,36,36,${this.state.navbarBgTransparent})`;
+    const hamburgerButton=classNames({
+      "hamburger":true,
+      "hamburger--slider":true,
+      "is-active":this.state.navbarOpen
+    })
+    const mobileSidebar=classNames({
+      "mobile-nav-sidebar":true,
+      "sidebar-is-active":this.state.navbarOpen
+    })
     return(
         <div>
       <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
@@ -52,8 +70,20 @@ class Navbar extends React.Component{
         </div>
       </nav>
       <div className="display-on-mobile-only">
-          <div className="header-bar">
-              <button class="hamburger hamburger--slider" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          <div className="mobile-nav-header-bar">
+              <img src={logo} className="navbar-logo"/>
+              <button className={hamburgerButton} type="button" onClick={this.handleClick}>
+                <span className="hamburger-box">
+                  <span className="hamburger-inner"></span>
+                </span>
+              </button>
+          </div>
+          <div className={mobileSidebar}>
+            <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
+            <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
+            <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
+            <NavLink to="/faq"><span className="main-nav-item">FAQ</span></NavLink>
+            <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
           </div>
       </div>
   </div>
