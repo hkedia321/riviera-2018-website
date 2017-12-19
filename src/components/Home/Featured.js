@@ -21,8 +21,8 @@ class Featured extends React.Component {
         const scrollPosition=document.getElementById('featured').scrollLeft
         const magnitude=scrollPosition-1000
         console.log('Featured Scroll:',scrollPosition)
+        phenomenonOpacity:1-scrollPosition/100
         this.setState({
-          phenomenonOpacity:1-scrollPosition/100
         })
         // if(magnitude<0 && this.state.phenomenonOpacity>0){
         //     this.setState({

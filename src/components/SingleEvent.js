@@ -19,12 +19,16 @@ class SingleEvent extends Component {
       console.log(window.location)
       const category=location[2]
       const event_name=location[3]
+      this.setState({
+        loading:true
+      })
       axios({
         method:'get',
         url:`https://riviera18.herokuapp.com/?event_category=${category}`
       }).then((response)=>{
         console.log(response.data)
         this.setState({
+          loading:false,
           events:response.data.event_list.filter((event)=>{
             console.log(event['EVENT NAME'],event_name.replace(/%20/g, " "),(event['EVENT NAME'])===event_name.replace(/%20/g, " "))
             return event['EVENT NAME']===event_name.replace(/%20/g, " ")
@@ -37,6 +41,9 @@ class SingleEvent extends Component {
         return (
             <div className="single-event-wrap">
                 <br/><br/>
+                {this.state.loading&&
+                  <div style={{textAlign:'center'}}>Loading...</div>
+                }
                 {this.state.events.map((event)=>(
                 <div key={event['EVENT NAME']}>
                 <Grid>
@@ -149,6 +156,8 @@ class SingleEvent extends Component {
                                                     <div className="item-right-detail text-bold">
                                                       <a style={{fontSize:'24px',padding:'10px'}} href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}><FontAwesome name='facebook'/></a>
                                                       <a style={{fontSize:'24px',padding:'10px'}} href={`https://twitter.com/home?status=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${window.location.href}`}><FontAwesome name='twitter'/></a>
+
+                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`whatsapp://send?text=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`} data-action="share/whatsapp/share"><FontAwesome name='whatsapp'/></a>
                                                     </div>
                                                 </div>
                                             </div>
