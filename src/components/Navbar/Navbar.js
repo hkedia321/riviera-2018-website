@@ -8,9 +8,10 @@ import {
   NavLink
 } from 'react-router-dom';
 import { connect } from 'react-redux';
-import * as actions from './../actions';
+import * as actions from './../../actions';
 import PropTypes from 'prop-types';
 import 'jquery';
+import './hamburger.css';
 class Navbar extends React.Component{
   constructor(props) {
     super(props);
@@ -40,7 +41,8 @@ class Navbar extends React.Component{
   render(){
     const bg=`rgba(36,36,36,${this.state.navbarBgTransparent})`;
     return(
-      <nav style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
+        <div>
+      <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
         <div className="main-nav-div">
           <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
           <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
@@ -49,6 +51,12 @@ class Navbar extends React.Component{
           <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
+      <div className="display-on-mobile-only">
+          <div className="header-bar">
+              <button class="hamburger hamburger--slider" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+      </div>
+  </div>
     )
   }
 }

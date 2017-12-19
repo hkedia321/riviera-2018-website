@@ -7,7 +7,7 @@ import {
 import { connect } from 'react-redux';
 import * as actions from './../../actions';
 import {Card} from 'material-ui/Card';
-import Navbar from './../Navbar'
+import Navbar from './../Navbar/Navbar.js'
 import RaisedButton from 'material-ui/RaisedButton';
 import Selena from './../../images/selena.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './EventsOld.css'
 
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar.js'
 import Slider from './EventsOld/Slider'
 import Listing from './EventsOld/Listing'
 

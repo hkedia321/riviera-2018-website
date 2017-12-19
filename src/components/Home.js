@@ -9,7 +9,7 @@ import * as actions from './../actions';
 import './Home.css'
 
 // Components
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar.js'
 import Header from './Home/Header'
 import Button from './Button'
 import Featured from './Home/Featured'

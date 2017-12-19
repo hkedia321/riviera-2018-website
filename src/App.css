@@ -49,12 +49,23 @@ a{
     color: inherit;
     font-style: normal;
 }
-
+.hide-on-mobile-only{
+    display: none;
+}
+.display-on-mobile-only{
+    display: block;
+}
 @media (min-width:769px){
     .event-card-left-part{
         padding:40px;
     }
     .single-event-wrap{
         padding:40px 70px;
+    }
+    .hide-on-mobile-only{
+        display: block;
+    }
+    .display-on-mobile-only{
+        display: none;
     }
 }
