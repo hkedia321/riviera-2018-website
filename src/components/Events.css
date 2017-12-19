@@ -11,6 +11,7 @@
 .events .event-card:hover{
   box-shadow: 0px 0px 10px 0px #000;
   transition: all 0.5s;
+
 }
 .events .category-title{
   font-size:24px;

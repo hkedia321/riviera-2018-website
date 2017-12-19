@@ -1,6 +1,9 @@
 import React from 'react'
 import FontAwesome from 'react-fontawesome'
-
+import eventImg from './../../images/home-cards/events.jpg';
+import sportsImg from './../../images/home-cards/sports.jpg';
+import proshowsImg from './../../images/home-cards/proshows.jpg';
+import previousImg from './../../images/home-cards/previous.jpg';
 const styles={
   featuredContainer:{
     display:'inline-flex',
@@ -73,24 +76,28 @@ class Featured extends React.Component {
             </div>
             <div className="item">
               <div className="event-card events-specific-card">
+                  <img src={eventImg} className="event-card-img"/>
                   <div className='overlay-layer'></div>
                   <div className='category-title'>Events</div>
               </div>
             </div>
             <div className="item">
               <div className="event-card sports">
+                  <img src={sportsImg} className="event-card-img"/>
                   <div className='overlay-layer'></div>
                   <div className='category-title'>Sports</div>
             </div>
             </div>
             <div className="item">
                 <div className="event-card proshows">
+                    <img src={proshowsImg} className="event-card-img"/>
                     <div className='overlay-layer'></div>
                     <div className='category-title'>Proshows</div>
                 </div>
             </div>
             <div className="item">
               <div className="event-card previous">
+                  <img src={previousImg} className="event-card-img"/>
                   <div className='overlay-layer'></div>
                   <div className='category-title'>Previous Events</div>
             </div>
