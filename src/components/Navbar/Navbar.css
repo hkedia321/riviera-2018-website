@@ -6,12 +6,15 @@ nav{
   font-size: 1.1rem;
   position: fixed;
   top: 0px;
-  right: 0px;
+  left: 0px;
   width: 100%;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 .main-nav-div{
-  display: inline-flex;
+  display: block;
   padding: 0px;
   list-style: none;
 }
@@ -38,7 +41,14 @@ nav{
   margin-bottom: 0px;
   border-bottom: 2px solid #fff;
 }
-
+.main-nav-div .navbar-logo{
+  width:100px;
+  float: left;
+}
+.mobile-nav-header-bar .navbar-logo{
+  width:100px;
+  float: right;
+}
 .mobile-nav-header-bar{
   z-index: 2000;
   padding: 10px 20px;
@@ -51,6 +61,8 @@ nav{
   width:100%;
   box-sizing: border-box;
   background-color: rgba(25,25,25,0.7);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 .hamburger{
@@ -59,18 +71,19 @@ nav{
 }
 .mobile-nav-sidebar{
   position: fixed;
+  padding-top: 0px;
   width: 250px;
-  height: calc(100vh - 58px);
+  height: calc(100vh - 67px);
   background-color: #13262c;
-  top: 58px;
+  top: 67px;
   left: -250px;
   color: #fff;
   z-index: 10001;
   transition: all 0.4s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
-.navbar-logo{
-  width:100px;
-}
+
 .mobile-nav-sidebar .main-nav-item{
   display: block;
   margin:0px;

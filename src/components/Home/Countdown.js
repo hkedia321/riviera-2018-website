@@ -1,9 +1,7 @@
 import React from 'react'
 import {Row,Col} from 'react-flexbox-grid'
 import CountdownNow from 'react-count-down'
-
 import './Countdown.css'
-
 class Countdown extends React.Component {
   state={
     daysLeft:0,
@@ -26,6 +24,10 @@ class Countdown extends React.Component {
         secondsLeft
       })
     },1000)
+
+    // var clock = $('.your-clock').FlipClock({
+    // // ... your options here
+    // });
   }
   cb=()=>{
 

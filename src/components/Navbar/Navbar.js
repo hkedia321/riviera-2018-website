@@ -43,9 +43,19 @@ class Navbar extends React.Component{
     window.removeEventListener('scroll', this.managePhenomenon);
 }
 handleClick = () =>{
-  this.setState({
-    navbarOpen:!this.state.navbarOpen
-  })
+    if(this.state.navbarOpen){
+        this.setState({
+          navbarOpen:false
+        })
+        document.body.style.overflowY='auto';
+    }
+    else{
+        this.setState({
+          navbarOpen:true
+        })
+        document.body.style.overflowY='hidden';
+    }
+
 }
   render(){
     const bg=`rgba(36,36,36,${this.state.navbarBgTransparent})`;
@@ -62,6 +72,7 @@ handleClick = () =>{
         <div>
       <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
         <div className="main-nav-div">
+          <NavLink to="/">  <img src={logo} className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
           <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
           <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
           <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
@@ -71,7 +82,7 @@ handleClick = () =>{
       </nav>
       <div className="display-on-mobile-only">
           <div className="mobile-nav-header-bar">
-              <img src={logo} className="navbar-logo"/>
+            <NavLink to="/">  <img src={logo} className="navbar-logo"/></NavLink>
               <button className={hamburgerButton} type="button" onClick={this.handleClick}>
                 <span className="hamburger-box">
                   <span className="hamburger-inner"></span>
@@ -79,6 +90,7 @@ handleClick = () =>{
               </button>
           </div>
           <div className={mobileSidebar}>
+            <NavLink to="/"><span className="main-nav-item">Home</span></NavLink>
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
             <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
             <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
