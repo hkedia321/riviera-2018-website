@@ -154,8 +154,8 @@ class SingleEvent extends Component {
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Share Event</span>
                                                     <div className="item-right-detail text-bold">
-                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}><FontAwesome name='facebook'/></a>
-                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://twitter.com/home?status=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${window.location.href}`}><FontAwesome name='twitter'/></a>
+                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}><FontAwesome name='facebook'/></a>
+                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://twitter.com/home?status=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`}><FontAwesome name='twitter'/></a>
 
                                                       <a style={{fontSize:'24px',padding:'10px'}} href={`whatsapp://send?text=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`} data-action="share/whatsapp/share"><FontAwesome name='whatsapp'/></a>
                                                     </div>

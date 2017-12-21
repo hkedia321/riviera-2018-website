@@ -8,10 +8,19 @@ import {
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table'
+import {
+  Card,
+  CardText,
+  CardTitle,
+  CardHeader,
+  CardActions
+} from 'material-ui/Card'
 import {Link} from 'react-router-dom'
 import escapeRegExp from 'escape-string-regexp'
 import sortBy from 'sort-by'
 import FontAwesome from 'react-fontawesome'
+import {Row,Col} from 'react-flexbox-grid'
+import FlatButton from 'material-ui/FlatButton'
 
 class EventsList extends React.Component {
   state={
@@ -56,12 +65,46 @@ class EventsList extends React.Component {
                 />
                 <FontAwesome name='search' style={{padding:'10px'}}/>
               </div>
-            <Table
+              <Row style={{width:'100%'}} top='md'>
+                {showingEvents.map((event)=>(
+                  <Col md={4} xs={12} style={{flexBasis:'50%'}}>
+                    <Card style={{margin:'20px',background:'#232323',color:'#fff'}}>
+                      <CardTitle
+                        title={event['EVENT NAME']}
+                        subtitle={event['CLUB NAME']}
+                        style={{textAlign:'left',color:'#fff'}}
+                        titleColor='#fff'
+                        subtitleColor='#fff'
+                      />
+                      <CardText
+                        color='#fff'
+                        style={{textAlign:'left'}}
+                      >
+                        {event['DESCRIPTION']}
+                      </CardText>
+                      <CardActions>
+                        <FlatButton disabled
+                          label={`Prize:${event['Prize Money']}`}
+                          icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
+                          labelStyle={{color:'#fff'}}
+                        />
+                        <FlatButton disabled
+                          icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
+                          label={`${event['Reg fees After GST']}/ person`}
+                          labelStyle={{color:'#fff'}}
+                        />
+                        <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><FlatButton label='View and Share' labelStyle={{color:'#fff'}} fullWidth={true}/></Link>
+                      </CardActions>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            {/*<Table
               selectable={false}
               style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
               >
               <TableBody displayRowCheckbox={false}>
-                <TableRow style={{color:'#fff'}}>
+                {/*<TableRow style={{color:'#fff'}}>
                   <TableRowColumn style={{fontWeight:'bold'}}>Event Name</TableRowColumn>
                   <TableRowColumn style={{fontWeight:'bold'}}>Club Name</TableRowColumn>
                   <TableRowColumn style={{fontWeight:'bold'}}>Description</TableRowColumn>
@@ -84,6 +127,7 @@ class EventsList extends React.Component {
                 ))}
               </TableBody>
             </Table>
+            */}
             </div>
           }
           </div>

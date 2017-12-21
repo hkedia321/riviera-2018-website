@@ -4,8 +4,8 @@ import './Button.css'
 class Button extends React.Component {
   render(){
     return(
-        <div className='rajat-button'>
-          <span>Register Now</span>
+        <div className='rajat-button' style={{background:this.props.color}}>
+          <span>{this.props.text}</span>
         </div>
     )
   }

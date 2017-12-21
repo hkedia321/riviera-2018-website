@@ -17,6 +17,7 @@ import Home from './components/Home';
 import './App.css';
 import EventsOld from './components/EventsOld';
 import Events from './components/Events'
+import CampusAmbassadorPage from './components/CampusAmbassadorPage'
 
 class App extends Component {
   state={
@@ -73,6 +74,8 @@ class App extends Component {
 
         <Route exact path='/events' render={()=>(<Events selectEvent={this.selectEvent}/>)}/>
         <Route exact path='/proshows' component={Proshows}/>
+
+        <Route exact path='/campus-ambassador' component={CampusAmbassadorPage}/>
 
 
         <Snackbar
