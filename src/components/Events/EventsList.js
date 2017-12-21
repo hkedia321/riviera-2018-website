@@ -50,17 +50,15 @@ class EventsList extends React.Component {
             :
             <div>
               <h1>{this.props.event_category}</h1>
-              <div className='search-container' style={{display:'flex',justifyContent:'flex-end',width:'90%',marginRight:'200px'}}>
+              <div className='search-container' style={{display:'flex',justifyContent:'center',width:'100%'}}>
                 <input
                   type='text'
                   value={query}
                   onChange={(e)=>this.updateQuery(e.target.value)}
                   style={{
-                    background:'#242424',
-                    border:'0px',
-                    padding:'10px',
-                    color:'#fff'
+                    
                   }}
+                  className="events-search-box"
                   placeholder='Search'
                 />
                 <FontAwesome name='search' style={{padding:'10px'}}/>
@@ -72,9 +70,9 @@ class EventsList extends React.Component {
                       <CardTitle
                         title={event['EVENT NAME']}
                         subtitle={event['CLUB NAME']}
-                        style={{textAlign:'left',color:'#fff'}}
+                        style={{textAlign:'left',color:'#fff',fontWeight:'bold'}}
                         titleColor='#fff'
-                        subtitleColor='#fff'
+                        subtitleColor='#9E9E9E'
                       />
                       <CardText
                         color='#fff'

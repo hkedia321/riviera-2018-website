@@ -20,7 +20,6 @@ import Countdown from './Home/Countdown'
 class Home extends Component {
     constructor(props) {
         super(props);
-
     }
     render() {
         return (
