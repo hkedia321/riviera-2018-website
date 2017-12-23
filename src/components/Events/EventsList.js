@@ -97,35 +97,6 @@ class EventsList extends React.Component {
                   </Col>
                 ))}
               </Row>
-            {/*<Table
-              selectable={false}
-              style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
-              >
-              <TableBody displayRowCheckbox={false}>
-                {/*<TableRow style={{color:'#fff'}}>
-                  <TableRowColumn style={{fontWeight:'bold'}}>Event Name</TableRowColumn>
-                  <TableRowColumn style={{fontWeight:'bold'}}>Club Name</TableRowColumn>
-                  <TableRowColumn style={{fontWeight:'bold'}}>Description</TableRowColumn>
-                  <TableRowColumn style={{fontWeight:'bold'}}>More Details</TableRowColumn>
-                </TableRow>
-                {showingEvents.map((event)=>(
-                  <TableRow key={event['EVENT NAME']} selectable={false} style={{color:'#fff'}}>
-                    <TableRowColumn>{event['EVENT NAME']}</TableRowColumn>
-                    <TableRowColumn>{event['CLUB NAME']}</TableRowColumn>
-                    <TableRowColumn>{event['DESCRIPTION']}</TableRowColumn>
-                    <TableRowColumn>
-                    <Link
-                    style={{
-                    border:'0px',
-                    padding:'10px'
-                  }}
-                  to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}
-                  >View Details</Link></TableRowColumn>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-          */}
         </div>
       }
     </div>

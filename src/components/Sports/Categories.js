@@ -35,19 +35,22 @@ class Categories extends React.Component {
           behavior:'smooth'
       })
     }
+    fetchSports = (sport) =>{
+      this.props.fetchSports(sport);
+    }
   render(){
         console.log('Opacity',this.state.phenomenonOpacity);
     return(
       <div className='featured-container event-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
         <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
-        <div className="item" onClick={()=>this.props.fetchEvents('adventure%20sports')}>
+        <div className="item" onClick={()=>this.fetchSports('swimming')}>
           <div className="event-card">
           <div className="category-title">
             Swimming
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchSports('badminton')}>
+        <div className="item" onClick={()=>this.fetchSports('badminton')}>
           <div className="event-card">
           <div className="category-title">
             Badminton
@@ -56,7 +59,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchSports('tennis')}>
+        <div className="item" onClick={()=>this.fetchSports('tennis')}>
           <div className="event-card">
           <div className="category-title">
             Tennis
@@ -65,7 +68,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchSports('tabletennis')}>
+        <div className="item" onClick={()=>this.fetchSports('tabletennis')}>
           <div className="event-card">
           <div className="category-title">
             Table Tennis
@@ -74,7 +77,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchSports('chess')}>
+        <div className="item" onClick={()=>this.fetchSports('chess')}>
           <div className="event-card">
           <div className="category-title">
             Chess
@@ -83,7 +86,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchSports('snooker')}>
+        <div className="item" onClick={()=>this.fetchSports('snooker')}>
             <div className="event-card">
                 <div className="category-title">
                     Snooker
@@ -92,7 +95,7 @@ class Categories extends React.Component {
                 </div>
             </div>
         </div>
-          <div className="item" onClick={()=>this.props.fetchSports('throwball')}>
+          <div className="item" onClick={()=>this.fetchSports('throwball')}>
               <div className="event-card">
                   <div className="category-title">
                     Throwball
@@ -101,7 +104,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchSports('basketball')}>
+          <div className="item" onClick={()=>this.fetchSports('basketball')}>
               <div className="event-card">
                   <div className="category-title">
                     Basketball
@@ -110,7 +113,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchSports('volleyball')}>
+          <div className="item" onClick={()=>this.fetchSports('volleyball')}>
               <div className="event-card">
                   <div className="category-title">
                     Volleyball
@@ -119,7 +122,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchSports('handball')}>
+          <div className="item" onClick={()=>this.fetchSports('handball')}>
               <div className="event-card">
                   <div className="category-title">
                     Handball
@@ -128,7 +131,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchSports('hockey')}>
+          <div className="item" onClick={()=>this.fetchSports('hockey')}>
               <div className="event-card">
                   <div className="category-title">
                     Hockey
@@ -137,7 +140,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchSports('cricket')}>
+          <div className="item" onClick={()=>this.fetchSports('cricket')}>
               <div className="event-card">
                   <div className="category-title">
                       Cricket
@@ -146,7 +149,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchSports('football')}>
+          <div className="item" onClick={()=>this.fetchSports('football')}>
               <div className="event-card">
                   <div className="category-title">
                       Football

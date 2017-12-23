@@ -25,7 +25,7 @@ const muiTheme = getMuiTheme({
 const Main = () => (
   <Provider store={createStoreWithMiddleware(reducers)}>
     <Router>
-    <MuiThemeProvider muiTheme={muiTheme}>
+    <MuiThemeProvider>
       <main>
         <Switch>
           <Route path='/' component={App}/>
