@@ -170,28 +170,38 @@ class FlipClock extends React.Component {
 	render() {
 		const { days,daysShuffle,hours, minutes, seconds, hoursShuffle, minutesShuffle, secondsShuffle } = this.state;
 		return(
+      <div>
 			<div className={'flipClock'}>
-        <FlipUnitContainer
-          unit={'days'}
-          digit={days}
-          shuffle={daysShuffle}
-        />
-				<FlipUnitContainer
-					unit={'hours'}
-					digit={hours}
-					shuffle={hoursShuffle}
-					/>
-				<FlipUnitContainer
-					unit={'minutes'}
-					digit={minutes}
-					shuffle={minutesShuffle}
-					/>
-				<FlipUnitContainer
-					unit={'seconds'}
-					digit={seconds}
-					shuffle={secondsShuffle}
-					/>
+        <div style={{margin:'10px'}}>
+            <FlipUnitContainer
+              unit={'days'}
+              digit={days}
+              shuffle={daysShuffle}
+            />
+          </div>
+          <div style={{margin:'10px'}}>
+            <FlipUnitContainer
+    					unit={'hours'}
+    					digit={hours}
+    					shuffle={hoursShuffle}
+    					/>
+            </div>
+            <div style={{margin:'10px'}}>
+            <FlipUnitContainer
+    					unit={'minutes'}
+    					digit={minutes}
+    					shuffle={minutesShuffle}
+    					/>
+            </div>
+            <div style={{margin:'10px'}}>
+            <FlipUnitContainer
+    					unit={'seconds'}
+    					digit={seconds}
+    					shuffle={secondsShuffle}
+    					/>
+            </div>
 			</div>
+      </div>
 		);
 	}
 }
