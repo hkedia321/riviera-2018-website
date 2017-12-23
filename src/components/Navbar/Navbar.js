@@ -29,7 +29,6 @@ class Navbar extends React.Component{
   managePhenomenon =(e)=>{
     const html = document.documentElement;
     let scroll = html.scrollTop;
-    console.log("Scroll:"+scroll);
     let pc=scroll/500;
     let bg=pc>1?1:pc;
     this.setState({

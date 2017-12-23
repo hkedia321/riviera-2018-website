@@ -28,7 +28,7 @@ const Main = () => (
     <MuiThemeProvider muiTheme={muiTheme}>
       <main>
         <Switch>
-                  <Route path='/' component={App}/>
+          <Route path='/' component={App}/>
         </Switch>
       </main>
     </MuiThemeProvider>
