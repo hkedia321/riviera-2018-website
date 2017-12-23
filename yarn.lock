@@ -2631,6 +2631,12 @@ flexboxgrid2@^7.0.0-alpha7:
   dependencies:
     normalize.css "^7.0.0"
 
+flipclock@^0.7.8:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/flipclock/-/flipclock-0.7.8.tgz#f37f1f7ca9044d902c1fee1f1ae7f4bd1eef1a54"
+  dependencies:
+    jquery ">=1.7"
+
 follow-redirects@^1.2.3:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.6.tgz#4dcdc7e4ab3dd6765a97ff89c3b4c258117c79bf"
@@ -3798,7 +3804,7 @@ jest@20.0.3:
   dependencies:
     jest-cli "^20.0.3"
 
-jquery@^3.2.1:
+jquery@>=1.7, jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 

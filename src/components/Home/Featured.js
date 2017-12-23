@@ -24,8 +24,8 @@ class Featured extends React.Component {
         const scrollPosition=document.getElementById('featured').scrollLeft
         const magnitude=scrollPosition-1000
         console.log('Featured Scroll:',scrollPosition)
-        phenomenonOpacity:1-scrollPosition/100
         this.setState({
+          phenomenonOpacity:1-scrollPosition/100
         })
         // if(magnitude<0 && this.state.phenomenonOpacity>0){
         //     this.setState({
@@ -49,12 +49,29 @@ class Featured extends React.Component {
         //     })
         // }
     }
+    componentDidMount(){
+      window.addEventListener('scroll', this.manageVisibility)
+    }
+    manageVisibility=()=>{
+      const html = document.documentElement;
+      let scroll = html.scrollTop;
+      if(scroll>350){
+        this.scrollLeft(200)
+      }
+    }
     scrollLeft=()=>{
         document.getElementById('featured').scrollBy({
             left:600,
             top:0,
             behavior:'smooth'
         })
+    }
+    scrollLeft=(val)=>{
+      document.getElementById('featured').scrollBy({
+          left:val,
+          top:0,
+          behavior:'smooth'
+      })
     }
     scrollRight=()=>{
         document.getElementById('featured').scrollBy({

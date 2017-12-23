@@ -20,7 +20,7 @@ class Navbar extends React.Component{
     super(props);
     this.state={
       navbarBgTransparent:"0",
-      navbarOpen:false,
+      navbarOpen:false
     }
   }
   handleNav = (place) =>{
@@ -29,7 +29,6 @@ class Navbar extends React.Component{
   managePhenomenon =(e)=>{
     const html = document.documentElement;
     let scroll = html.scrollTop;
-    console.log("Scroll:"+scroll);
     let pc=scroll/500;
     let bg=pc>1?1:pc;
     this.setState({
@@ -53,7 +52,7 @@ handleClick = () =>{
         this.setState({
           navbarOpen:true
         })
-        document.body.style.overflowY='hidden';
+        // document.body.style.overflowY='hidden';
     }
 
 }
@@ -89,6 +88,8 @@ handleClick = () =>{
                 </span>
               </button>
           </div>
+
+
           <div className={mobileSidebar}>
             <NavLink to="/"><span className="main-nav-item">Home</span></NavLink>
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
