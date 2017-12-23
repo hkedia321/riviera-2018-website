@@ -56,7 +56,7 @@ class EventsList extends React.Component {
                   value={query}
                   onChange={(e)=>this.updateQuery(e.target.value)}
                   style={{
-                    
+
                   }}
                   className="events-search-box"
                   placeholder='Search'
@@ -88,7 +88,7 @@ class EventsList extends React.Component {
                         />
                         <FlatButton disabled
                           icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
-                          label={`${event['Reg fees After GST']}/ person`}
+                          label={`${event['Reg fees After GST']}/ ${event['Team Event (yes/no)']=='yes'?'team':'person'}`}
                           labelStyle={{color:'#fff'}}
                         />
                         <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><FlatButton label='View and Share' labelStyle={{color:'#fff'}} fullWidth={true}/></Link>

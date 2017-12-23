@@ -12,14 +12,7 @@ class Header extends React.Component {
     return(
       <div className='header' id='scene'>
         <div className='header-bg' data-depth='0.8'>
-          <img src='/header-bg.jpeg'
-            style={{
-              width:'100%',
-              position:'absolute',
-              left:'-200px',
-              top:'-50px'
-            }}
-          />
+          
         </div>
         <div className='tt' data-depth='0.3'>
           <img src='/tt.png'

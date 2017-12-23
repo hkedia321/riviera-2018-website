@@ -32,6 +32,7 @@
 .event-categories{
     background: #C3C3C3;
     padding-top: 200px;
+    background: url('../images/events-bg.jpg')
 }
 
 .event-categories .event-card{

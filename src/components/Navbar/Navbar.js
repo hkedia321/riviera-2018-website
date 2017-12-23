@@ -76,7 +76,6 @@ handleClick = () =>{
           <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
           <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
           <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
-          <NavLink to="/faq"><span className="main-nav-item">FAQ</span></NavLink>
           <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
@@ -94,7 +93,6 @@ handleClick = () =>{
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
             <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
             <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
-            <NavLink to="/faq"><span className="main-nav-item">FAQ</span></NavLink>
             <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
           </div>
       </div>

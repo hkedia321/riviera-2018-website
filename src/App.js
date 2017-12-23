@@ -9,7 +9,6 @@ import {
 import { connect } from 'react-redux';
 import * as actions from './actions';
 import PropTypes from 'prop-types';
-
 import Snackbar from 'material-ui/Snackbar';
 import SingleEvent from './components/SingleEvent';
 import Proshows from './components/Proshows/Proshow.js';
