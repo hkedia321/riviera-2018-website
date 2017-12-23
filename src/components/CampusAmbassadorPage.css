@@ -1,0 +1,21 @@
+.campus-ambassador-page{
+
+}
+
+.campus-ambassador-page .header{
+    padding-top: 200px;
+    background: url('../images/campus-ambassador.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+
+.campus-ambassador-page h1,h3{
+  font-weight: 400;
+  color: #fff;
+  width: auto;
+}
+
+p.description{
+  text-align: justify;
+}
