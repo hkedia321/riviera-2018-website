@@ -20,7 +20,7 @@ class Navbar extends React.Component{
     super(props);
     this.state={
       navbarBgTransparent:"0",
-      navbarOpen:false,
+      navbarOpen:false
     }
   }
   handleNav = (place) =>{
@@ -88,6 +88,8 @@ handleClick = () =>{
                 </span>
               </button>
           </div>
+
+
           <div className={mobileSidebar}>
             <NavLink to="/"><span className="main-nav-item">Home</span></NavLink>
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
