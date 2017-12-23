@@ -55,7 +55,7 @@ class Featured extends React.Component {
     manageVisibility=()=>{
       const html = document.documentElement;
       let scroll = html.scrollTop;
-      if(scroll>350){
+      if(scroll>350&&(document.getElementById('featured'))){
         this.scrollLeft(200)
       }
     }
