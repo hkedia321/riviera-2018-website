@@ -171,29 +171,30 @@ class FlipClock extends React.Component {
 		const { days,daysShuffle,hours, minutes, seconds, hoursShuffle, minutesShuffle, secondsShuffle } = this.state;
 		return(
       <div>
-			<div className={'flipClock'}>
-        <div style={{margin:'10px'}}>
+
+      <div className='custom-countdown-container'>
+        <div style={{margin:'10px'}} className='unit-container'>
             <FlipUnitContainer
               unit={'days'}
               digit={days}
               shuffle={daysShuffle}
             />
           </div>
-          <div style={{margin:'10px'}}>
+          <div style={{margin:'10px'}} className='unit-container'>
             <FlipUnitContainer
     					unit={'hours'}
     					digit={hours}
     					shuffle={hoursShuffle}
     					/>
             </div>
-            <div style={{margin:'10px'}}>
+            <div style={{margin:'10px'}} className='unit-container'>
             <FlipUnitContainer
     					unit={'minutes'}
     					digit={minutes}
     					shuffle={minutesShuffle}
     					/>
             </div>
-            <div style={{margin:'10px'}}>
+            <div style={{margin:'10px'}} className='unit-container'>
             <FlipUnitContainer
     					unit={'seconds'}
     					digit={seconds}
@@ -211,8 +212,11 @@ class Countdown extends React.Component {
     return(
       <div className='countdown'>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} md={6}>
             <FlipClock/>
+          </Col>
+          <Col xs={12} md={6} style={{textAlign:'center'}}>
+            <h1>Till the extravaganza begins!</h1>
           </Col>
         </Row>
       </div>

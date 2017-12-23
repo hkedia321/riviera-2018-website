@@ -35,7 +35,7 @@
     display: none !important;
   }
   .header .header-bg{
-    background: url('../images/header-bg.jpeg');
+    width: 100%;
     background-position: center;
   }
   .header .header-bg img{

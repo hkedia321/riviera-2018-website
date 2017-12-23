@@ -20,7 +20,7 @@ injectTapEventPlugin();
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const muiTheme = getMuiTheme({
-  fontFamily:'Varela Round'
+  fontFamily:'Roboto'
 });
 const Main = () => (
   <Provider store={createStoreWithMiddleware(reducers)}>

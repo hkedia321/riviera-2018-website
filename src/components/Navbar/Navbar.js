@@ -53,7 +53,7 @@ handleClick = () =>{
         this.setState({
           navbarOpen:true
         })
-        document.body.style.overflowY='hidden';
+        // document.body.style.overflowY='hidden';
     }
 
 }

@@ -5,7 +5,6 @@ header {
   position: relative;
 }
 header h1 {
-  font-family: "Droid Sans Mono", monospace;
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -52,7 +51,7 @@ header h1 {
 }
 .upperCard span, .lowerCard span {
   font-size: 5em;
-  font-family: "Droid Sans Mono", monospace;
+
   font-weight: lighter;
   color: #333333;
 }
@@ -99,7 +98,6 @@ header h1 {
           backface-visibility: hidden;
 }
 .flipCard span {
-  font-family: "Droid Sans Mono", monospace;
   font-size: 5em;
   font-weight: lighter;
   color: #333333;
@@ -198,3 +196,33 @@ header h1 {
             transform: rotateX(0deg);
   }
 }
+
+
+  .custom-countdown-container{
+    display: flex;
+    width: 69vh;
+  }
+
+
+  @media (max-width:600px) {
+    .custom-countdown-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  /* .flipUnitContainer{
+    width: 20px;
+  }
+
+  .unit-container{
+    width: 10%;
+  }
+
+  .upperCard span, .lowerCard span {
+    font-size: 3em;
+  }
+
+  .flipCard span {
+    font-size: 3em;
+  } */
