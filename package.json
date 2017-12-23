@@ -15,6 +15,7 @@
     "react-dom": "^15.5.4",
     "react-draggable": "^3.0.4",
     "react-flexbox-grid": "^2.0.0",
+    "react-flip-move": "^2.10.0",
     "react-fontawesome": "^1.6.1",
     "react-redux": "^5.0.5",
     "react-router": "^2.0.0",
