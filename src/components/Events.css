@@ -6,21 +6,18 @@
     background: #5E5E5E;
     cursor: pointer;
     transition: all 0.5s;
+    transform: scale(0.9);
+    
 }
-
+.events .event-card.selected{
+    transform: scale(1.1);
+}
 .events .event-card:hover{
     box-shadow: 0px 0px 10px 0px #000;
     transition: all 0.5s;
 
 }
-.events .category-title{
-    font-size:24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top:80px;
-}
+
 .events-search-box{
     background:#242424;
     border:0px;

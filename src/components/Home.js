@@ -9,7 +9,6 @@ import * as actions from './../actions';
 import './Home.css'
 
 // Components
-import Navbar from './Navbar/Navbar.js'
 import Header from './Home/Header'
 import Button from './Button'
 import Featured from './Home/Featured'
@@ -24,10 +23,6 @@ class Home extends Component {
     render() {
         return (
             <div className="homepage">
-                {/* Navbar */}
-                  <div className='full-width-column'>
-                    <Navbar fontColor='#fff'/>
-                  </div>
                 {/* Header */}
                 <div className='full-width-column'>
                   <Header/>

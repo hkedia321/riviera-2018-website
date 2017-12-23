@@ -5,7 +5,6 @@ import React from 'react'
 import Categories from './Events/Categories'
 import EventsList from './Events/EventsList'
 import './Events.css'
-import Navbar from './Navbar/Navbar'
 
 import axios from 'axios'
 
@@ -42,7 +41,7 @@ class Events extends React.Component{
     render(){
         return(
             <div className="events">
-                <Navbar fontColor='#fff'/>
+
                 {/* Top Portion with cards */}
                 <Categories fetchEvents={this.fetchEvents}/>
 
