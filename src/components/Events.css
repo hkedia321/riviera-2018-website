@@ -7,6 +7,7 @@
     cursor: pointer;
     transition: all 0.5s;
     transform: scale(0.9);
+    
 }
 .events .event-card.selected{
     transform: scale(1.1);
@@ -16,14 +17,7 @@
     transition: all 0.5s;
 
 }
-.events .category-title{
-    font-size:24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top:80px;
-}
+
 .events-search-box{
     background:#242424;
     border:0px;
@@ -35,6 +29,7 @@
 .event-categories{
     background: #C3C3C3;
     padding-top: 200px;
+    background: url('../images/events-bg.jpg')
 }
 
 .event-categories .event-card{

@@ -110,6 +110,10 @@
   margin-right:20px;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .featured-container .event-card:hover{
     cursor: pointer;
@@ -151,13 +155,12 @@
 }
 .category-title{
   font-size:24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top:80px;
+  text-align: center;
 }
-
+.category-subtitle{
+    font-size: 20px;
+    color:#ddd;
+}
 @media (max-width: 600px) {
   .featured-container .phenomenon{
     left: 5px;

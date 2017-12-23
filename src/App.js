@@ -9,7 +9,6 @@ import {
 import { connect } from 'react-redux';
 import * as actions from './actions';
 import PropTypes from 'prop-types';
-
 import Snackbar from 'material-ui/Snackbar';
 import SingleEvent from './components/SingleEvent';
 import Proshows from './components/Proshows/Proshow.js';
@@ -17,7 +16,8 @@ import Home from './components/Home';
 import './App.css';
 import EventsOld from './components/EventsOld';
 import Events from './components/Events'
-import Sports from './components/Sports'
+import Sports from './components/Sports';
+import Navbar from './components/Navbar/Navbar';
 import CampusAmbassadorPage from './components/CampusAmbassadorPage'
 
 class App extends Component {
@@ -59,7 +59,7 @@ class App extends Component {
     }
     return (
       <div className="app-wrap">
-
+          <Navbar fontColor='#fff'/>
         <Route exact path='/' component={Home}/>
         <Route exact path='/event/:category/:event_name' render={()=>(
           <SingleEvent

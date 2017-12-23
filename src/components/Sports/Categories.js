@@ -36,105 +36,122 @@ class Categories extends React.Component {
       })
     }
   render(){
-        console.log('Opacity',this.state.phenomenonOpacity)
+        console.log('Opacity',this.state.phenomenonOpacity);
     return(
       <div className='featured-container event-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
         <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
         <div className="item" onClick={()=>this.props.fetchEvents('adventure%20sports')}>
           <div className="event-card">
           <div className="category-title">
-            Adventure Sports
+            Swimming
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('cyber%20engage')}>
+        <div className="item" onClick={()=>this.props.fetchSports('badminton')}>
           <div className="event-card">
           <div className="category-title">
-            Cyber Engage
+            Badminton
+            <br/>
+            <span className="category-subtitle">(Men & Women)</span>
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('dance')}>
+        <div className="item" onClick={()=>this.props.fetchSports('tennis')}>
           <div className="event-card">
           <div className="category-title">
-            Dance
+            Tennis
+            <br/>
+            <span className="category-subtitle">(Men & Women)</span>
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('drama')}>
+        <div className="item" onClick={()=>this.props.fetchSports('tabletennis')}>
           <div className="event-card">
           <div className="category-title">
-            Drama
+            Table Tennis
+            <br/>
+            <span className="category-subtitle">(Men & Women)</span>
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('informals')}>
+        <div className="item" onClick={()=>this.props.fetchSports('chess')}>
           <div className="event-card">
           <div className="category-title">
-            Informals
+            Chess
+            <br/>
+            <span className="category-subtitle">(Men & Women)</span>
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('music')}>
+        <div className="item" onClick={()=>this.props.fetchSports('snooker')}>
             <div className="event-card">
                 <div className="category-title">
-                    Music
+                    Snooker
+                    <br/>
+                    <span className="category-subtitle">(Men only)</span>
                 </div>
             </div>
         </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('pre-riviera')}>
+          <div className="item" onClick={()=>this.props.fetchSports('throwball')}>
               <div className="event-card">
                   <div className="category-title">
-                    Pre-Riviera
+                    Throwball
+                    <br/>
+                    <span className="category-subtitle">(Women only)</span>
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('premium')}>
+          <div className="item" onClick={()=>this.props.fetchSports('basketball')}>
               <div className="event-card">
                   <div className="category-title">
-                    Premium
+                    Basketball
+                    <br/>
+                    <span className="category-subtitle">(Men & Women)</span>
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('quiz%20events')}>
+          <div className="item" onClick={()=>this.props.fetchSports('volleyball')}>
               <div className="event-card">
                   <div className="category-title">
-                    Quiz Events
+                    Volleyball
+                    <br/>
+                    <span className="category-subtitle">(Men & Women)</span>
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20english')}>
+          <div className="item" onClick={()=>this.props.fetchSports('handball')}>
               <div className="event-card">
                   <div className="category-title">
-                    Words with English
+                    Handball
+                    <br/>
+                    <span className="category-subtitle">(Men only)</span>
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20hindi')}>
+          <div className="item" onClick={()=>this.props.fetchSports('hockey')}>
               <div className="event-card">
                   <div className="category-title">
-                    Words with Hindi
+                    Hockey
+                    <br/>
+                    <span className="category-subtitle">(Men only)</span>
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20telugu')}>
+          <div className="item" onClick={()=>this.props.fetchSports('cricket')}>
               <div className="event-card">
                   <div className="category-title">
-                      Words with Telugu
+                      Cricket
+                      <br/>
+                      <span className="category-subtitle">(Men only)</span>
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20tamil')}>
+          <div className="item" onClick={()=>this.props.fetchSports('football')}>
               <div className="event-card">
                   <div className="category-title">
-                      Words with Tamil
-                  </div>
-              </div>
-          </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('workshops')}>
-              <div className="event-card">
-                  <div className="category-title">
-                    Workshops
+                      Football
+                      <br/>
+                      <span className="category-subtitle">(Men only)</span>
                   </div>
               </div>
           </div>

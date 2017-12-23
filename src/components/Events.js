@@ -41,6 +41,7 @@ class Events extends React.Component{
     render(){
         return(
             <div className="events">
+
                 {/* Top Portion with cards */}
                 <Categories fetchEvents={this.fetchEvents}/>
 

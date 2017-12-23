@@ -129,7 +129,7 @@ class SingleEvent extends Component {
                                             <div className="event-right-details">
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Price</span>
-                                                    <div className="item-right-detail text-bold">Rs. {event['Reg fees After GST']} / person</div>
+                                                    <div className="item-right-detail text-bold">Rs. {event['Reg fees After GST']} / {event['Team Event (yes/no)']=='yes'?'team':'person'}</div>
                                                 </div>
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Team Event</span>

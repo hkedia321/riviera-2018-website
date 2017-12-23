@@ -45,71 +45,71 @@ class EventsList extends React.Component {
       <div className='events-list'>
         {(events.length>0 && !this.props.loading)?
           <div>
-            {this.props.loading?
-              <div>Loading...</div>
-              :
-              <div>
-                <h1>{this.props.event_category}</h1>
-                <div className='search-container' style={{display:'flex',justifyContent:'center',width:'100%'}}>
-                  <input
-                    type='text'
-                    value={query}
-                    onChange={(e)=>this.updateQuery(e.target.value)}
-                    style={{
+          {this.props.loading?
+            <div>Loading...</div>
+            :
+            <div>
+              <h1>{this.props.event_category}</h1>
+              <div className='search-container' style={{display:'flex',justifyContent:'center',width:'100%'}}>
+                <input
+                  type='text'
+                  value={query}
+                  onChange={(e)=>this.updateQuery(e.target.value)}
+                  style={{
 
-                    }}
-                    className="events-search-box"
-                    placeholder='Search'
-                  />
-                  <FontAwesome name='search' style={{padding:'10px'}}/>
-                </div>
-                <Row style={{width:'100%'}} top='md'>
-                      {showingEvents.map((event)=>(
-                        <Col md={4} xs={12}>
-                          <Card style={{margin:'20px',background:'#232323',color:'#fff'}}>
-                            <CardTitle
-                              title={event['EVENT NAME']}
-                              subtitle={event['CLUB NAME']}
-                              style={{textAlign:'left',color:'#fff',fontWeight:'bold'}}
-                              titleColor='#fff'
-                              subtitleColor='#9E9E9E'
-                            />
-                            <CardText
-                              color='#fff'
-                              style={{textAlign:'left'}}
-                              >
-                                {event['DESCRIPTION']}
-                              </CardText>
-                              <CardActions>
-                                <FlatButton disabled
-                                  label={`Prize:${event['Prize Money']}`}
-                                  icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
-                                  labelStyle={{color:'#fff'}}
-                                />
-                                <FlatButton disabled
-                                  icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
-                                  label={`${event['Reg fees After GST']}/ person`}
-                                  labelStyle={{color:'#fff'}}
-                                />
-                                <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><FlatButton label='View and Share' labelStyle={{color:'#fff'}} fullWidth={true}/></Link>
-                              </CardActions>
-                            </Card>
-                          </Col>
-                        ))}
-                    </Row>
-                    {/*<Table
-                      selectable={false}
-                      style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
+                  }}
+                  className="events-search-box"
+                  placeholder='Search'
+                />
+                <FontAwesome name='search' style={{padding:'10px'}}/>
+              </div>
+              <Row style={{width:'100%'}} top='md'>
+                {showingEvents.map((event)=>(
+                  <Col md={4} xs={12} style={{flexBasis:'50%'}}>
+                    <Card style={{margin:'20px',background:'#232323',color:'#fff'}}>
+                      <CardTitle
+                        title={event['EVENT NAME']}
+                        subtitle={event['CLUB NAME']}
+                        style={{textAlign:'left',color:'#fff',fontWeight:'bold'}}
+                        titleColor='#fff'
+                        subtitleColor='#9E9E9E'
+                      />
+                      <CardText
+                        color='#fff'
+                        style={{textAlign:'left'}}
                       >
-                      <TableBody displayRowCheckbox={false}>
-                      {/*<TableRow style={{color:'#fff'}}>
-                      <TableRowColumn style={{fontWeight:'bold'}}>Event Name</TableRowColumn>
-                      <TableRowColumn style={{fontWeight:'bold'}}>Club Name</TableRowColumn>
-                      <TableRowColumn style={{fontWeight:'bold'}}>Description</TableRowColumn>
-                      <TableRowColumn style={{fontWeight:'bold'}}>More Details</TableRowColumn>
-                    </TableRow>
-                    {showingEvents.map((event)=>(
-                    <TableRow key={event['EVENT NAME']} selectable={false} style={{color:'#fff'}}>
+                        {event['DESCRIPTION']}
+                      </CardText>
+                      <CardActions>
+                        <FlatButton disabled
+                          label={`Prize:${event['Prize Money']}`}
+                          icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
+                          labelStyle={{color:'#fff'}}
+                        />
+                        <FlatButton disabled
+                          icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
+                          label={`${event['Reg fees After GST']}/ ${event['Team Event (yes/no)']=='yes'?'team':'person'}`}
+                          labelStyle={{color:'#fff'}}
+                        />
+                        <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><FlatButton label='View and Share' labelStyle={{color:'#fff'}} fullWidth={true}/></Link>
+                      </CardActions>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            {/*<Table
+              selectable={false}
+              style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
+              >
+              <TableBody displayRowCheckbox={false}>
+                {/*<TableRow style={{color:'#fff'}}>
+                  <TableRowColumn style={{fontWeight:'bold'}}>Event Name</TableRowColumn>
+                  <TableRowColumn style={{fontWeight:'bold'}}>Club Name</TableRowColumn>
+                  <TableRowColumn style={{fontWeight:'bold'}}>Description</TableRowColumn>
+                  <TableRowColumn style={{fontWeight:'bold'}}>More Details</TableRowColumn>
+                </TableRow>
+                {showingEvents.map((event)=>(
+                  <TableRow key={event['EVENT NAME']} selectable={false} style={{color:'#fff'}}>
                     <TableRowColumn>{event['EVENT NAME']}</TableRowColumn>
                     <TableRowColumn>{event['CLUB NAME']}</TableRowColumn>
                     <TableRowColumn>{event['DESCRIPTION']}</TableRowColumn>
