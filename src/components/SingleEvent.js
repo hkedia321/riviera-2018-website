@@ -6,6 +6,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import medal23 from './../images/medal23.png';
 import FontAwesome from 'react-fontawesome'
+import {Helmet} from 'react-helmet'
 
 import axios from 'axios'
 
@@ -46,6 +47,9 @@ class SingleEvent extends Component {
                 }
                 {this.state.events.map((event)=>(
                 <div key={event['EVENT NAME']}>
+                  <Helmet>
+                    <title>{event['EVENT NAME']+` - Riviera 2018 | VIT University`}</title>
+                  </Helmet>
                 <Grid>
                     <Row>
                         <Col xs={12} mdOffset={0} md={12}>
