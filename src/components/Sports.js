@@ -13,6 +13,7 @@ import Handball from './Sports/SportDetails/Handball.js';
 import Hockey from './Sports/SportDetails/Hockey.js';
 import Cricket from './Sports/SportDetails/Cricket.js';
 import Football from './Sports/SportDetails/Football.js';
+import Navbar from './Navbar/Navbar'
 
 import axios from 'axios'
 
@@ -30,6 +31,7 @@ class Events extends React.Component{
         const {sport} = this.state;
         return(
             <div className="events">
+                <Navbar fontColor='#fff'/>
                 {/* Top Portion with cards */}
                 <Categories fetchSports={this.fetchSports}/>
 

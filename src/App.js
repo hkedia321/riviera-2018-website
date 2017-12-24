@@ -59,7 +59,7 @@ class App extends Component {
     }
     return (
       <div className="app-wrap">
-          <Navbar fontColor='#fff'/>
+          
         <Route exact path='/' component={Home}/>
         <Route exact path='/event/:category/:event_name' render={()=>(
           <SingleEvent

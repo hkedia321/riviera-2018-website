@@ -15,6 +15,7 @@ import Featured from './Home/Featured'
 import StudentAmbassador from './Home/StudentAmbassador'
 import Footer from './Home/Footer'
 import Countdown from './Home/Countdown'
+import Navbar from './Navbar/Navbar'
 
 class Home extends Component {
     constructor(props) {
@@ -23,6 +24,7 @@ class Home extends Component {
     render() {
         return (
             <div className="homepage">
+                <Navbar fontColor='#fff'/>
                 {/* Header */}
                 <div className='full-width-column'>
                   <Header/>

@@ -30,17 +30,35 @@
   text-align: center;
 }
 
+.header .header-bg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .header-bg .logo{
+  width: 40%;
+  align-self: center;
+  position: relative;
+  left: 25%;
+}
+
 @media(max-width:800px){
   .header .sjt{
-    display: none !important;
+
   }
   .header .header-bg{
     width: 100%;
     background-position: center;
   }
-  .header .header-bg img{
-    display: none;
+
+  .header .header-bg .logo{
+    width: 90%;
+    position: relative;
+    top:10px;
+    left: 0px;
   }
+
 }
 
 .header .tt{

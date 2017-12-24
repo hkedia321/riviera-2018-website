@@ -21,7 +21,7 @@ class CampusAmbassadorPage extends React.Component{
                 <div className='table-container'>
                   <Table
                     selectable={false}
-                    style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
+                    style={{background:'#2D2D2D',width:'100%',margin:'20px'}}
                     >
                     <TableBody displayRowCheckbox={false}>
                       <TableRow>
@@ -49,7 +49,7 @@ class CampusAmbassadorPage extends React.Component{
                 <div className='table-container'>
                   <Table
                     selectable={false}
-                    style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
+                    style={{background:'#2D2D2D',width:'100%',margin:'20px'}}
                     >
                     <TableBody displayRowCheckbox={false}>
                       <TableRow>
@@ -78,7 +78,7 @@ class CampusAmbassadorPage extends React.Component{
                 <div className='table-container'>
                   <Table
                     selectable={false}
-                    style={{background:'#2D2D2D',width:'95%',margin:'20px'}}
+                    style={{background:'#2D2D2D',width:'100%',margin:'20px'}}
                     >
                     <TableBody displayRowCheckbox={false}>
                       <TableRow>
