@@ -44,10 +44,16 @@ nav{
 .main-nav-div .navbar-logo{
   width:100px;
   float: left;
+  position: absolute;
+  top:-15px;
 }
+
 .mobile-nav-header-bar .navbar-logo{
   width:100px;
   float: right;
+  position: absolute;
+  top:-15px;
+  right: 0px;
 }
 .mobile-nav-header-bar{
   z-index: 2000;

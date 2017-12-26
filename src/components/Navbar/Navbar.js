@@ -10,7 +10,6 @@ import {
 import { connect } from 'react-redux';
 import * as actions from './../../actions';
 import PropTypes from 'prop-types';
-import logo from '../../images/Riviera2017-white1.png';
 import classNames from 'classnames';
 
 import 'jquery';
@@ -71,17 +70,17 @@ handleClick = () =>{
         <div>
       <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
         <div className="main-nav-div">
-          <NavLink to="/">  <img src={logo} className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
+          <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
           <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
            <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
           <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
-          <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
+          {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
           <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
       <div className="display-on-mobile-only">
           <div className="mobile-nav-header-bar">
-            <NavLink to="/">  <img src={logo} className="navbar-logo"/></NavLink>
+            <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo"/></NavLink>
               <button className={hamburgerButton} type="button" onClick={this.handleClick}>
                 <span className="hamburger-box">
                   <span className="hamburger-inner"></span>
@@ -95,7 +94,7 @@ handleClick = () =>{
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
             <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
             <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
-            <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
+            {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
             <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
           </div>
       </div>
