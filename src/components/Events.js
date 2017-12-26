@@ -5,7 +5,8 @@ import React from 'react'
 import Categories from './Events/Categories'
 import EventsList from './Events/EventsList'
 import './Events.css'
-import Navbar from './Navbar/Navbar'
+import Navbar from './Navbar/Navbar';
+import Footer from './Home/Footer';
 
 import axios from 'axios'
 
@@ -53,7 +54,7 @@ class Events extends React.Component{
                   loading={this.state.loading}
                   selectEvent={this.props.selectEvent}
                 />
-
+                <Footer/>
             </div>
         )
     }

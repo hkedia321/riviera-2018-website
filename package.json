@@ -6,6 +6,7 @@
     "axios": "^0.16.1",
     "classnames": "^2.2.5",
     "flipclock": "^0.7.8",
+    "google-map-react": "^0.26.0",
     "history": "^4.6.1",
     "jquery": "^3.2.1",
     "material-ui": "^0.18.1",

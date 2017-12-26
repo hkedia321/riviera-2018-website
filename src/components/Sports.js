@@ -14,8 +14,8 @@ import Hockey from './Sports/SportDetails/Hockey.js';
 import Cricket from './Sports/SportDetails/Cricket.js';
 import Football from './Sports/SportDetails/Football.js';
 import Navbar from './Navbar/Navbar'
-
 import axios from 'axios'
+import Footer from './Home/Footer';
 
 class Events extends React.Component{
     state={
@@ -50,7 +50,7 @@ class Events extends React.Component{
                 {sport==="cricket" && <Cricket/>}
                 {sport==="football" && <Football/>}
 
-
+                <Footer/>
             </div>
         )
     }

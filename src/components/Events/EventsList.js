@@ -66,7 +66,7 @@ class EventsList extends React.Component {
               <Row style={{width:'100%'}} top='md'>
                 {showingEvents.map((event)=>(
                   <Col md={4} xs={12}>
-                    <Card style={{margin:'20px',background:'#232323',color:'#fff',fontFamily:'Roboto'}}>
+                    <Card style={{margin:'20px',background:'#232323',color:'#fff'}}>
                       <CardTitle
                         title={event['EVENT NAME']}
                         subtitle={event['CLUB NAME']}

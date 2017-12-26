@@ -1,0 +1,118 @@
+.header-featured{
+   height: 400px;
+   width: 100%;
+   position: relative;
+   z-index: -1;
+}
+
+.header-contact{
+   /*background-image: url('../images/events-bg.jpg');*/
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   background: linear-gradient(
+      rgba(20,20,20, .5),
+      rgba(20,20,20, .5)),
+      url('../images/events-bg.jpg');
+   }
+   .header-contact h1{
+      margin: 0;
+   }
+   .header-heading{
+      font-size: 2.4rem;
+   }
+   .contact-name{
+
+      margin: 0;
+   }
+   .contactus-card-heading{
+      margin-bottom: 10px;
+   }
+   .contact-mobile{
+      margin: 10px;
+      font-weight: normal;
+      color: #ddd;
+   }
+   .hvr-underline-reveal{
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      position: relative;
+      overflow: hidden;
+
+
+   }
+   .hvr-underline-reveal:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 4px;
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+
+   }
+   .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+   }
+   .hvr-underline-reveal:hover{
+      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+   }
+   .reveal-blue:before{
+      background: #3f51b5;
+   }
+   .reveal-lblue:before{
+      background: #607D8B;
+   }
+   .reveal-red:before{
+      background: #e91e63;
+   }
+   .reveal-green:before{
+      background: #4caf50;
+   }
+   .contact-email a{
+      text-decoration: none;
+      transition: all 0.3s ease-in;
+   }
+   .contact-email a:hover{
+      text-decoration: underline;
+   }
+   .contact-card{
+      width: 100%;
+      margin-bottom: 20px;
+   }
+   .zigzag{
+      background: repeat-x url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="6px" viewBox="0 0 12 6" enable-background="new 0 0 12 6" xml:space="preserve"><polygon points="6,3.5 0,0 0,1.208 6,4.708 12,1.208 12,0" fill="#9E9E9E"/></svg>');
+      height: 5px;
+      border: none;
+      width: 50%;
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   .gmaps{
+       width: 100%;
+       height: 350px;
+       filter: grayscale(1);
+       transition: all 0.3s ease-in;
+   }
+   .gmaps:hover{
+      filter: grayscale(0);
+   }
+   @media (min-width:769px){
+      .contact-card{
+         min-height: 280px;
+      }
+   }
