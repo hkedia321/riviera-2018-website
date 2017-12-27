@@ -3,13 +3,21 @@
 }
 
 .campus-ambassador-page .header{
-    padding-top: 200px;
+    /*padding-top: 200px;
     background: url('../images/campus-ambassador.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50%;
+    height: 50%;*/
 }
-
+.header-campus{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   background: linear-gradient(
+      rgba(20,20,20, .5),
+      rgba(20,20,20, .5)),
+      url('../images/campus-ambassador.jpg') center 0px / cover;
+   }
 .campus-ambassador-page h1,h3{
   font-weight: 400;
   color: #fff;
@@ -19,25 +27,28 @@
 p.description{
   text-align: justify;
 }
-
-.table-row td{
-  overflow: visible !important;
-  text-overflow: clip !important;
-  white-space:pre !important;
+.table-row{
+  border-bottom: 1px solid #9E9E9E !important;
 }
-
+table{
+  overflow: hidden;
+}
+.table-row td{
+  /*overflow: visible !important;
+  text-overflow: clip !important;
+  white-space:pre !important;*/
+}
+.table-container>div{
+  overflow: hidden !important;
+}
 
 @media (max-width:600px) {
   .table-container{
     width: 100%;
-    overflow: scroll;
   }
   .table-container table{
-    width: 160% !important;
+    width: 600px !important;
 
-    overflow: scroll !important;
-  }
-  .table-container div div{
-    overflow: auto !important;
+    overflow-x: scroll !important;
   }
 }
