@@ -29,7 +29,7 @@ class Contacts extends React.Component{
                               style={{textAlign:'center'}}
                               >
                                 <h1 className="center contactus-card-heading">Registrations</h1>
-                                <hr className="zigzag mini"/>
+                                <hr className="zigzag"/>
                                 <h3 className="contact-name">Apurv Kumar</h3>
                                 <h4 className="contact-mobile"><FontAwesome name='phone'/> 8939451788</h4>
                                 <br/>

@@ -88,7 +88,7 @@ class EventsList extends React.Component {
                         color='#fff'
                         style={{textAlign:'left',paddingTop:"0",lineHeight: "1.2rem"}}
                       >
-                        <hr className="zigzag"/>
+                        <hr className="zigzag zigzag-left"/>
                         {event['DESCRIPTION']}
                       </CardText>
                       <CardActions>
@@ -99,7 +99,7 @@ class EventsList extends React.Component {
                           labelStyle={{color:'#fff'}}
                         />
                         <FlatButton disabled
-                          label={`Prize: ${event['Prize Money']}`} 
+                          label={`Prize: ${event['Prize Money']}`}
                           icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
                           labelStyle={{color:'#fff'}}
                         />
