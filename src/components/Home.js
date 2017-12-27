@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import {
     BrowserRouter as Router,
     Route,
-    Switch
+    Switch,
+    Link
 } from 'react-router-dom';
 import { connect } from 'react-redux';
+import $ from 'jquery';
 import * as actions from './../actions';
 import './Home.css'
 
@@ -21,6 +23,11 @@ class Home extends Component {
     constructor(props) {
         super(props);
     }
+    handleClick = () =>{
+        $('html, body').animate({
+        scrollTop: $("#featured").offset().top-120
+    }, 500);
+    }
     render() {
         return (
             <div className="homepage">
@@ -31,10 +38,10 @@ class Home extends Component {
                 </div>
                 {/* Register Button */}
                 <div className='register-button-container'>
-                  <Button text='Register' style={{zIndex:10}}/>
+                  <Button text='Know More' onClick={this.handleClick} style={{zIndex:10}}/>
                 </div>
                 {/* The Phenomenon and featured events */}
-                <Featured/>
+                <Featured id="featured"/>
                 {/* Student Ambassador */}
                 <StudentAmbassador/>
                 {/* Countdown */}

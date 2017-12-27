@@ -167,39 +167,49 @@ class FlipClock extends React.Component {
 			});
 		}
 	}
+
 	render() {
+		const daysLabelStyle={color:"#eee",marginBottom:"0px"};
 		const { days,daysShuffle,hours, minutes, seconds, hoursShuffle, minutesShuffle, secondsShuffle } = this.state;
 		return(
       <div>
 
       <div className='custom-countdown-container'>
-        <div style={{margin:'10px'}} className='unit-container'>
+        <div className='unit-container'>
             <FlipUnitContainer
               unit={'days'}
               digit={days}
               shuffle={daysShuffle}
             />
+			<h3 className="center" style={daysLabelStyle}>Days</h3>
           </div>
-          <div style={{margin:'10px'}} className='unit-container'>
+          <div className='unit-container'>
+		  <span className="flip-clock-dot top"></span> <span className="flip-clock-dot bottom"></span>
             <FlipUnitContainer
     					unit={'hours'}
     					digit={hours}
     					shuffle={hoursShuffle}
     					/>
+					<h3 className="center" style={daysLabelStyle}>Hours</h3>
             </div>
-            <div style={{margin:'10px'}} className='unit-container'>
+
+            <div className='unit-container'>
+			<span className="flip-clock-dot top"></span> <span className="flip-clock-dot bottom"></span>
             <FlipUnitContainer
     					unit={'minutes'}
     					digit={minutes}
     					shuffle={minutesShuffle}
     					/>
+						<h3 className="center" style={daysLabelStyle}>Minutes</h3>
             </div>
-            <div style={{margin:'10px'}} className='unit-container'>
+            <div className='unit-container'>
+			<span className="flip-clock-dot top"></span> <span className="flip-clock-dot bottom"></span>
             <FlipUnitContainer
     					unit={'seconds'}
     					digit={seconds}
     					shuffle={secondsShuffle}
     					/>
+						<h3 className="center" style={daysLabelStyle}>Seconds</h3>
             </div>
 			</div>
       </div>
@@ -212,11 +222,11 @@ class Countdown extends React.Component {
     return(
       <div className='countdown'>
         <Row>
-          <Col xs={12} md={6}>
-            <FlipClock/>
-          </Col>
-          <Col xs={12} md={6} style={{textAlign:'center'}}>
-            <h1>Till the extravaganza begins!</h1>
+		<Col xs={12} md={12}>
+		  <h1 className="center text-white">Till the extravaganza begins!</h1>
+		</Col>
+          <Col xs={12} md={12} className="center">
+            <FlipClock  className="center"/>
           </Col>
         </Row>
       </div>

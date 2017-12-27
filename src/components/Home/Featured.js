@@ -88,7 +88,7 @@ class Featured extends React.Component {
             <div className="item">
               <div className={'phenomenon '+this.state.phenomenonClass} style={{opacity:this.state.phenomenonOpacity}}>
                 <h2>The phenomenon</h2>
-                <p>Riviera'17 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
+                <p>Riviera'18 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
               </div>
             </div>
             <div className="item">

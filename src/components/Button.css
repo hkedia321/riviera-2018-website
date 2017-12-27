@@ -10,6 +10,9 @@
       padding: 10px;
       transition: all 0.5s;
     }
+    .rajat-button-orange{
+        background-color: #ED994E;
+    }
     .rajat-button:hover{
       background-color: white;
       cursor: pointer;
@@ -25,4 +28,7 @@
       color: white;
       transition: color 0.2s;
       line-height: 40px;
+    }
+    .rajat-button-orange:hover >span{
+        color:#ED994E !important;
     }

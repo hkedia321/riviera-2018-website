@@ -4,9 +4,17 @@ import './Button.css'
 class Button extends React.Component {
   render(){
     return(
-        <div className='rajat-button' style={{background:this.props.color}}>
-          <span>{this.props.text}</span>
-        </div>
+      <div>
+        {this.props.orange?
+            <div className='rajat-button rajat-button-orange' onClick={this.props.onClick?this.props.onClick:null} >
+              <span>{this.props.text}</span>
+            </div>
+            :
+            <div className='rajat-button' onClick={this.props.onClick?this.props.onClick:null} >
+              <span>{this.props.text}</span>
+            </div>
+    }
+  </div>
     )
   }
 }

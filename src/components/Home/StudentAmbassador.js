@@ -7,11 +7,13 @@ class StudentAmbassador extends React.Component {
       <div className='student-ambassador'>
         <h1>Become a Student Ambassador</h1>
         <h4>The best program to get the word out there</h4>
-        <Link to='/campus-ambassador' style={{textDecoration:'none'}}>
+
           <div className='register-button-container' style={{position:'relative',top:'50px'}}>
-            <Button text='Enroll Now' style={{position:'relative',left:'300px'}} color='#ED994E'/>
+            <Link to='/campus-ambassador' style={{textDecoration:'none'}}>
+            <Button text='Enroll Now' style={{position:'relative',left:'300px'}} orange={true} color='#ED994E'/>
+            </Link>
           </div>
-        </Link>
+
       </div>
     )
   }
