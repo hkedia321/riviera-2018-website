@@ -73,8 +73,9 @@ handleClick = () =>{
           <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
           <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
            <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
-          <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
+            {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
           {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
+          <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
           <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
@@ -93,8 +94,9 @@ handleClick = () =>{
             <NavLink to="/"><span className="main-nav-item">Home</span></NavLink>
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
             <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
-            <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink>
+            {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
             {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
+	    <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
             <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
           </div>
       </div>

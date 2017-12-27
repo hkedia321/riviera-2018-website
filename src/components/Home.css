@@ -194,7 +194,6 @@
 }
 
 .student-ambassador{
-  background: #0091C5;
   width: 100%;
   position: relative;
   top:-50px;
@@ -202,10 +201,20 @@
   padding-top: 100px;
   text-align: center;
   padding-bottom: 100px;
+  background: url('../images/campus-bg.png') #C3C3C3;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .student-ambassador h1{
+  padding-top: 200px;
   font-weight: 300;
+}
+
+@media (max-width:600px) {
+  .student-ambassador h1{
+    padding-top:100px;
+  }
 }
 
 .student-ambassador h4{

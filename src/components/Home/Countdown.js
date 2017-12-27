@@ -114,7 +114,7 @@ class FlipClock extends React.Component {
     console.log(month)
 
     // Update event date here
-    const eventDate=4
+    const eventDate=15
     let totalDaysLeft=0
     if(month===12){
       // Logic for December
