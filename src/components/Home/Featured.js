@@ -1,4 +1,7 @@
 import React from 'react'
+import {
+    Link
+} from 'react-router-dom';
 import FontAwesome from 'react-fontawesome'
 import eventImg from './../../images/home-cards/events.jpg';
 import sportsImg from './../../images/home-cards/sports.jpg';
@@ -92,32 +95,40 @@ class Featured extends React.Component {
               </div>
             </div>
             <div className="item">
+                <Link to="/events">
               <div className="event-card events-specific-card">
                   <img src={eventImg} className="event-card-img"/>
                   <div className='overlay-layer'></div>
                   <div className='category-title'>Events</div>
               </div>
+          </Link>
             </div>
             <div className="item">
+              <Link to="/sports">
               <div className="event-card sports">
                   <img src={sportsImg} className="event-card-img"/>
                   <div className='overlay-layer'></div>
                   <div className='category-title'>Sports</div>
             </div>
+          </Link>
             </div>
             <div className="item">
+              <Link to="/campus-ambassador">
                 <div className="event-card proshows">
                     <img src={proshowsImg} className="event-card-img"/>
                     <div className='overlay-layer'></div>
-                    <div className='category-title'>Proshows</div>
+                    <div className='category-title'>Campus Ambassador</div>
                 </div>
+              </Link>
             </div>
             <div className="item">
+              <Link to="/sponsors">
               <div className="event-card previous">
                   <img src={previousImg} className="event-card-img"/>
                   <div className='overlay-layer'></div>
-                  <div className='category-title'>Previous Events</div>
+                  <div className='category-title'>Sponsors</div>
             </div>
+          </Link>
             </div>
             <div className="arrow right" onClick={()=>{this.scrollLeft()}}><FontAwesome name="chevron-right"/></div>
       </div>

@@ -15,6 +15,12 @@
       rgba(20,20,20, .5)),
       url('../images/contact-bg.jpg');
    }
+   .header-sponsors{
+       background: linear-gradient(
+          rgba(20,20,20, .5),
+          rgba(20,20,20, .5)),
+          url('../images/sponsors-bg.jpg') center center / cover;
+   }
    .header-contact h1{
       margin: 0;
    }
@@ -107,6 +113,9 @@
       width: 50%;
       text-align: center;
       margin-bottom: 20px;
+   }
+   .zigzag.mini{
+       width:70px;
    }
    .zigzag-left{
        text-align: left;
