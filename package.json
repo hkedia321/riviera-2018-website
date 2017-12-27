@@ -19,6 +19,7 @@
     "react-flexbox-grid": "^2.0.0",
     "react-flip-move": "^2.10.0",
     "react-fontawesome": "^1.6.1",
+    "react-google-maps": "^9.4.3",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.5",
     "react-router": "^2.0.0",
