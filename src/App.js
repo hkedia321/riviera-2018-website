@@ -61,8 +61,6 @@ class App extends Component {
     }
     return (
       <div className="app-wrap">
-
-        <Route exact path='/' component={Home}/>
         <Route exact path='/event/:category/:event_name' render={()=>(
           <SingleEvent
             eventName={this.state.selectedEvent.name}
@@ -81,7 +79,7 @@ class App extends Component {
         <Route exact path='/sponsors' component={Sponsors}/>
 
         <Route exact path='/campus-ambassador' component={CampusAmbassadorPage}/>
-
+        <Route exact path='/' component={Home}/>
 
         <Snackbar
           open ={snackbarOpen}

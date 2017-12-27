@@ -112,7 +112,9 @@ class Featured extends React.Component {
             </div>
           </Link>
             </div>
+
             <div className="item">
+
               <Link to="/campus-ambassador">
                 <div className="event-card proshows">
                     <img src={proshowsImg} className="event-card-img"/>

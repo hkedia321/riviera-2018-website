@@ -1,6 +1,8 @@
 import React from 'react'
 import {Row,Col} from 'react-flexbox-grid'
 import CountdownNow from 'react-count-down'
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import './Countdown.css'
 
 class AnimatedCard extends React.Component {
@@ -175,6 +177,7 @@ class FlipClock extends React.Component {
       <div>
 
       <div className='custom-countdown-container'>
+		  <Fade delay={100}>
         <div className='unit-container'>
             <FlipUnitContainer
               unit={'days'}
@@ -183,6 +186,8 @@ class FlipClock extends React.Component {
             />
 			<h3 className="center" style={daysLabelStyle}>Days</h3>
           </div>
+	  </Fade>
+	  <Fade delay={200}>
           <div className='unit-container'>
 		  <span className="flip-clock-dot top"></span> <span className="flip-clock-dot bottom"></span>
             <FlipUnitContainer
@@ -192,7 +197,8 @@ class FlipClock extends React.Component {
     					/>
 					<h3 className="center" style={daysLabelStyle}>Hours</h3>
             </div>
-
+</Fade>
+<Fade delay={300}>
             <div className='unit-container'>
 			<span className="flip-clock-dot top"></span> <span className="flip-clock-dot bottom"></span>
             <FlipUnitContainer
@@ -202,6 +208,8 @@ class FlipClock extends React.Component {
     					/>
 						<h3 className="center" style={daysLabelStyle}>Minutes</h3>
             </div>
+		</Fade>
+		<Fade delay={400}>
             <div className='unit-container'>
 			<span className="flip-clock-dot top"></span> <span className="flip-clock-dot bottom"></span>
             <FlipUnitContainer
@@ -211,7 +219,9 @@ class FlipClock extends React.Component {
     					/>
 						<h3 className="center" style={daysLabelStyle}>Seconds</h3>
             </div>
+		</Fade>
 			</div>
+
       </div>
 		);
 	}
@@ -223,9 +233,12 @@ class Countdown extends React.Component {
       <div className='countdown'>
         <Row>
 		<Col xs={12} md={12}>
+			<Zoom delay={400}>
 		  <h1 className="center text-white">Till the extravaganza begins!</h1>
+	  </Zoom>
 		</Col>
           <Col xs={12} md={12} className="center">
+
             <FlipClock  className="center"/>
           </Col>
         </Row>

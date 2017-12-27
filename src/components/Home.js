@@ -5,6 +5,7 @@ import {
     Switch,
     Link
 } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 import { connect } from 'react-redux';
 import $ from 'jquery';
 import * as actions from './../actions';
@@ -31,11 +32,15 @@ class Home extends Component {
     render() {
         return (
             <div className="homepage">
+
                 <Navbar fontColor='#fff'/>
+
                 {/* Header */}
+                <Fade>
                 <div className='full-width-column'>
                   <Header/>
                 </div>
+                </Fade>
                 {/* Register Button */}
                 <div className='register-button-container'>
                   <Button text='Know More' onClick={this.handleClick} style={{zIndex:10}}/>

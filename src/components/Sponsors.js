@@ -10,6 +10,7 @@ import {
 import FontAwesome from 'react-fontawesome';
 import {Row,Col,Grid} from 'react-flexbox-grid'
 import Navbar from './Navbar/Navbar';
+import Fade from 'react-reveal/Fade';
 import Footer from './Home/Footer';
 import title from './../images/sponsors/pepsi.png';
 import cosponsor from './../images/sponsors/silklogo.png';
@@ -31,13 +32,16 @@ class Sponsors extends React.Component{
         <Navbar fontColor='#fff'/>
         <div className="header-featured header-sponsors header-contact">
           <div className="overlay"></div>
+          <Fade delay={100}>
           <h1 className="header-heading center text-white">Sponsors</h1>
+        </Fade>
         </div>
         <div className="below-header-content">
           <Grid fluid>
             <br/><br/><br/><br/>
             <Row>
               <Col xs={12} md={6} lg={4} lgOffset={2}>
+                   <Fade delay={100}>
                 <Card className="contact-card hvr-underline-reveal reveal-blue" style={{background:'#232323',color:'#fff'}}>
                   <CardText
                     color='#fff'
@@ -48,8 +52,10 @@ class Sponsors extends React.Component{
                       <img src={title} className="sponsor-img"/>
                     </CardText>
                   </Card>
+                   </Fade>
                 </Col>
                 <Col xs={12} md={6} lg={4}>
+                     <Fade delay={200}>
                   <Card className="contact-card hvr-underline-reveal reveal-lblue" style={{background:'#232323',color:'#fff'}}>
                     <CardText
                       color='#fff'
@@ -60,11 +66,13 @@ class Sponsors extends React.Component{
                         <img src={cosponsor} className="sponsor-img"/>
                       </CardText>
                     </Card>
+                    </Fade>
                   </Col>
                 </Row>
                 <br/><br/><br/><br/>
                 <Row>
                   <Col xs={12} md={12} lg={10} lgOffset={1}>
+                       <Fade delay={200}>
                     <Card className="contact-card hvr-underline-reveal reveal-green" style={{background:'#232323',color:'#fff'}}>
                       <CardText
                         color='#fff'
@@ -74,18 +82,25 @@ class Sponsors extends React.Component{
                           <hr className="zigzag mini"/>
                           <Row>
                             <Col xs={12} md={4}>
+                                 <Fade delay={300}>
                               <img src={other1} className="sponsor-img"/>
+                          </Fade>
                             </Col>
                             <Col xs={12} md={4}>
+                                 <Fade delay={450}>
                               <img src={other2} className="sponsor-img"/>
+                          </Fade>
                             </Col>
                             <Col xs={12} md={4}>
+                                 <Fade delay={600}>
                               <img src={other3} className="sponsor-img"/>
+                          </Fade>
                             </Col>
                           </Row>
 
                         </CardText>
                       </Card>
+                  </Fade>
                     </Col>
                     </Row>
             </Grid>

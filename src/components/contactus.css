@@ -115,7 +115,8 @@
       margin-bottom: 20px;
    }
    .zigzag.mini{
-       width:70px;
+       width:82px;
+       max-width: 100%;
    }
    .zigzag-left{
        text-align: left;

@@ -25,6 +25,7 @@ class Events extends React.Component{
                 <Categories fetchSports={this.fetchSports}/>
 
                 {/* List of Events */}
+
                 {<SportCard sport={sport}/>}
 
                 {/*

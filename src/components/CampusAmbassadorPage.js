@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
+import Fade from 'react-reveal/Fade';
 import './CampusAmbassadorPage.css';
 import {
   Card,
@@ -20,13 +21,18 @@ class CampusAmbassadorPage extends React.Component{
         <div className="header-featured header-campus">
           <div>
             <div className="overlay"></div>
+            <Fade delay={100}>
             <h1 className="header-heading center text-white">Campus Ambassador</h1>
+            </Fade>
+            <Fade delay={200}>
             <h3 className="center header-subheading">The best program to get the word out there!</h3>
+            </Fade>
           </div>
         </div>
         <br/><br/><br/>
         <Row>
           <Col xs={10} xsOffset={1} md={8} mdOffset={2}>
+            <Fade>
             <Card className="" style={{background:'#232323',color:'#fff'}}>
                            <CardText
                                color='#fff'
@@ -36,7 +42,9 @@ class CampusAmbassadorPage extends React.Component{
 
           </CardText>
         </Card>
+      </Fade>
             <div className='table-container'>
+              <Fade>
               <Table
                 selectable={false}
                 style={{background:'#232323',width:'100%',margin:'20px'}}
@@ -62,9 +70,11 @@ class CampusAmbassadorPage extends React.Component{
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
                   </TableBody>
                 </Table>
+              </Fade>
               </div>
 
               <div className='table-container'>
+                <Fade>
                 <Table
                   selectable={false}
                   style={{background:'#232323',width:'100%',margin:'20px'}}
@@ -90,10 +100,12 @@ class CampusAmbassadorPage extends React.Component{
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
                     </TableBody>
                   </Table>
+                </Fade>
                 </div>
 
 
                 <div className='table-container'>
+                  <Fade>
                   <Table
                     selectable={false}
                     style={{background:'#232323',width:'100%',margin:'20px'}}
@@ -119,8 +131,10 @@ class CampusAmbassadorPage extends React.Component{
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
                       </TableBody>
                     </Table>
+                  </Fade>
                   </div>
                   <br/><br/>
+                  <Fade>
                   <Card className="" style={{background:'#232323',color:'#fff'}}>
                                  <CardText
                                      color='#fff'
@@ -137,7 +151,9 @@ class CampusAmbassadorPage extends React.Component{
                   </div>
                 </CardText>
               </Card>
+            </Fade>
                     <br/><br/>
+                    <Fade>
                     <Card className="" style={{background:'#232323',color:'#fff'}}>
                                    <CardText
                                        color='#fff'
@@ -159,6 +175,7 @@ class CampusAmbassadorPage extends React.Component{
                     </ol>
                   </CardText>
                 </Card>
+              </Fade>
                 </Col>
               </Row>
               <br/><br/>
