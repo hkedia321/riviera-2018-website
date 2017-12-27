@@ -99,7 +99,7 @@ class EventsList extends React.Component {
                           labelStyle={{color:'#fff'}}
                         />
                         <FlatButton disabled
-                          label={`Prize: ${event['Prize Money']}`}
+                          label={`Prize: ${event['Prize Money']}`} 
                           icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
                           labelStyle={{color:'#fff'}}
                         />

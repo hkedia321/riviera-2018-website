@@ -34,9 +34,14 @@
     background: linear-gradient(
                      rgba(20,20,20, .5),
                      rgba(20,20,20, .5)),
-                     url('../images/events-bg.jpg');
+                     url('../images/events-bg.jpg') center center / cover;
 }
-
+.sports-categories{
+    background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5)),
+                     url('../images/sports-bg.jpg') center center / cover;
+}
 .event-categories .event-card{
     left: 400px;
 }

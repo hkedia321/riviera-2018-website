@@ -41,7 +41,7 @@ class Categories extends React.Component {
   render(){
         console.log('Opacity',this.state.phenomenonOpacity);
     return(
-      <div className='featured-container event-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
+      <div className='featured-container event-categories sports-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
         <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
         <div className="item" onClick={()=>this.fetchSports('swimming')}>
           <div className="event-card">
