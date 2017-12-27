@@ -67,7 +67,6 @@
       transform: translateY(0);
    }
    .hvr-underline-reveal:hover{
-      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
       -webkit-transform: translateY(0);
       transform: translateY(0);
    }
@@ -101,6 +100,11 @@
       width: 50%;
       text-align: center;
       margin-bottom: 20px;
+   }
+   .events-list .zigzag{
+       text-align: left;
+       margin-left: 0px;
+       margin-right: auto;
    }
    .gmaps{
        width: 100%;

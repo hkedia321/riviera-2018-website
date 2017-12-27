@@ -25,7 +25,9 @@
     color:#fff;
     outline: none;
 }
-
+.hvr-underline-reveal:hover .event-card-view-button{
+    background-color: rgba(153,153,153,0.2) !important;
+}
 .event-categories{
     background: #C3C3C3;
     padding-top: 200px;

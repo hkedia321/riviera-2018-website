@@ -5,6 +5,7 @@ import {Card} from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import medal23 from './../images/medal23.png';
+import Loading from './Loading';
 import FontAwesome from 'react-fontawesome'
 import {Helmet} from 'react-helmet'
 
@@ -42,8 +43,8 @@ class SingleEvent extends Component {
         return (
             <div className="single-event-wrap">
                 <br/><br/>
-                {this.state.loading&&
-                  <div style={{textAlign:'center'}}>Loading...</div>
+                {this.state.loading &&
+                  <div className="center"><Loading/></div>
                 }
                 {this.state.events.map((event)=>(
                 <div key={event['EVENT NAME']}>
@@ -53,7 +54,7 @@ class SingleEvent extends Component {
                 <Grid>
                     <Row>
                         <Col xs={12} mdOffset={0} md={12}>
-                            <Card className="single-event-card background-black text-white" style={{fontFamily:'Roboto'}}>
+                            <Card className="single-event-card background-black text-white">
                                 <Grid>
                                     <Row>
                                         <Col xs={12} md={8} className="event-card-left-part">
@@ -133,7 +134,7 @@ class SingleEvent extends Component {
                                             <div className="event-right-details">
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Price</span>
-                                                    <div className="item-right-detail text-bold">Rs. {event['Reg fees After GST']} / {event['Team Event (yes/no)']=='yes'?'team':'person'}</div>
+                                                    <div className="item-right-detail text-bold">{Number(event['Reg fees After GST'])===0?"FREE":<span>Rs. {event['Reg fees After GST']} / {event['Team Event (yes/no)']=='yes'?'team':'person'}</span>}</div>
                                                 </div>
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Team Event</span>
@@ -158,10 +159,10 @@ class SingleEvent extends Component {
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Share Event</span>
                                                     <div className="item-right-detail text-bold">
-                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}><FontAwesome name='facebook'/></a>
-                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://twitter.com/home?status=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`}><FontAwesome name='twitter'/></a>
+                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}><FontAwesome className="fa facebook-fa" name='facebook'/></a>
+                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`https://twitter.com/home?status=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`}><FontAwesome  className="fa twitter-fa" name='twitter'/></a>
 
-                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`whatsapp://send?text=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`} data-action="share/whatsapp/share"><FontAwesome name='whatsapp'/></a>
+                                                      <a style={{fontSize:'24px',padding:'10px'}} href={`whatsapp://send?text=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`} data-action="share/whatsapp/share"><FontAwesome  className="fa whatsapp-fa" name='whatsapp'/></a>
                                                     </div>
                                                 </div>
                                             </div>
