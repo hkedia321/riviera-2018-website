@@ -9,3 +9,10 @@ Riviera is the Annual International Sports and Cultural Carnival of the Vellore 
 * **Step 4:** Run on http://localhost:3000 with:```$ npm run start```
 * **Step 5:** Build locally with: ```$ npm run build ```
 * **Step 6:** To deploy at a URL use: ```$ npm run deploy ```
+
+### Contributors
+- [Rahul Krishna](https://github.com/rahulakrishna) (Frontend)
+- [Harshit Kedia](https://github.com/hkedia321) (Frontend)
+- [Rajat Mukati](https://www.facebook.com/rajatmukati005) (Design)
+- [Apurva Nitanjay](https://github.com/apuayush/) (Backend)
+- [Ujjwal Verma](https://github.com/ujjwal96) (Backend)
