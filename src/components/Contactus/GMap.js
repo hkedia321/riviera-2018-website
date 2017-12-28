@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
     Card,
@@ -25,11 +24,14 @@ class GMap extends React.Component{
   };
     componentDidMount(){
     }
-
     render(){
+        const GoogleMapConfig = {
+        	key: 'AIzaSyA9Gz9EDiM21X1G0Lkp_Wn71NKDhKRVcEY'
+        };
         return(
           <div className="gmaps">
                 <GoogleMapReact
+                    bootstrapURLKeys={GoogleMapConfig}
                     defaultCenter={this.props.center}
                     defaultZoom={this.props.zoom}
                     >
