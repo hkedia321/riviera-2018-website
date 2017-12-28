@@ -76,6 +76,7 @@ handleClick = () =>{
             {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
           {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
           <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
+          <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
           <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
@@ -97,6 +98,7 @@ handleClick = () =>{
             {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
             {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
 	    <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
+            <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
             <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
           </div>
       </div>

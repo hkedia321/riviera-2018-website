@@ -18,6 +18,7 @@ import EventsOld from './components/EventsOld';
 import Events from './components/Events'
 import Contactus from './components/Contactus'
 import Sports from './components/Sports';
+import Sponsors from './components/Sponsors';
 import Navbar from './components/Navbar/Navbar';
 import CampusAmbassadorPage from './components/CampusAmbassadorPage'
 
@@ -60,8 +61,6 @@ class App extends Component {
     }
     return (
       <div className="app-wrap">
-
-        <Route exact path='/' component={Home}/>
         <Route exact path='/event/:category/:event_name' render={()=>(
           <SingleEvent
             eventName={this.state.selectedEvent.name}
@@ -77,9 +76,10 @@ class App extends Component {
         <Route exact path='/proshows' component={Proshows}/>
         <Route exact path='/sports' component={Sports}/>
         <Route exact path='/contact' component={Contactus}/>
+        <Route exact path='/sponsors' component={Sponsors}/>
 
         <Route exact path='/campus-ambassador' component={CampusAmbassadorPage}/>
-
+        <Route exact path='/' component={Home}/>
 
         <Snackbar
           open ={snackbarOpen}

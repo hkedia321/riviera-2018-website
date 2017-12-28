@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderBg from '../../images/header-bg.jpeg'
 import Parallax from 'parallax-js'
+import Fade from 'react-reveal/Fade';
 
 
 class Header extends React.Component {
@@ -12,8 +13,9 @@ class Header extends React.Component {
     return(
       <div className='header' id='scene'>
         <div className='header-bg' data-depth='0.8'>
-          <img src='rivieralogo.png' className='logo'/>
+          <Fade delay={400}><img src='rivieralogo.png' className='logo'/></Fade>
         </div>
+
         <div className='tt' data-depth='0.3'>
           <img src='/tt.png'
             style={{
@@ -24,6 +26,8 @@ class Header extends React.Component {
             }}
           />
         </div>
+
+
         <div className='sjt' data-depth='0.6'>
           <img src='/sjt.png'
             style={{

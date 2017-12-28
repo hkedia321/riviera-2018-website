@@ -12,6 +12,7 @@ import {
 } from 'material-ui/Card';
 import FontAwesome from 'react-fontawesome';
 import {Row,Col,Grid} from 'react-flexbox-grid'
+import Fade from 'react-reveal/Fade';
 import Navbar from './Navbar/Navbar';
 import Contacts from './Contactus/Contacts';
 import GMap from './Contactus/GMap';
@@ -31,12 +32,16 @@ class Contactus extends React.Component{
                 <Navbar fontColor='#fff'/>
                 <div className="header-featured header-contact">
                     <div className="overlay"></div>
+                    <Fade delay={100}>
                     <h1 className="header-heading center text-white">Contact Us</h1>
+                    </Fade>
                 </div>
                 <div className="below-header-content">
                     <Contacts/>
                         <br/><br/><br/><br/>
+                        <Fade delay={200}>
                         <GMap/>
+                      </Fade>
                         <br/><br/><br/><br/>
                         <Footer/>
                     </div>

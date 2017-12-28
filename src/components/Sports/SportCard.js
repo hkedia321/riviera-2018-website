@@ -16,6 +16,7 @@ import {
     CardActions
 } from 'material-ui/Card'
 import {Link} from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 import escapeRegExp from 'escape-string-regexp'
 import sortBy from 'sort-by'
 import FontAwesome from 'react-fontawesome'
@@ -215,6 +216,7 @@ class SportCard extends React.Component {
                 <div>
                     <Row style={{width:'100%'}} top='md'>
                         <Col md={8} mdOffset={2} xs={12}>
+                            <Fade delay={100}>
                             <Card style={{margin:'20px',background:'#232323',color:'#fff'}}>
                                 <CardTitle
                                     title={title}
@@ -227,12 +229,13 @@ class SportCard extends React.Component {
                                   color='#fff'
                                   style={{textAlign:'left',paddingTop:"0",lineHeight: "1.2rem"}}
                                   >
-                                      <hr className="zigzag"/>
+                                      <hr className="zigzag mini"/>
                                     {content}
                                   </CardText>
                                     <CardActions>
                                     </CardActions>
                                 </Card>
+                                </Fade>
                             </Col>
                         </Row>
                     </div>

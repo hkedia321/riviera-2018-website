@@ -1,9 +1,11 @@
 import React from 'react'
-import './Button.css'
+import './Button.css';
+import Zoom from 'react-reveal/Zoom';
 
 class Button extends React.Component {
   render(){
     return(
+        <Zoom delay={500}>
       <div>
         {this.props.orange?
             <div className='rajat-button rajat-button-orange' onClick={this.props.onClick?this.props.onClick:null} >
@@ -15,6 +17,7 @@ class Button extends React.Component {
             </div>
     }
   </div>
+</Zoom>
     )
   }
 }

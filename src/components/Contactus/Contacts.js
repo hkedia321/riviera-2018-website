@@ -8,6 +8,7 @@ import {
   CardActions
 } from 'material-ui/Card';
 import FontAwesome from 'react-fontawesome';
+import Fade from 'react-reveal/Fade';
 import {Row,Col,Grid} from 'react-flexbox-grid';
 
 class Contacts extends React.Component{
@@ -23,6 +24,7 @@ class Contacts extends React.Component{
               <br/><br/><br/><br/>
                 <Row>
                   <Col xs={12} md={6} lg={3}>
+                    <Fade delay={200}>
                       <Card className="contact-card hvr-underline-reveal reveal-blue" style={{background:'#232323',color:'#fff'}}>
                           <CardText
                               color='#fff'
@@ -38,8 +40,10 @@ class Contacts extends React.Component{
                                   <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:registration.riviera1@vit.ac.in" target="_blank">registration.riviera1@vit.ac.in</a></h4>
                               </CardText>
                           </Card>
+                        </Fade>
                       </Col>
                       <Col xs={12} md={6} lg={3}>
+                        <Fade delay={350}>
                           <Card className="contact-card hvr-underline-reveal reveal-lblue" style={{background:'#232323',color:'#fff'}}>
                               <CardText
                                   color='#fff'
@@ -54,8 +58,10 @@ class Contacts extends React.Component{
                                       <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:events.riviera@vit.ac.in" target="_blank">events.riviera@vit.ac.in</a></h4>
                                   </CardText>
                               </Card>
+                            </Fade>
                           </Col>
                           <Col xs={12} md={6} lg={3}>
+                            <Fade delay={500}>
                               <Card className="contact-card hvr-underline-reveal reveal-red" style={{background:'#232323',color:'#fff'}}>
                                   <CardText
                                       color='#fff'
@@ -71,8 +77,10 @@ class Contacts extends React.Component{
                                           <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:sports.riviera@vit.ac.in" target="_blank">sports.riviera@vit.ac.in</a></h4>
                                       </CardText>
                                   </Card>
+                                </Fade>
                               </Col>
                               <Col xs={12} md={6} lg={3}>
+                                <Fade delay={650}>
                                   <Card className="contact-card hvr-underline-reveal reveal-green" style={{background:'#232323',color:'#fff'}}>
                                       <CardText
                                           color='#fff'
@@ -88,6 +96,7 @@ class Contacts extends React.Component{
                                               <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:gc.riviera1@vit.ac.in" target="_blank">gc.riviera1@vit.ac.in</a></h4>
                                           </CardText>
                                       </Card>
+                                    </Fade>
                                   </Col>
                     </Row>
                 </Grid>

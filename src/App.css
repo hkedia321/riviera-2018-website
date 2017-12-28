@@ -63,6 +63,7 @@
 a{
     color: inherit;
     font-style: normal;
+    text-decoration: none;
 }
 .hide-on-mobile-only{
     display: none;

@@ -21,6 +21,7 @@ import escapeRegExp from 'escape-string-regexp';
 import Loading from './../Loading';
 import sortBy from 'sort-by'
 import FontAwesome from 'react-fontawesome'
+import Fade from 'react-reveal/Fade';
 import {Row,Col} from 'react-flexbox-grid'
 import FlatButton from 'material-ui/FlatButton';
 import NoEventsFound from './NoEventsFound';
@@ -76,6 +77,7 @@ class EventsList extends React.Component {
                     });
                     return(
                   <Col md={4} xs={12}>
+                      <Fade delay={100}>
                     <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><Card className={hvrClass} style={{margin:'20px',background:'#232323',color:'#fff'}}>
                       <CardTitle
                         title={event['EVENT NAME']}
@@ -106,6 +108,7 @@ class EventsList extends React.Component {
                         {/* <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><FlatButton label='View and Share' className="event-card-view-button" labelStyle={{color:'#fff'}} fullWidth={true}/></Link> */}
                       </CardActions>
                     </Card></Link>
+                </Fade>
                   </Col>
                 )
               }
