@@ -12,7 +12,7 @@ class Button extends React.Component {
               <span>{this.props.text}</span>
             </div>
             :
-            <div className='rajat-button' onClick={this.props.onClick?this.props.onClick:null} >
+            <div className='rajat-button' onClick={this.props.onClick?this.props.onClick:null}>
               <span>{this.props.text}</span>
             </div>
     }

@@ -12,6 +12,7 @@ import {
 import {Row,Col} from 'react-flexbox-grid'
 import Footer from './Home/Footer';
 import {Table,TableBody,TableRow,TableHeaderColumn,TableRowColumn} from 'material-ui/Table'
+import Button from './Button'
 
 class CampusAmbassadorPage extends React.Component{
   render(){
@@ -52,7 +53,7 @@ class CampusAmbassadorPage extends React.Component{
                   <TableBody displayRowCheckbox={false}>
                     <TableRow>
                       <TableHeaderColumn colSpan="3" tooltip="Colleges within Tamil Nadu (Zone 1)" style={{textAlign: 'center'}}>
-                        Colleges within Tamil Nadu (Zone 1)
+                        <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges within Tamil Nadu (Zone 1)</span>
                       </TableHeaderColumn>
                     </TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'>
@@ -82,7 +83,7 @@ class CampusAmbassadorPage extends React.Component{
                     <TableBody displayRowCheckbox={false}>
                       <TableRow>
                         <TableHeaderColumn colSpan="3" tooltip="Colleges from Andhra, Telangana, Kerala and Karnataka (Zone 2)" style={{textAlign: 'center'}}>
-                          Colleges from Andhra, Telangana, Kerala and Karnataka (Zone 2)
+                          <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges from Andhra, Telangana, Kerala and Karnataka (Zone 2)</span>
                         </TableHeaderColumn>
                       </TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'>
@@ -113,7 +114,7 @@ class CampusAmbassadorPage extends React.Component{
                       <TableBody displayRowCheckbox={false}>
                         <TableRow>
                           <TableHeaderColumn colSpan="3" tooltip="Colleges From other parts of North India (Zone 3)" style={{textAlign: 'center'}}>
-                            Colleges From other parts of North India (Zone 3)
+                            <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges From other parts of North India (Zone 3)</span>
                           </TableHeaderColumn>
                         </TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'>
@@ -179,6 +180,13 @@ class CampusAmbassadorPage extends React.Component{
                 </Col>
               </Row>
               <br/><br/>
+              <Row style={{marginTop:'200px'}}>
+                <Col xs={12}>
+                  <div className='register-button-container'>
+                    <a href='https://vtop9.vit.ac.in/riviera/'><Button text='Enroll Now'/></a>
+                  </div>
+                </Col>
+              </Row>
               <Footer/>
             </div>
           )

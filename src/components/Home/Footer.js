@@ -21,14 +21,14 @@ class Footer extends React.Component {
               <Col xs={12} style={{padding:'10px'}}>
                 <Link to='/sponsors'>View Sponsors</Link><br/>
               </Col>
-              <Col xs={12} style={{padding:'10px'}}>
+              {/* <Col xs={12} style={{padding:'10px'}}>
                 <Link to='/team'>Riviera Team</Link><br/>
-              </Col>
+              </Col> */}
               <Col xs={12} style={{padding:'10px'}}>
                 <Link to='/highlights'>Riviera '17 Highlights</Link><br/>
               </Col>
               <Col xs={12} style={{padding:'10px'}}>
-                  <button>Register Now</button>
+                  <a href='https://vtop9.vit.ac.in/riviera/'><button>Register Now</button></a>
               </Col>
             </Row>
           </Col>

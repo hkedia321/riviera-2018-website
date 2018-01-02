@@ -19,7 +19,15 @@ class Navbar extends React.Component{
     super(props);
     this.state={
       navbarBgTransparent:"0",
-      navbarOpen:false
+      navbarOpen:false,
+        active:{
+          home:false,
+          events:false,
+          sports:false,
+          campus:false,
+          sponsors:false,
+          contact:false
+        }
     }
   }
   handleNav = (place) =>{
@@ -36,7 +44,52 @@ class Navbar extends React.Component{
   }
   componentDidMount(){
     window.addEventListener('scroll', this.managePhenomenon);
-  }
+    const path=window.location.pathname
+    console.log(path)
+    Object.keys(this.state.active).forEach((key)=>{
+      this.setState({
+          active:{
+            ...this.state.active,
+            [key]:false
+          }
+      })
+    })
+
+      switch (path){
+          case '/':{
+            this.setState({
+                active:{home:true}
+            })
+          }
+          case '/events':{
+              this.setState({
+                  active:{events:true}
+              })
+          }
+          case '/sports':{
+              this.setState({
+                  active:{sports:true}
+              })
+          }
+          case '/campus-ambassador':{
+              this.setState({
+                  active:{campus:true}
+              })
+          }
+          case '/sponsors':{
+              this.setState({
+                  active:{sponsors:true}
+              })
+          }
+          case '/contact':{
+              this.setState({
+                  active:{contact:true}
+              })
+          }
+      }
+    }
+
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.managePhenomenon);
 }
@@ -70,14 +123,13 @@ handleClick = () =>{
         <div>
       <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
         <div className="main-nav-div">
-          <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
-          <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
-           <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
+            <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
+            <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
             {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
-          {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
-          <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
-          <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
-          <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
+            {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
+            <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
+            <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
+            <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
       <div className="display-on-mobile-only">
@@ -92,14 +144,15 @@ handleClick = () =>{
 
 
           <div className={mobileSidebar}>
-            <NavLink to="/"><span className="main-nav-item">Home</span></NavLink>
-            <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
-            <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
-            {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
-            {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
-	    <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
-            <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
-            <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
+              <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
+              <NavLink to="/"><span className={`main-nav-item ${this.state.active.home?'active':''}`}>Home</span></NavLink>
+              <NavLink to="/events"><span className={`main-nav-item ${this.state.active.events?'active':''}`}>Events</span></NavLink>
+              <NavLink to="/sports"><span className={`main-nav-item ${this.state.active.sports?'active':''}`}>Sports</span></NavLink>
+              {/* <NavLink to="/schedule"><span className={main-nav-item` ${}this.state.active.event?'active}:'Schedule</span></NavLink> */}
+              {/* <NavLink to="/proshows"><span className={main-nav-item` ${}this.state.active.event?'active}:'>Proshows</span></NavLink> */}
+              <NavLink to="/campus-ambassador"><span className={`main-nav-item ${this.state.active.campus?'active':''}`}>Campus Ambassador</span></NavLink>
+              <NavLink to="/sponsors"><span className={`main-nav-item ${this.state.active.sponsors?'active':''}`}>Sponsors</span></NavLink>
+              <NavLink to="/contact"><span className={`main-nav-item ${this.state.active.contact?'active':''}`}>Contact</span></NavLink>
           </div>
       </div>
   </div>

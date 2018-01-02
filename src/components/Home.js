@@ -26,8 +26,8 @@ class Home extends Component {
     }
     handleClick = () =>{
         $('html, body').animate({
-        scrollTop: $("#featured").offset().top-120
-    }, 500);
+          scrollTop: $("#featured").offset().top-120
+        }, 500);
     }
     render() {
         return (
