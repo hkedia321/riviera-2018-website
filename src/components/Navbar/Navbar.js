@@ -122,6 +122,9 @@ handleClick = () =>{
     return(
         <div>
       <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
+        <div className='logo'>
+          <img src='/vitlogo.png'/>
+        </div>
         <div className="main-nav-div">
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
             <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
@@ -134,7 +137,7 @@ handleClick = () =>{
       </nav>
       <div className="display-on-mobile-only">
           <div className="mobile-nav-header-bar">
-            <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo"/></NavLink>
+            <NavLink to="/">  <img src='/vitlogo.png' className="navbar-logo"/></NavLink>
               <button className={hamburgerButton} type="button" onClick={this.handleClick}>
                 <span className="hamburger-box">
                   <span className="hamburger-inner"></span>

@@ -10,7 +10,7 @@ class StudentAmbassador extends React.Component {
                     <h1>Become a Student Ambassador</h1>
                 </Fade>
                 <Fade delay={300}>
-                    <h4>The best program to get the word out there</h4>
+                    <h4>The best event to get the word out there</h4>
                 </Fade>
                 <div className='register-button-container' style={{position:'relative',top:'50px'}}>
                     <Link to='/campus-ambassador' style={{textDecoration:'none'}}>

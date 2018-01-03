@@ -63,6 +63,7 @@ class Featured extends React.Component {
       }
     }
     scrollLeft=()=>{
+        console.log('Scrolling Left')
         document.getElementById('featured').scrollBy({
             left:600,
             top:0,
@@ -70,6 +71,7 @@ class Featured extends React.Component {
         })
     }
     scrollLeft=(val)=>{
+      console.log('Scrolling Left')
       document.getElementById('featured').scrollBy({
           left:val,
           top:0,
@@ -91,7 +93,7 @@ class Featured extends React.Component {
             <div className="item">
               <div className={'phenomenon '+this.state.phenomenonClass} style={{opacity:this.state.phenomenonOpacity}}>
                 <h2>The phenomenon</h2>
-                <p>Riviera'18 will be packed with performances from cultural clubs to leading artists. Sports and daily events will enhance the fun</p>
+                <p>Riviera'18 will be packed with performances from various VIT clubs to leading celebrities. Sports and cultural events will be thoroughly entertaining and boosting up the spirits of students</p>
               </div>
             </div>
             <div className="item">
@@ -132,7 +134,7 @@ class Featured extends React.Component {
             </div>
           </Link>
             </div>
-            <div className="arrow right" onClick={()=>{this.scrollLeft()}}><FontAwesome name="chevron-right"/></div>
+            <div className="arrow right" onClick={()=>this.scrollLeft(400)}><FontAwesome name="chevron-right"/></div>
       </div>
     )
   }

@@ -26,7 +26,7 @@ class CampusAmbassadorPage extends React.Component{
             <h1 className="header-heading center text-white">Campus Ambassador</h1>
             </Fade>
             <Fade delay={200}>
-            <h3 className="center header-subheading">The best program to get the word out there!</h3>
+            <h3 className="center header-subheading">The best event to get the word out there!</h3>
             </Fade>
           </div>
         </div>
@@ -39,7 +39,11 @@ class CampusAmbassadorPage extends React.Component{
                                color='#fff'
                                style={{textAlign:'justify',lineHeight: "1.2rem"}}
                                >
-              <h4>The Campus Ambassador Program is a scheme to boost off-campus publicity for Riviera'18. A maximum of one student representative from each college is deemed as an ambassador. The ambassador is held responsible for facilitating the participation of students from his/her college in Riviera. Ambassadors who fetch a sizeable number of registrations from their colleges shall be awarded with a number of incentives in Riviera&#39;18. These incentives and the associated registration requirements are tabulated below:</h4>
+              <h4 style={{fontWeight:'300'}}>
+                The Campus Ambassador Program is a scheme to boost "off-campus" publicity for Riviera'18.
+                <span style={{fontWeight:'700'}}> The student representative from each college who fetch the maximum registrations as mentioned underneath (tabular form) shall be rewarded with incentives during Riviera'18.</span>
+                The ambassador is held responsible for facilitating the participation of students from his/her college in Riviera.
+                These incentives and the associated registration requirements are tabulated below:</h4>
 
           </CardText>
         </Card>
@@ -53,7 +57,7 @@ class CampusAmbassadorPage extends React.Component{
                   <TableBody displayRowCheckbox={false}>
                     <TableRow>
                       <TableHeaderColumn colSpan="3" tooltip="Colleges within Tamil Nadu (Zone 1)" style={{textAlign: 'center'}}>
-                        <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges within Tamil Nadu (Zone 1)</span>
+                        <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges within Tamil Nadu (Zone 1)<br/>(Incentives are only for campus ambassador)</span>
                       </TableHeaderColumn>
                     </TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'>
@@ -61,11 +65,11 @@ class CampusAmbassadorPage extends React.Component{
                       <TableRowColumn style={{fontWeight:'bold'}}>Diamond</TableRowColumn>
                       <TableRowColumn style={{fontWeight:'bold'}}>Platinum</TableRowColumn>
                     </TableRow>
-                    <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>35-50 registrations</TableRowColumn> <TableRowColumn>50-75 registrations</TableRowColumn><TableRowColumn> Above 75 registrations</TableRowColumn></TableRow>
-                    <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>One way fare</TableRowColumn> <TableRowColumn>One way fare</TableRowColumn> <TableRowColumn>Two way fare</TableRowColumn></TableRow>
+                    <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>25-50 registrations</TableRowColumn> <TableRowColumn>50-75 registrations</TableRowColumn><TableRowColumn> Above 75 registrations</TableRowColumn></TableRow>
+                    <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>One way fare<br/>(for campus ambassador only)</TableRowColumn> <TableRowColumn>One way fare<br/>(for campus ambassador only)</TableRowColumn> <TableRowColumn>Two way fare<br/>(for campus ambassador only)</TableRowColumn></TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>Certificate &amp; tag</TableRowColumn> <TableRowColumn>Certificate &amp; tag</TableRowColumn> <TableRowColumn>Certificate &amp; tag</TableRowColumn></TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>Post on Riviera page</TableRowColumn> <TableRowColumn>Post on Riviera page </TableRowColumn><TableRowColumn>Post on Riviera page</TableRowColumn></TableRow>
-                    <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>4 days&#39; accommodation</TableRowColumn> <TableRowColumn>4 days&#39; accommodation</TableRowColumn></TableRow>
+                    <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>4 days accommodation</TableRowColumn> <TableRowColumn>4 days accommodation</TableRowColumn></TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>Food coupons</TableRowColumn> <TableRowColumn>Food coupons</TableRowColumn></TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>Goodies</TableRowColumn> <TableRowColumn>Goodies</TableRowColumn></TableRow>
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
@@ -83,7 +87,7 @@ class CampusAmbassadorPage extends React.Component{
                     <TableBody displayRowCheckbox={false}>
                       <TableRow>
                         <TableHeaderColumn colSpan="3" tooltip="Colleges from Andhra, Telangana, Kerala and Karnataka (Zone 2)" style={{textAlign: 'center'}}>
-                          <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges from Andhra, Telangana, Kerala and Karnataka (Zone 2)</span>
+                          <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges from Andhra, Telangana, Kerala and Karnataka (Zone 2)<br/>(Incentives are only for campus ambassador)</span>
                         </TableHeaderColumn>
                       </TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'>
@@ -92,10 +96,10 @@ class CampusAmbassadorPage extends React.Component{
                         <TableRowColumn style={{fontWeight:'bold'}}>Platinum</TableRowColumn>
                       </TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>20-30 registrations</TableRowColumn> <TableRowColumn>31-50 registrations</TableRowColumn><TableRowColumn> Above 50 registrations</TableRowColumn></TableRow>
-                      <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>One way fare</TableRowColumn> <TableRowColumn>One way fare</TableRowColumn> <TableRowColumn>Two way fare</TableRowColumn></TableRow>
+                      <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>One way fare<br/>(for campus ambassador only)</TableRowColumn> <TableRowColumn>One way fare<br/>(for campus ambassador only)</TableRowColumn> <TableRowColumn>Two way fare<br/>(for campus ambassador only)</TableRowColumn></TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>Certificate &amp; tag</TableRowColumn> <TableRowColumn>Certificate &amp; tag</TableRowColumn> <TableRowColumn>Certificate &amp; tag</TableRowColumn></TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>Post on Riviera page</TableRowColumn> <TableRowColumn>Post on Riviera page </TableRowColumn><TableRowColumn>Post on Riviera page</TableRowColumn></TableRow>
-                      <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>4 days&#39; accommodation</TableRowColumn> <TableRowColumn>4 days&#39; accommodation</TableRowColumn></TableRow>
+                      <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>4 days accommodation</TableRowColumn> <TableRowColumn>4 days accommodation</TableRowColumn></TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>Food coupons</TableRowColumn> <TableRowColumn>Food coupons</TableRowColumn></TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>Goodies</TableRowColumn> <TableRowColumn>Goodies</TableRowColumn></TableRow>
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
@@ -114,7 +118,7 @@ class CampusAmbassadorPage extends React.Component{
                       <TableBody displayRowCheckbox={false}>
                         <TableRow>
                           <TableHeaderColumn colSpan="3" tooltip="Colleges From other parts of North India (Zone 3)" style={{textAlign: 'center'}}>
-                            <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges From other parts of North India (Zone 3)</span>
+                            <span style={{fontWeight:'bold',color:'#fff',fontSize:'16px'}}>Colleges From other parts of North India (Zone 3)<br/>(Incentives are only for campus ambassador)</span>
                           </TableHeaderColumn>
                         </TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'>
@@ -123,10 +127,10 @@ class CampusAmbassadorPage extends React.Component{
                           <TableRowColumn style={{fontWeight:'bold'}}>Platinum</TableRowColumn>
                         </TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>10-15 registrations</TableRowColumn> <TableRowColumn>16-25 registrations</TableRowColumn><TableRowColumn> Above 25 registrations</TableRowColumn></TableRow>
-                        <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>One way fare</TableRowColumn> <TableRowColumn>One way fare</TableRowColumn> <TableRowColumn>Two way fare</TableRowColumn></TableRow>
+                        <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>One way fare<br/>(for campus ambassador only)</TableRowColumn> <TableRowColumn>One way fare<br/>(for campus ambassador only)</TableRowColumn> <TableRowColumn>Two way fare<br/>(for campus ambassador only)</TableRowColumn></TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>Certificate &amp; tag</TableRowColumn> <TableRowColumn>Certificate &amp; tag</TableRowColumn> <TableRowColumn>Certificate &amp; tag</TableRowColumn></TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn>Post on Riviera page</TableRowColumn> <TableRowColumn>Post on Riviera page </TableRowColumn><TableRowColumn>Post on Riviera page</TableRowColumn></TableRow>
-                        <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>4 days&#39; accommodation</TableRowColumn> <TableRowColumn>4 days&#39; accommodation</TableRowColumn></TableRow>
+                        <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>4 days accommodation</TableRowColumn> <TableRowColumn>4 days accommodation</TableRowColumn></TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>Food coupons</TableRowColumn> <TableRowColumn>Food coupons</TableRowColumn></TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn>Goodies</TableRowColumn> <TableRowColumn>Goodies</TableRowColumn></TableRow>
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
@@ -144,7 +148,7 @@ class CampusAmbassadorPage extends React.Component{
                   <div className='rules-container'>
                     <h3 className="text-bold">DUTIES OF CAMPUS AMBASSADOR</h3>
                     <ol>
-                      <li>Campus ambassadors are to act as the link between the Riviera Team and the concerned college administration and facilitate student communication.</li>
+                      <li>Campus ambassadors are to act as the link between the Riviera Team and the concerned college administration and facilitate student participation during Riviera'18 (15th-18th February) at VIT, Vellore.</li>
                       <li>Be updated with Riviera ’18 happenings.</li>
                       <li>To publicize and promote Riviera’18 by all possible means.</li>
                       <li>They are required to share posters and other happenings of Riviera’18 through social media networks.</li>
@@ -162,7 +166,6 @@ class CampusAmbassadorPage extends React.Component{
                                        >
                     <h3 className="text-bold">TERMS AND CONDITIONS</h3>
                     <ol>
-                      <li>Only 1 campus ambassador per college is permitted.</li>
                       <li>The final decision of allotting the zone and category rests with the Riviera’18 team.</li>
                       <li>Any kind of indiscipline caused by the ambassador during or before the fest will lead to severe disciplinary actions.</li>
                       <li>The travel ticket should be booked in the name of the ambassador to claim the refund. The travel fares, as mentioned, entail train tickets of the 2 nd class compartments to all respective destinations from Vellore. (Maximum amount is INR 500 one way for Zone 1, INR 750 one way for Zone 2 and INR 1000 one way for Zone 3 and twice the amount for two way fares.)</li>

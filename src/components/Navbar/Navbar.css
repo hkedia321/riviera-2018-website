@@ -45,15 +45,15 @@ nav{
   width:100px;
   float: left;
   position: absolute;
-  top:-15px;
+  top:0px;
 }
 
 .mobile-nav-header-bar .navbar-logo{
   width:100px;
   float: right;
   position: absolute;
-  top:-15px;
-  right: 0px;
+  top:14px;
+  right: 22px;
 }
 .mobile-nav-header-bar{
   z-index: 2000;
@@ -108,4 +108,15 @@ nav{
 }
 .sidebar-is-active{
   left: 0px !important;
+}
+
+.logo{
+  float: left;
+}
+
+.logo img{
+  width: 150px;
+  position: absolute;
+  left: 30px;
+  top:-20px
 }
