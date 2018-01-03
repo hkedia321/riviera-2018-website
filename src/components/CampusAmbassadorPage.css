@@ -38,8 +38,16 @@ table{
   text-overflow: clip !important;
   white-space:pre !important;*/
 }
-.table-container>div{
-  overflow: hidden !important;
+.table-container .react-reveal div{
+  overflow-x:scroll !important;
+}
+
+.table-container .react-reveal div div{
+  overflow-x: scroll;
+}
+
+.table-container .react-reveal div div div{
+  overflow-x: scroll !important;
 }
 
 @media (max-width:600px) {
