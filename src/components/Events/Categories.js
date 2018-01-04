@@ -96,7 +96,7 @@ class Categories extends React.Component {
               <div className='category-title'>Music</div>
         </div>
         </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('pre-riviera')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('pre_riviera')}>
             <div className="event-card">
                 <img src={pre} className="event-card-img"/>
                 <div className='overlay-layer'></div>
@@ -133,7 +133,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20telugu')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20telegu')}>
               <div className="event-card">
                 <img src={telugu} className="event-card-img"/>
                 <div className='overlay-layer'></div>
@@ -142,7 +142,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20tamil')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('wordswithtamil')}>
               <div className="event-card">
                 <img src={tamil} className="event-card-img"/>
                 <div className='overlay-layer'></div>
@@ -151,7 +151,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('workshops')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('workshop')}>
               <div className="event-card">
                 <img src={workshop} className="event-card-img"/>
                 <div className='overlay-layer'></div>
