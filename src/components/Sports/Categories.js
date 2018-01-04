@@ -13,6 +13,8 @@ import tennis from './../../images/sports-cards/tennis.jpg';
 import throwball from './../../images/sports-cards/throwball.jpg';
 import tt from './../../images/sports-cards/tt.jpg';
 import volleyball from './../../images/sports-cards/volleyball.jpg';
+import mrriviera from './../../images/sports-cards/mrriviera.jpg';
+import general from './../../images/sports-cards/general.jpg';
 
 const styles={
   featuredContainer:{
@@ -56,6 +58,17 @@ class Categories extends React.Component {
     return(
       <div className='featured-container event-categories sports-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
         <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
+        <div className="item" onClick={()=>this.fetchSports('general')}>
+          <div className="event-card">
+            <img src={general} className="event-card-img"/>
+                  <div className='overlay-layer'></div>
+          <div className="category-title">
+            General Rules
+            <br/>
+            <span className="category-subtitle"></span>
+          </div>
+        </div>
+        </div>
         <div className="item" onClick={()=>this.fetchSports('swimming')}>
           <div className="event-card">
             <img src={swimming} className="event-card-img"/>
@@ -64,6 +77,17 @@ class Categories extends React.Component {
             Swimming
             <br/>
             <span className="category-subtitle">(Men & Women)</span>
+          </div>
+        </div>
+        </div>
+        <div className="item" onClick={()=>this.fetchSports('mrriviera')}>
+          <div className="event-card">
+            <img src={mrriviera} className="event-card-img"/>
+                  <div className='overlay-layer'></div>
+          <div className="category-title">
+            Mr. Riviera
+            <br/>
+            <span className="category-subtitle">(Men)</span>
           </div>
         </div>
         </div>

@@ -10,7 +10,7 @@ class Events extends React.Component{
       events:[],
       sports_categories:[],
       redirectToEvent:false,
-      sport:"swimming"
+      sport:"general"
     }
     fetchSports = (sport)=>{
         this.setState({sport});

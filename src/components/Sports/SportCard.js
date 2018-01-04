@@ -31,7 +31,22 @@ class SportCard extends React.Component {
     render(){
         const sport = this.props.sport;
         let title,subtitle,content;
-        if(sport==="swimming"){
+        if(sport==="general"){
+            title="General Rules";
+            subtitle="Men & Women";
+            content=<div className="sport-card-content">
+                <ol>
+                  <li>All players should compulsorily bring their college ID cards and bonafide, without which the participant will not be permitted.</li>
+                  <li>All teams should report to the registration desk at least 3 hours prior to the match schedule.</li>
+                  <li>Players must come in proper attire during the tournament and must report promptly to the court.</li>
+                  <li>The sports committee reserves all the rights to change the time and venue of the matches.</li>
+                  <li>The Officials’ decision shall be the final.</li>
+                  <li>If there are less than 4 teams, then the event will be cancelled.</li>
+                  <li>The rules will be followed according to the concerned Federations.</li>
+                </ol>
+            </div>;
+        }
+        else if(sport==="swimming"){
             title="Swimming";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
@@ -50,6 +65,28 @@ class SportCard extends React.Component {
                     <li> Registration Fee is &nbsp;<FontAwesome name='rupee' style={{color:'#fff'}}/> 250.</li>
                 </ul>
             </div>;
+        }
+        else if(sport==='mrriviera'){
+          title="Mr. Riviera";
+          subtitle="Men";
+          content=<div className="sport-card-content">
+              <b>Rules and Regulations:</b>
+              <ul>
+                <li> There are 4 categories in Mr. Riviera
+                  <ol>
+                    <li>Below 60</li>
+                    <li>60-70</li>
+                    <li>70-80</li>
+                    <li>Aboce 80</li>
+                  </ol>
+                </li>
+                <li>The registration fee is <FontAwesome name='rupee' style={{color:'#fff'}}/> 250/- (inclusive of GST)</li>
+                <li>It is an individual event.</li>
+              <li>
+              Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
+            </li>
+          </ul>
+          </div>;
         }
         else if(sport==="badminton"){
             title="Badminton";
