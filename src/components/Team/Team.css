@@ -1,0 +1,7 @@
+.team-page .header-campus {
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('../../images/team.jpg') 100px -100px / cover;
+}
+
+.team-member img{
+    width: 100%;
+}

@@ -36,6 +36,7 @@ class Header extends React.Component {
               bottom:'200px',
               width:'100%'
             }}
+            className='sjt-image'
           />
         </div>
       </div>

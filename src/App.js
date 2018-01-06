@@ -21,6 +21,7 @@ import Sports from './components/Sports';
 import Sponsors from './components/Sponsors';
 import CampusAmbassadorPage from './components/CampusAmbassadorPage'
 import ScrollToTop from './ScrollToTop'
+import Team from './components/Team'
 
 
 class App extends Component {
@@ -81,6 +82,7 @@ class App extends Component {
           <Route exact path='/sponsors' component={Sponsors}/>
 
           <Route exact path='/campus-ambassador' component={CampusAmbassadorPage}/>
+          <Route exact path='/team' component={Team}/>
           <Route exact path='/' component={Home}/>
 
           <Snackbar

@@ -29,6 +29,10 @@
   text-align: center;
 }
 
+.header .sjt .sjt-image{
+  bottom: 200px;
+}
+
 .header .header-bg{
   display: flex;
   flex-direction: row;
@@ -44,17 +48,22 @@
 
 @media(max-width:800px){
   .header .sjt{
-
+    top:10px;
+  }
+  .header .sjt .sjt-image{
+    top:200px;
   }
   .header .header-bg{
     width: 100%;
     background-position: center;
+    position: absolute;
+    top:500px;
   }
 
   .header .header-bg .logo{
-    width: 90%;
+    width: 100%;
     position: relative;
-    top:10px;
+    top:200px;
     left: 0px;
   }
 
