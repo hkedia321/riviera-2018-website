@@ -12,11 +12,10 @@ class Header extends React.Component {
   render(){
     return(
       <div className='header' id='scene'>
-        <div className='header-bg' data-depth='0.8'>
+        <div className='header-bg' data-depth='0.3'>
           <Fade delay={400}><img src='rivieralogo.png' className='logo'/></Fade>
         </div>
-
-        <div className='tt' data-depth='0.3'>
+        <div className='tt' data-depth='0.7'>
           <img src='/tt.png'
             style={{
               position:'absolute',
@@ -28,7 +27,7 @@ class Header extends React.Component {
         </div>
 
 
-        <div className='sjt' data-depth='0.6'>
+        <div className='sjt' data-depth='0.4'>
           <img src='/sjt.png'
             style={{
               position:'absolute',
