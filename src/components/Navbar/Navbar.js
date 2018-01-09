@@ -123,7 +123,9 @@ handleClick = () =>{
         <div>
       <nav className="hide-on-mobile-only" style={{color:this.props.fontColor,backgroundColor:bg}} onScroll={(e)=>{this.managePhenomenon(e)}}>
         <div className='logo'>
+            <Link to="/">
           <img src='/vitlogo.png'/>
+            </Link>
         </div>
         <div className="main-nav-div">
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>

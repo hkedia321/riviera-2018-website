@@ -28,22 +28,6 @@ class Events extends React.Component{
 
                 {<SportCard sport={sport}/>}
 
-                {/*
-                {sport==="swimming" && <Swimming/>}
-                {sport==="badminton" && <Badminton/>}
-                {sport==="tennis" && <Tennis/>}
-                {sport==="tabletennis" && <Tabletennis/>}
-                {sport==="chess" && <Chess/>}
-                {sport==="snooker" && <Snooker/>}
-                {sport==="throwball" && <Throwball/>}
-                {sport==="basketball" && <Basketball/>}
-                {sport==="volleyball" && <Volleyball/>}
-                {sport==="handball" && <Handball/>}
-                {sport==="hockey" && <Hockey/>}
-                {sport==="cricket" && <Cricket/>}
-                {sport==="football" && <Football/>}
-                */}
-
                 <Footer/>
             </div>
         )

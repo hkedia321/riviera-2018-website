@@ -47,7 +47,7 @@ class Sponsors extends React.Component{
                     color='#fff'
                     style={{textAlign:'center'}}
                     >
-                      <h1 className="center contactus-card-heading">Title Sponsor</h1>
+                      <h1 className="center card-heading">Title Sponsor</h1>
                       <hr className="zigzag mini"/>
                       <img src={title} className="sponsor-img"/>
                     </CardText>
@@ -61,7 +61,7 @@ class Sponsors extends React.Component{
                       color='#fff'
                       style={{textAlign:'center'}}
                       >
-                        <h1 className="center contactus-card-heading">Co-Sponsor</h1>
+                        <h1 className="center card-heading">Co-Sponsor</h1>
                         <hr className="zigzag mini"/>
                         <img src={cosponsor} className="sponsor-img"/>
                       </CardText>
@@ -78,7 +78,7 @@ class Sponsors extends React.Component{
                         color='#fff'
                         style={{textAlign:'center'}}
                         >
-                          <h1 className="center contactus-card-heading">Other Sponsors</h1>
+                          <h1 className="center card-heading">Other Sponsors</h1>
                           <hr className="zigzag mini"/>
                           <Row>
                             <Col xs={12} md={4}>
