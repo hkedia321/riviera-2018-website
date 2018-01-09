@@ -8,6 +8,7 @@ import './Events.css'
 import Navbar from './Navbar/Navbar';
 import { connect } from 'react-redux';
 import * as actions from './../actions';
+import {Helmet} from 'react-helmet'
 import Footer from './Home/Footer';
 
 import axios from 'axios'
@@ -51,6 +52,9 @@ class Events extends React.Component{
     render(){
         return(
             <div className="events">
+                <Helmet>
+                  <title>Events - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
+                </Helmet>
                 <Navbar fontColor='#fff'/>
                 {/* Top Portion with cards */}
                 <Categories fetchEvents={this.fetchEvents}/>

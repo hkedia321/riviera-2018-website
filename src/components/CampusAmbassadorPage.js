@@ -13,11 +13,15 @@ import {Row,Col} from 'react-flexbox-grid'
 import Footer from './Home/Footer';
 import {Table,TableBody,TableRow,TableHeaderColumn,TableRowColumn} from 'material-ui/Table'
 import Button from './Button'
+import {Helmet} from 'react-helmet'
 
 class CampusAmbassadorPage extends React.Component{
   render(){
     return(
       <div className='campus-ambassador-page'>
+          <Helmet>
+            <title>Campus Ambassador - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
+          </Helmet>
         <Navbar fontColor='#fff'/>
         <div className="header-featured header-campus">
           <div>

@@ -11,17 +11,21 @@ import {
   CardActions
 } from 'material-ui/Card';
 import Footer from './Home/Footer';
+import {Helmet} from 'react-helmet'
 
 class Team extends React.Component{
   render(){
     return(
       <div className='team-page'>
+          <Helmet>
+            <title>Team - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
+          </Helmet>
         <Navbar fontColor='#fff'/>
         <div className="header-featured header-campus">
           <div>
             <div className="overlay"></div>
             <Fade delay={100}>
-              <h1 className="header-heading center text-white">Team Riviera'18</h1>
+              <h1 className="header-heading center text-white">Team Riviera 2018</h1>
             </Fade>
             <Fade delay={200}>
               <h3 className="center header-subheading">The people who make it happen!</h3>

@@ -13,6 +13,7 @@ import Navbar from './Navbar/Navbar';
 import Fade from 'react-reveal/Fade';
 import Footer from './Home/Footer';
 import title from './../images/sponsors/pepsi.png';
+import {Helmet} from 'react-helmet'
 import cosponsor from './../images/sponsors/silklogo.png';
 import other1 from './../images/sponsors/maruti-suzuki.png';
 import other2 from './../images/sponsors/cognizant.png';
@@ -29,6 +30,9 @@ class Sponsors extends React.Component{
   render(){
     return(
       <div className="sponsors-component">
+          <Helmet>
+            <title>Sponsors - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
+          </Helmet>
         <Navbar fontColor='#fff'/>
         <div className="header-featured header-sponsors header-contact">
           <div className="overlay"></div>
