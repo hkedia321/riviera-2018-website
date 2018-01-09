@@ -82,9 +82,6 @@ class SportCard extends React.Component {
                 </li>
                 <li>The registration fee is <FontAwesome name='rupee' style={{color:'#fff'}}/> 250/- (inclusive of GST)</li>
                 <li>It is an individual event.</li>
-              <li>
-              Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
-            </li>
           </ul>
           </div>;
         }
