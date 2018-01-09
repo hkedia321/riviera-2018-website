@@ -247,17 +247,13 @@ footer a{
   padding: 10px;
   margin-top: 100px;
 }
-
-footer button{
-  background: #0091C5;
-  padding: 10px;
-  color: #ffffff;
-  width: 50%;
-  border:none;
-  font-weight: bold;
-  font-size: 14px;
+footer button:hover{
+  background-color: rgba(0,0,0,1) !important;
 }
-
+.footer-logo{
+  width: 70%;
+  margin-top: 30px;
+}
 @media(max-width: 600px){
   footer h1,h4{
     margin-left:20px;

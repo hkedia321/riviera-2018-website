@@ -64,13 +64,20 @@ class App extends Component {
     return (
       <ScrollToTop>
         <div className="app-wrap">
-          <Route exact path='/event/:category/:event_name' render={()=>(
-            <SingleEvent
-              eventName={this.state.selectedEvent.name}
-              eventDescription={this.state.selectedEvent.description}
-              eventOrganiser={this.state.selectedEvent.organiser}
-            />
-          )}/>
+            <Route exact path='/events/:category/:event_name' render={()=>(
+              <SingleEvent
+                eventName={this.state.selectedEvent.name}
+                eventDescription={this.state.selectedEvent.description}
+                eventOrganiser={this.state.selectedEvent.organiser}
+              />
+            )}/>
+            <Route exact path='/event/:category/:event_name' render={()=>(
+              <SingleEvent
+                eventName={this.state.selectedEvent.name}
+                eventDescription={this.state.selectedEvent.description}
+                eventOrganiser={this.state.selectedEvent.organiser}
+              />
+            )}/>
 
           {/* Following line is Merchandise */}
           <Route exact path='/merchandise' component={EventsOld}/>

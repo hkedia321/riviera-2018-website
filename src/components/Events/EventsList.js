@@ -78,7 +78,7 @@ class EventsList extends React.Component {
                     return(
                   <Col md={4} xs={12}>
                       <Fade delay={100}>
-                    <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><Card className={hvrClass} style={{margin:'20px',background:'#232323',color:'#fff'}}>
+                    <Link to={`/events/${this.props.event_category}/${event['EVENT NAME']}`}><Card className={hvrClass} style={{margin:'20px',background:'#232323',color:'#fff'}}>
                       <CardTitle
                         title={event['EVENT NAME']}
                         subtitle={event['CLUB NAME']}

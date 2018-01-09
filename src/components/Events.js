@@ -6,6 +6,8 @@ import Categories from './Events/Categories'
 import EventsList from './Events/EventsList'
 import './Events.css'
 import Navbar from './Navbar/Navbar';
+import { connect } from 'react-redux';
+import * as actions from './../actions';
 import Footer from './Home/Footer';
 
 import axios from 'axios'
@@ -36,7 +38,13 @@ class Events extends React.Component{
           loading:false
         })
       }).catch((error)=>{
-        console.error(error)
+        console.error(error);
+        this.setState({
+          event_category:[],
+          events:[],
+          loading:false
+        })
+        this.props.showMessage("Error! Couldn't fetch Events");
       })
     }
 
@@ -60,4 +68,11 @@ class Events extends React.Component{
     }
 }
 
-export default Events
+
+function mapStateToProps(state){
+    return {
+
+    };
+}
+
+export default connect(mapStateToProps,actions)(Events);
