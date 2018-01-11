@@ -94,7 +94,11 @@ class SportCard extends React.Component {
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
                 minimum 3 and maximum 5 participants from men’s team.</li>
                 <li>
+<<<<<<< HEAD
                 Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of GST).
+=======
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/> 1250/- (inclusive of all taxes plus GST).
+>>>>>>> 58a0dbdec00cfafd75912ca7100c436de335da59
               </li>
             </ul>
             </div>;
@@ -251,7 +255,7 @@ class SportCard extends React.Component {
                     <Row style={{width:'100%'}} top='md'>
                         <Col md={8} mdOffset={2} xs={12}>
                             <Fade delay={100}>
-                            <Card style={{margin:'20px',background:'#232323',color:'#fff'}}>
+                            <Card style={{margin:'20px',marginBottom:"0",background:'#232323',color:'#fff'}}>
                                 <CardTitle
                                     title={title}
                                     subtitle={subtitle}

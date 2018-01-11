@@ -3,7 +3,7 @@
       height: 50px;
       background-color: #2297c2;
       text-align: center;
-      display: block;
+      display: inline-block;
       transition: background-color 0.2s;
       -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
       clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
@@ -20,6 +20,7 @@
       padding-top: 15px;
       padding-bottom: 0px;
       transition: all 0.5s;
+      margin-bottom: 5px;
     }
     .rajat-button:hover > span{
       color: #2297c2;

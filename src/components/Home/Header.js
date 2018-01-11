@@ -13,7 +13,7 @@ class Header extends React.Component {
     return(
       <div className='header' id='scene'>
         <div className='header-bg' data-depth='0.3'>
-          <Fade delay={400}><img src='rivieralogo.png' className='logo'/></Fade>
+          <img src='rivieralogo.png' className='logo'/>
         </div>
         <div className='tt' data-depth='0.7'>
           <img src='/tt.png'

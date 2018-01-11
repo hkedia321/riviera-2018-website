@@ -8,6 +8,8 @@ import medal23 from './../images/medal23.png';
 import Loading from './Loading';
 import FontAwesome from 'react-fontawesome'
 import {Helmet} from 'react-helmet'
+import Navbar from './Navbar/Navbar'
+import Footer from './Home/Footer'
 
 import axios from 'axios'
 
@@ -41,8 +43,10 @@ class SingleEvent extends Component {
     render() {
         console.log(this.state)
         return (
+            <div>
+                <Navbar fontColor='#fff'/>
             <div className="single-event-wrap">
-                <br/><br/>
+                <br/><br/><br/><br/>
                 {this.state.loading &&
                   <div className="center"><Loading/></div>
                 }
@@ -52,6 +56,7 @@ class SingleEvent extends Component {
                     <title>{event['EVENT NAME']+` - Riviera 2018 | VIT University`}</title>
                   </Helmet>
                 <Grid>
+
                     <Row>
                         <Col xs={12} mdOffset={0} md={12}>
                             <Card className="single-event-card background-black text-white">
@@ -133,7 +138,7 @@ class SingleEvent extends Component {
                                             </div>
                                             <div className="event-right-details">
                                                 <div className="event-right-detail-item">
-                                                    <span className="text-light text-bold item-right-tag">Price</span>
+                                                    <span className="text-light text-bold item-right-tag">Reg Fee</span>
                                                     <div className="item-right-detail text-bold">{Number(event['Reg fees After GST'])===0?"FREE":<span>Rs. {event['Reg fees After GST']} / {event['Team Event (yes/no)']=='yes'?'team':'person'}</span>}</div>
                                                 </div>
                                                 <div className="event-right-detail-item">
@@ -173,8 +178,11 @@ class SingleEvent extends Component {
                         </Col>
                     </Row>
                 </Grid>
+                <br/><br/><br/><br/>
               </div>
               ))}
+          </div>
+              <Footer/>
             </div>
         );
     }

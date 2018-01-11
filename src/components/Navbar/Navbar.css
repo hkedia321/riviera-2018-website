@@ -49,10 +49,10 @@ nav{
 }
 
 .mobile-nav-header-bar .navbar-logo{
-  width:100px;
+  width:130px;
   float: right;
   position: absolute;
-  top:14px;
+  top:-5px;
   right: 22px;
 }
 .mobile-nav-header-bar{
@@ -100,7 +100,7 @@ nav{
 .mobile-nav-sidebar a{
   text-decoration: none;
 }
-.mobile-nav-sidebar .active .main-nav-item{
+.mobile-nav-sidebar .active-mobile-nav{
   background-color: rgba(0,0,0,0.4);
 }
 .mobile-nav-sidebar .main-nav-item:hover{

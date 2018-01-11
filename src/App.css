@@ -60,6 +60,9 @@
 .whatsapp-fa:hover{
     color:#34af23;
 }
+.instagram-fa:hover{
+    color:#fb3958;
+}
 a{
     color: inherit;
     font-style: normal;
@@ -70,6 +73,9 @@ a{
 }
 .display-on-mobile-only{
     display: block;
+}
+.single-event-wrap{
+    min-height: 90vh;
 }
 @media (min-width:769px){
     .event-card-left-part{

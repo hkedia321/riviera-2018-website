@@ -3,6 +3,7 @@ import Categories from './Sports/Categories';
 import SportCard from './Sports/SportCard.js';
 import Navbar from './Navbar/Navbar'
 import axios from 'axios'
+import {Helmet} from 'react-helmet'
 import Footer from './Home/Footer';
 
 class Events extends React.Component{
@@ -20,6 +21,9 @@ class Events extends React.Component{
         let sportsDetails
         return(
             <div className="events">
+                <Helmet>
+                  <title>Sports - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
+                </Helmet>
                 <Navbar fontColor='#fff'/>
                 {/* Top Portion with cards */}
                 <Categories fetchSports={this.fetchSports}/>

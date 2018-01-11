@@ -15,6 +15,7 @@ import {Row,Col,Grid} from 'react-flexbox-grid'
 import Fade from 'react-reveal/Fade';
 import Navbar from './Navbar/Navbar';
 import Contacts from './Contactus/Contacts';
+import {Helmet} from 'react-helmet'
 import GMap from './Contactus/GMap';
 import Footer from './Home/Footer';
 import './contactus.css';
@@ -29,6 +30,9 @@ class Contactus extends React.Component{
     render(){
         return(
             <div className="contact-us-component">
+                <Helmet>
+                  <title>Contact us - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
+                </Helmet>
                 <Navbar fontColor='#fff'/>
                 <div className="header-featured header-contact">
                     <div className="overlay"></div>
