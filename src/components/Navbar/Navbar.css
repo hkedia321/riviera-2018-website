@@ -81,7 +81,7 @@ nav{
   width: 250px;
   height: calc(100vh - 67px);
   background-color: #13262c;
-  top: 67px;
+  top: 65px;
   left: -250px;
   color: #fff;
   z-index: 10001;
