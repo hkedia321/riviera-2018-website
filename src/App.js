@@ -82,7 +82,7 @@ class App extends Component {
           <Route exact path='/sponsors' component={Sponsors}/>
 
           <Route exact path='/campus-ambassador' component={CampusAmbassadorPage}/>
-          <Route exact path='/team' component={Team}/>
+          <Route exact path='/team-testing' component={Team}/>
           <Route exact path='/' component={Home}/>
 
           <Snackbar

@@ -112,4 +112,8 @@ class Sponsors extends React.Component{
     }
   }
 
-  export default Sponsors
+export default Sponsors
+
+
+// Change the header image in Events whenever a category is selected.
+// 

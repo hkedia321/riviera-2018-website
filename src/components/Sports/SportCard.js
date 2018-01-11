@@ -77,7 +77,7 @@ class SportCard extends React.Component {
                     <li>Below 60</li>
                     <li>60-70</li>
                     <li>70-80</li>
-                    <li>Aboce 80</li>
+                    <li>Above 80</li>
                   </ol>
                 </li>
                 <li>The registration fee is <FontAwesome name='rupee' style={{color:'#fff'}}/> 250/- (inclusive of GST)</li>
@@ -94,7 +94,7 @@ class SportCard extends React.Component {
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
                 minimum 3 and maximum 5 participants from men’s team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -108,7 +108,7 @@ class SportCard extends React.Component {
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
                 minimum 3 and maximum 5 participants from men’s team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -122,7 +122,7 @@ class SportCard extends React.Component {
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
                 minimum 3 and maximum 5 participants from men’s team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -135,7 +135,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 4 and maximum 6 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -148,7 +148,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 2 and maximum 5 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>1250/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -161,7 +161,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 9 and maximum 12 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -174,7 +174,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 5 and maximum 12 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -187,7 +187,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 6 and maximum 12 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -200,7 +200,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 7 and maximum 12 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>3000/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -213,7 +213,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 11 and maximum 16 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>4000/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>4000/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -226,7 +226,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 11 and maximum 16 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>4000/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>4000/- (inclusive of GST).
               </li>
             </ul>
             </div>;
@@ -239,7 +239,7 @@ class SportCard extends React.Component {
                 <ul>
                   <li> From one college, Minimum 11 and maximum 18 participants from each team.</li>
                 <li>
-                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>4500/- (inclusive of all taxes plus GST).
+                Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>4500/- (inclusive of GST).
               </li>
             </ul>
             </div>;
