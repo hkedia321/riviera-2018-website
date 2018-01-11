@@ -48,6 +48,14 @@ class DevelopersDialog extends React.Component{
                       </div>
                       <div className="dialog-item">
                         <Paper zDepth={2} className="about-dialog-paper" style={{padding:'1rem'}}>
+                          <img src="/svg/developers/rajat-mukati.jpg" className="circle responsive-img" style={{width:'85%',marginLeft:'auto',marginRight:'auto'}} />
+                          <h4 className="center margin-bottom-0">Rajat Mukati</h4>
+                          <h5 className="center developers-position margin-top-0" style={{color:'#9E9E9E'}}>Designer</h5>
+                          <a href="https://www.facebook.com/rajatmukati005" target="_blank"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                        </Paper>
+                      </div>
+                      <div className="dialog-item">
+                        <Paper zDepth={2} className="about-dialog-paper" style={{padding:'1rem'}}>
                           <img src="/svg/developers/harshit-kedia.jpeg" className="circle responsive-img" style={{width:'85%',marginLeft:'auto',marginRight:'auto'}} />
                           <h4 className="center margin-bottom-0">Harshit Kedia</h4>
                           <h5 className="center developers-position margin-top-0" style={{color:'#9E9E9E'}}>Frontend developer</h5>
@@ -56,10 +64,10 @@ class DevelopersDialog extends React.Component{
                       </div>
                       <div className="dialog-item">
                         <Paper zDepth={2} className="about-dialog-paper" style={{padding:'1rem'}}>
-                          <img src="/svg/developers/rajat-mukati.jpg" className="circle responsive-img" style={{width:'85%',marginLeft:'auto',marginRight:'auto'}} />
-                          <h4 className="center margin-bottom-0">Rajat Mukati</h4>
-                          <h5 className="center developers-position margin-top-0" style={{color:'#9E9E9E'}}>Designer</h5>
-                          <a href="https://www.facebook.com/rajatmukati005" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                          <img src="/svg/developers/ujjwal-verma.jpeg" className="circle responsive-img" style={{width:'85%',marginLeft:'auto',marginRight:'auto'}} />
+                          <h4 className="center margin-bottom-0">Ujwal Verma</h4>
+                          <h5 className="center developers-position margin-top-0" style={{color:'#9E9E9E'}}>Backend developer</h5>
+                          <a href="https://github.com/ujjwal96" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                         </Paper>
                       </div>
                       <div className="dialog-item">
@@ -68,14 +76,6 @@ class DevelopersDialog extends React.Component{
                           <h4 className="center margin-bottom-0">Apurva Nitanjay</h4>
                           <h5 className="center developers-position margin-top-0" style={{color:'#9E9E9E'}}>Backend developer</h5>
                           <a href="https://github.com/apuayush/" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                        </Paper>
-                      </div>
-                      <div className="dialog-item">
-                        <Paper zDepth={2} className="about-dialog-paper" style={{padding:'1rem'}}>
-                          <img src="/svg/developers/ujjwal-verma.jpeg" className="circle responsive-img" style={{width:'85%',marginLeft:'auto',marginRight:'auto'}} />
-                          <h4 className="center margin-bottom-0">Ujwal Verma</h4>
-                          <h5 className="center developers-position margin-top-0" style={{color:'#9E9E9E'}}>Backend developer</h5>
-                          <a href="https://github.com/ujjwal96" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                         </Paper>
                       </div>
                   </div>

@@ -14,6 +14,7 @@
       rgba(20,20,20, .5),
       rgba(20,20,20, .5)),
       url('../images/contact-bg.jpg');
+    background-size: cover;
    }
    .header-sponsors{
        background: linear-gradient(
@@ -135,5 +136,8 @@
    @media (min-width:769px){
       .contact-card{
          min-height: 280px;
+      }
+      .header-contact{
+          background-position: 0px -80px;
       }
    }

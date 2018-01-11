@@ -7,7 +7,7 @@ class Button extends React.Component {
             return(
                 <div>
                 {this.props.noRevealAnimation?
-                    <div>
+                    <span>
                         {this.props.orange?
                             <div className='rajat-button rajat-button-orange' onClick={this.props.onClick?this.props.onClick:null} >
                                 <span>{this.props.text}</span>
@@ -17,10 +17,10 @@ class Button extends React.Component {
                                 <span>{this.props.text}</span>
                             </div>
                         }
-                    </div>
+                    </span>
                 :
                 <Zoom delay={500}>
-                    <div>
+                    <span>
                         {this.props.orange?
                             <div className='rajat-button rajat-button-orange' onClick={this.props.onClick?this.props.onClick:null} >
                                 <span>{this.props.text}</span>
@@ -30,7 +30,7 @@ class Button extends React.Component {
                                 <span>{this.props.text}</span>
                             </div>
                         }
-                    </div>
+                    </span>
                 </Zoom>
                 }
             </div>

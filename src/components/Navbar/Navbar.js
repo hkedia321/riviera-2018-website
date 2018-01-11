@@ -46,47 +46,7 @@ class Navbar extends React.Component{
     window.addEventListener('scroll', this.managePhenomenon);
     const path=window.location.pathname
     console.log(path)
-    Object.keys(this.state.active).forEach((key)=>{
-      this.setState({
-          active:{
-            ...this.state.active,
-            [key]:false
-          }
-      })
-    })
-
-      switch (path){
-          case '/':{
-            this.setState({
-                active:{home:true}
-            })
-          }
-          case '/events':{
-              this.setState({
-                  active:{events:true}
-              })
-          }
-          case '/sports':{
-              this.setState({
-                  active:{sports:true}
-              })
-          }
-          case '/campus-ambassador':{
-              this.setState({
-                  active:{campus:true}
-              })
-          }
-          case '/sponsors':{
-              this.setState({
-                  active:{sponsors:true}
-              })
-          }
-          case '/contact':{
-              this.setState({
-                  active:{contact:true}
-              })
-          }
-      }
+    this.setState({currentPath:path});
     }
 
 
@@ -134,7 +94,7 @@ handleClick = () =>{
             {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
             <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
             <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
-            <NavLink to="/team"><span className="main-nav-item">Team</span></NavLink>
+            {/* <NavLink to="/team"><span className="main-nav-item">Team</span></NavLink> */}
             <NavLink to="/contact"><span className="main-nav-item">Contact</span></NavLink>
         </div>
       </nav>
@@ -151,15 +111,15 @@ handleClick = () =>{
 
           <div className={mobileSidebar}>
               <NavLink to="/">  <img src='/rivieralogo.png' className="navbar-logo hide-on-mobile-only" alt=""/></NavLink>
-              <NavLink to="/"><span className={`main-nav-item ${this.state.active.home?'active':''}`}>Home</span></NavLink>
-              <NavLink to="/events"><span className={`main-nav-item ${this.state.active.events?'active':''}`}>Events</span></NavLink>
-              <NavLink to="/sports"><span className={`main-nav-item ${this.state.active.sports?'active':''}`}>Sports</span></NavLink>
+              <NavLink to="/"><span className={`main-nav-item ${this.state.currentPath==="/"?'active-mobile-nav':''}`}>Home</span></NavLink>
+              <NavLink to="/events"><span className={`main-nav-item ${this.state.currentPath==="/events"?'active-mobile-nav':''}`}>Events</span></NavLink>
+              <NavLink to="/sports"><span className={`main-nav-item ${this.state.currentPath==="/sports"?'active-mobile-nav':''}`}>Sports</span></NavLink>
               {/* <NavLink to="/schedule"><span className={main-nav-item` ${}this.state.active.event?'active}:'Schedule</span></NavLink> */}
               {/* <NavLink to="/proshows"><span className={main-nav-item` ${}this.state.active.event?'active}:'>Proshows</span></NavLink> */}
-              <NavLink to="/campus-ambassador"><span className={`main-nav-item ${this.state.active.campus?'active':''}`}>Campus Ambassador</span></NavLink>
-              <NavLink to="/sponsors"><span className={`main-nav-item ${this.state.active.sponsors?'active':''}`}>Sponsors</span></NavLink>
-              <NavLink to="/team"><span className={`main-nav-item${this.state.active.team?'active':''}`}>Team</span></NavLink>
-              <NavLink to="/contact"><span className={`main-nav-item ${this.state.active.contact?'active':''}`}>Contact</span></NavLink>
+              <NavLink to="/campus-ambassador"><span className={`main-nav-item ${this.state.currentPath==="/campus-ambassador"?'active-mobile-nav':''}`}>Campus Ambassador</span></NavLink>
+              <NavLink to="/sponsors"><span className={`main-nav-item ${this.state.currentPath==="/sponsors"?'active-mobile-nav':''}`}>Sponsors</span></NavLink>
+              {/* <NavLink to="/team"><span className={`main-nav-item${this.state.active.team?'active-mobile-nav':''}`}>Team</span></NavLink> */}
+              <NavLink to="/contact"><span className={`main-nav-item ${this.state.currentPath==="/contact"?'active-mobile-nav':''}`}>Contact</span></NavLink>
           </div>
       </div>
   </div>
