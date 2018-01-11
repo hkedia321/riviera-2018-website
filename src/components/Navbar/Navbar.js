@@ -116,23 +116,14 @@ handleClick = () =>{
               <NavLink to="/sports"><span className={`main-nav-item ${this.state.currentPath==="/sports"?'active-mobile-nav':''}`}>Sports</span></NavLink>
               {/* <NavLink to="/schedule"><span className={main-nav-item` ${}this.state.active.event?'active}:'Schedule</span></NavLink> */}
               {/* <NavLink to="/proshows"><span className={main-nav-item` ${}this.state.active.event?'active}:'>Proshows</span></NavLink> */}
-<<<<<<< HEAD
-<<<<<<< HEAD
               <NavLink to="/campus-ambassador"><span className={`main-nav-item ${this.state.active.campus?'active':''}`}>Campus Ambassador</span></NavLink>
               <NavLink to="/sponsors"><span className={`main-nav-item ${this.state.active.sponsors?'active':''}`}>Sponsors</span></NavLink>
               {/* <NavLink to="/team"><span className={`main-nav-item${this.state.active.team?'active':''}`}>Team</span></NavLink> */}
               <NavLink to="/contact"><span className={`main-nav-item ${this.state.active.contact?'active':''}`}>Contact</span></NavLink>
-=======
-=======
->>>>>>> 1ba087105ed44dd98515b99b377e9a9bccbf434e
               <NavLink to="/campus-ambassador"><span className={`main-nav-item ${this.state.currentPath==="/campus-ambassador"?'active-mobile-nav':''}`}>Campus Ambassador</span></NavLink>
               <NavLink to="/sponsors"><span className={`main-nav-item ${this.state.currentPath==="/sponsors"?'active-mobile-nav':''}`}>Sponsors</span></NavLink>
               {/* <NavLink to="/team"><span className={`main-nav-item${this.state.active.team?'active-mobile-nav':''}`}>Team</span></NavLink> */}
               <NavLink to="/contact"><span className={`main-nav-item ${this.state.currentPath==="/contact"?'active-mobile-nav':''}`}>Contact</span></NavLink>
-<<<<<<< HEAD
->>>>>>> 58a0dbdec00cfafd75912ca7100c436de335da59
-=======
->>>>>>> 1ba087105ed44dd98515b99b377e9a9bccbf434e
           </div>
       </div>
   </div>
