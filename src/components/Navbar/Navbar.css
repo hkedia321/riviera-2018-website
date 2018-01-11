@@ -49,10 +49,10 @@ nav{
 }
 
 .mobile-nav-header-bar .navbar-logo{
-  width:100px;
+  width:130px;
   float: right;
   position: absolute;
-  top:14px;
+  top:-5px;
   right: 22px;
 }
 .mobile-nav-header-bar{
@@ -81,7 +81,7 @@ nav{
   width: 250px;
   height: calc(100vh - 67px);
   background-color: #13262c;
-  top: 67px;
+  top: 65px;
   left: -250px;
   color: #fff;
   z-index: 10001;
@@ -100,7 +100,7 @@ nav{
 .mobile-nav-sidebar a{
   text-decoration: none;
 }
-.mobile-nav-sidebar .active .main-nav-item{
+.mobile-nav-sidebar .active-mobile-nav{
   background-color: rgba(0,0,0,0.4);
 }
 .mobile-nav-sidebar .main-nav-item:hover{

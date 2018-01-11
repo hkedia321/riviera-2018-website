@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardActions
 } from 'material-ui/Card';
-import {Row,Col} from 'react-flexbox-grid'
+import {Row,Col,Grid} from 'react-flexbox-grid'
 import Footer from './Home/Footer';
 import {Table,TableBody,TableRow,TableHeaderColumn,TableRowColumn} from 'material-ui/Table'
 import Button from './Button'
@@ -35,6 +35,7 @@ class CampusAmbassadorPage extends React.Component{
           </div>
         </div>
         <br/><br/><br/>
+        <Grid fluid>
         <Row>
           <Col xs={10} xsOffset={1} md={8} mdOffset={2}>
             <Fade>
@@ -52,11 +53,11 @@ class CampusAmbassadorPage extends React.Component{
           </CardText>
         </Card>
       </Fade>
+      <br/><br/>
             <div className='table-container'>
-              <Fade>
               <Table
                 selectable={false}
-                style={{background:'#232323',width:'100%',margin:'20px'}}
+                style={{background:'#232323'}}
                 >
                   <TableBody displayRowCheckbox={false}>
                     <TableRow>
@@ -79,14 +80,12 @@ class CampusAmbassadorPage extends React.Component{
                     <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
                   </TableBody>
                 </Table>
-              </Fade>
               </div>
-
+              <br/><br/>
               <div className='table-container'>
-                <Fade>
                 <Table
                   selectable={false}
-                  style={{background:'#232323',width:'100%',margin:'20px'}}
+                  style={{background:'#232323'}}
                   >
                     <TableBody displayRowCheckbox={false}>
                       <TableRow>
@@ -109,15 +108,12 @@ class CampusAmbassadorPage extends React.Component{
                       <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
                     </TableBody>
                   </Table>
-                </Fade>
                 </div>
-
-
+                <br/><br/>
                 <div className='table-container'>
-                  <Fade>
                   <Table
                     selectable={false}
-                    style={{background:'#232323',width:'100%',margin:'20px'}}
+                    style={{background:'#232323'}}
                     >
                       <TableBody displayRowCheckbox={false}>
                         <TableRow>
@@ -140,10 +136,8 @@ class CampusAmbassadorPage extends React.Component{
                         <TableRow style={{color:'#fff'}} className='table-row'><TableRowColumn></TableRowColumn><TableRowColumn></TableRowColumn> <TableRowColumn>Proshow passes for all 4 days</TableRowColumn></TableRow>
                       </TableBody>
                     </Table>
-                  </Fade>
                   </div>
                   <br/><br/>
-                  <Fade>
                   <Card className="" style={{background:'#232323',color:'#fff'}}>
                                  <CardText
                                      color='#fff'
@@ -160,9 +154,7 @@ class CampusAmbassadorPage extends React.Component{
                   </div>
                 </CardText>
               </Card>
-            </Fade>
                     <br/><br/>
-                    <Fade>
                     <Card className="" style={{background:'#232323',color:'#fff'}}>
                                    <CardText
                                        color='#fff'
@@ -172,7 +164,7 @@ class CampusAmbassadorPage extends React.Component{
                     <ol>
                       <li>The final decision of allotting the zone and category rests with the Riviera’18 team.</li>
                       <li>Any kind of indiscipline caused by the ambassador during or before the fest will lead to severe disciplinary actions.</li>
-                      <li>The travel ticket should be booked in the name of the ambassador to claim the refund. The travel fares, as mentioned, entail train tickets of the 2 nd class compartments to all respective destinations from Vellore. (Maximum amount is INR 500 one way for Zone 1, INR 750 one way for Zone 2 and INR 1000 one way for Zone 3 and twice the amount for two way fares.)</li>
+                      <li>The travel ticket should be booked in the name of the ambassador to claim the refund. The travel fares, as mentioned, entail train tickets of the 2nd class compartments to all respective destinations from Vellore. (Maximum amount is INR 500 one way for Zone 1, INR 750 one way for Zone 2 and INR 1000 one way for Zone 3 and twice the amount for two way fares.)</li>
                       <li>The travel expenses will be redeemed on the fourth day of the fest on submission of the ticket.</li>
                       <li>As a proof of registrations the student ambassador needs to maintain a record of the details of registered students, in a format described by the Riviera’18 team.</li>
                       <li>Each individual external entry shall be counted as one registration. </li>
@@ -183,17 +175,20 @@ class CampusAmbassadorPage extends React.Component{
                     </ol>
                   </CardText>
                 </Card>
-              </Fade>
                 </Col>
               </Row>
               <br/><br/>
-              <Row style={{marginTop:'200px'}}>
+              <Row>
                 <Col xs={12}>
-                  <div className='register-button-container'>
-                    <a href='https://vtop9.vit.ac.in/riviera/'><Button text='Enroll Now'/></a>
+                  <div className='center' style={{display:"flex",justifyContent:"center"}}>
+                    <a target="_blank" href='https://vtop9.vit.ac.in/riviera/'>
+                    <Button style={{display:"inline-block"}} text='Enroll Now'/>
+                  </a>
                   </div>
                 </Col>
               </Row>
+              <br/><br/>
+            </Grid>
               <Footer/>
             </div>
           )

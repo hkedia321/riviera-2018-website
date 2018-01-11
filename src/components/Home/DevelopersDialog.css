@@ -18,8 +18,10 @@
   transition: all 0.3s ease;
   color: #555 !important; }
 
-.dialog-item .fa:hover {
-  color: #eee !important; }
+  .dialog-item .fa-github:hover {
+    color: #eee !important; }
+    .dialog-item .fa-facebook:hover {
+      color: #3b5998 !important; }
 .about-flexBox{
   display: flex;
   width:100vw;
