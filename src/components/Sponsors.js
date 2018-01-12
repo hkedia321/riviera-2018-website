@@ -43,36 +43,6 @@ class Sponsors extends React.Component{
         <div className="below-header-content">
           <Grid fluid>
             <br/><br/><br/><br/>
-            <Row>
-              <Col xs={12} md={6} lg={4} lgOffset={2}>
-                   <Fade delay={100}>
-                <Card className="contact-card hvr-underline-reveal reveal-blue" style={{background:'#232323',color:'#fff'}}>
-                  <CardText
-                    color='#fff'
-                    style={{textAlign:'center'}}
-                    >
-                      <h1 className="center card-heading">Title Sponsor</h1>
-                      <hr className="zigzag mini"/>
-                      <img src={title} className="sponsor-img"/>
-                    </CardText>
-                  </Card>
-                   </Fade>
-                </Col>
-                <Col xs={12} md={6} lg={4}>
-                     <Fade delay={200}>
-                  <Card className="contact-card hvr-underline-reveal reveal-lblue" style={{background:'#232323',color:'#fff'}}>
-                    <CardText
-                      color='#fff'
-                      style={{textAlign:'center'}}
-                      >
-                        <h1 className="center card-heading">Co-Sponsor</h1>
-                        <hr className="zigzag mini"/>
-                        <img src={cosponsor} className="sponsor-img"/>
-                      </CardText>
-                    </Card>
-                    </Fade>
-                  </Col>
-                </Row>
                 <br/><br/><br/><br/>
                 <Row>
                   <Col xs={12} md={12} lg={10} lgOffset={1}>
@@ -86,9 +56,19 @@ class Sponsors extends React.Component{
                           <hr className="zigzag mini"/>
                           <Row>
                             <Col xs={12} md={4}>
-                                 <Fade delay={300}>
+                              <Fade delay={300}>
+                                <img src={title} className="sponsor-img"/>
+                              </Fade>
+                            </Col>
+                            <Col xs={12} md={4}>
+                              <Fade delay={300}>
+                                <img src={cosponsor} className="sponsor-img"/>
+                              </Fade>
+                            </Col>
+                            <Col xs={12} md={4}>
+                             <Fade delay={300}>
                               <img src={other1} className="sponsor-img"/>
-                          </Fade>
+                            </Fade>
                             </Col>
                             <Col xs={12} md={4}>
                                  <Fade delay={450}>
@@ -120,4 +100,4 @@ export default Sponsors
 
 
 // Change the header image in Events whenever a category is selected.
-// 
+//
