@@ -43,8 +43,11 @@ class Footer extends React.Component {
                         <RaisedButton primary={true} style={{backgroundColor:"rgba(0,0,0,0)"}} label="View Sponsors" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
                     </Link>
                     <Link to='/campus-ambassador'>
-                    <RaisedButton primary={true} style={{backgroundColor:"rgba(0,0,0,0)"}} label="Campus Ambassador" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
-                </Link>
+                      <RaisedButton primary={true} style={{backgroundColor:"rgba(0,0,0,0)"}} label="Campus Ambassador Program" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
+                    </Link>
+                    <a href='https://www.youtube.com/watch?v=qMYNRDx19EM'>
+                      <RaisedButton primary={true} style={{backgroundColor:"rgba(0,0,0,0)"}} label="Riviera '17 Highlights" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
+                    </a>
                     <br/>
 
                     <a href='https://vtop9.vit.ac.in/riviera/' target="_blank">
