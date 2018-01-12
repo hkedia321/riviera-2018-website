@@ -50,6 +50,10 @@ class SportCard extends React.Component {
             title="Swimming";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+                <div style={{textAlign:'center'}}>
+                  <b>Date: Men: 16th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 17th February</b>
+                </div>
+                <br/>
                 <b>There are 8 categories in swimming</b>
                 <ul>
                     <li> Freestyle- 50 m &amp; 100 m</li>
@@ -70,6 +74,9 @@ class SportCard extends React.Component {
           title="Mr. Riviera";
           subtitle="Men";
           content=<div className="sport-card-content">
+            <div style={{textAlign:'center'}}>
+              <b>Date: 16th February</b>
+            </div>
               <b>Rules and Regulations:</b>
               <ul>
                 <li> There are 4 categories in Mr. Riviera
@@ -89,6 +96,9 @@ class SportCard extends React.Component {
             title="Badminton";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: Men: 8th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 9th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
@@ -103,6 +113,9 @@ class SportCard extends React.Component {
             title="Tennis";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: Men: 10th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 12th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
@@ -117,6 +130,9 @@ class SportCard extends React.Component {
             title="Table Tennis";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: Men: 9th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 9th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 2 and maximum 5 participants from women’s team and
@@ -131,6 +147,9 @@ class SportCard extends React.Component {
             title="Chess";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: Men: 10th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 10th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 4 and maximum 6 participants from each team.</li>
@@ -144,6 +163,9 @@ class SportCard extends React.Component {
             title="Snooker";
             subtitle="Men Only";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: 15th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 2 and maximum 5 participants from each team.</li>
@@ -157,6 +179,9 @@ class SportCard extends React.Component {
             title="Throwball";
             subtitle="Women Only";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: 12th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 9 and maximum 12 participants from each team.</li>
@@ -170,6 +195,9 @@ class SportCard extends React.Component {
             title="Basketball";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: Men: 11th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 13th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 5 and maximum 12 participants from each team.</li>
@@ -183,6 +211,9 @@ class SportCard extends React.Component {
             title="Volleyball";
             subtitle="Men & Women";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: Men: 13th February <span style={{visibility:'hidden'}}>- - -</span>  Women: 13th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 6 and maximum 12 participants from each team.</li>
@@ -196,6 +227,9 @@ class SportCard extends React.Component {
             title="Handball";
             subtitle="Men Only";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: 7th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 7 and maximum 12 participants from each team.</li>
@@ -209,6 +243,9 @@ class SportCard extends React.Component {
             title="Hockey";
             subtitle="Men Only";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: 9th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 11 and maximum 16 participants from each team.</li>
@@ -222,6 +259,9 @@ class SportCard extends React.Component {
             title="Cricket";
             subtitle="Men Only";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: 5th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 11 and maximum 16 participants from each team.</li>
@@ -235,6 +275,9 @@ class SportCard extends React.Component {
             title="Football";
             subtitle="Men Only";
             content=<div className="sport-card-content">
+              <div style={{textAlign:'center'}}>
+                <b>Date: 14th February</b>
+              </div>
                 <b>Rules and Regulations:</b>
                 <ul>
                   <li> From one college, Minimum 11 and maximum 18 participants from each team.</li>

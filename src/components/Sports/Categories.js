@@ -31,6 +31,9 @@ class Categories extends React.Component {
     state={
         phenomenonOpacity:1
     }
+    componentDidMount(){
+      this.fetchSports('general',general)
+    }
     managePhenomenon(e){
         const scrollPosition=document.getElementById('featured').scrollLeft
         const magnitude=100-scrollPosition
@@ -50,15 +53,19 @@ class Categories extends React.Component {
           behavior:'smooth'
       })
     }
-    fetchSports = (sport) =>{
-      this.props.fetchSports(sport);
+    fetchSports = (sport,backgroundImage) =>{
+      this.props.fetchSports(sport,backgroundImage);
     }
   render(){
         console.log('Opacity',this.state.phenomenonOpacity);
     return(
-      <div className='featured-container event-categories sports-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
+      <div className='featured-container event-categories sports-categories'
+        onScroll={(e)=>{this.managePhenomenon(e)}}
+        id="featured"
+        style={{backgroundImage:`url(${this.props.backgroundImage})`,backgroundSize:'cover'}}
+        >
         <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
-        <div className="item" onClick={()=>this.fetchSports('general')}>
+        <div className="item" onClick={()=>this.fetchSports('general',general)}>
           <div className="event-card">
             <img src={general} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -69,7 +76,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('swimming')}>
+        <div className="item" onClick={()=>this.fetchSports('swimming',swimming)}>
           <div className="event-card">
             <img src={swimming} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -80,7 +87,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('mrriviera')}>
+        <div className="item" onClick={()=>this.fetchSports('mrriviera',mrriviera)}>
           <div className="event-card">
             <img src={mrriviera} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -91,7 +98,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('badminton')}>
+        <div className="item" onClick={()=>this.fetchSports('badminton',badminton)}>
           <div className="event-card">
             <img src={badminton} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -102,7 +109,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('tennis')}>
+        <div className="item" onClick={()=>this.fetchSports('tennis',tennis)}>
           <div className="event-card">
             <img src={tennis} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -113,7 +120,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('tabletennis')}>
+        <div className="item" onClick={()=>this.fetchSports('tabletennis',tt)}>
           <div className="event-card">
             <img src={tt} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -124,7 +131,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('chess')}>
+        <div className="item" onClick={()=>this.fetchSports('chess',chess)}>
           <div className="event-card">
             <img src={chess} className="event-card-img"/>
                   <div className='overlay-layer'></div>
@@ -135,7 +142,7 @@ class Categories extends React.Component {
           </div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.fetchSports('snooker')}>
+        <div className="item" onClick={()=>this.fetchSports('snooker',snooker)}>
             <div className="event-card">
               <img src={snooker} className="event-card-img"/>
                     <div className='overlay-layer'></div>
@@ -146,7 +153,7 @@ class Categories extends React.Component {
                 </div>
             </div>
         </div>
-          <div className="item" onClick={()=>this.fetchSports('throwball')}>
+          <div className="item" onClick={()=>this.fetchSports('throwball',throwball)}>
               <div className="event-card">
                 <img src={throwball} className="event-card-img"/>
                       <div className='overlay-layer'></div>
@@ -157,7 +164,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.fetchSports('basketball')}>
+          <div className="item" onClick={()=>this.fetchSports('basketball',basketball)}>
               <div className="event-card">
                 <img src={basketball} className="event-card-img"/>
                       <div className='overlay-layer'></div>
@@ -168,7 +175,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.fetchSports('volleyball')}>
+          <div className="item" onClick={()=>this.fetchSports('volleyball',volleyball)}>
               <div className="event-card">
                 <img src={volleyball} className="event-card-img"/>
                       <div className='overlay-layer'></div>
@@ -179,7 +186,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.fetchSports('handball')}>
+          <div className="item" onClick={()=>this.fetchSports('handball',handball)}>
               <div className="event-card">
                 <img src={handball} className="event-card-img"/>
                       <div className='overlay-layer'></div>
@@ -190,7 +197,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.fetchSports('hockey')}>
+          <div className="item" onClick={()=>this.fetchSports('hockey',hockey)}>
               <div className="event-card">
                 <img src={hockey} className="event-card-img"/>
                       <div className='overlay-layer'></div>
@@ -201,7 +208,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.fetchSports('cricket')}>
+          <div className="item" onClick={()=>this.fetchSports('cricket',cricket)}>
               <div className="event-card">
                 <img src={cricket} className="event-card-img"/>
                       <div className='overlay-layer'></div>
@@ -212,7 +219,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.fetchSports('football')}>
+          <div className="item" onClick={()=>this.fetchSports('football',football)}>
               <div className="event-card">
                 <img src={football} className="event-card-img"/>
                       <div className='overlay-layer'></div>

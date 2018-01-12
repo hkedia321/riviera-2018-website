@@ -43,6 +43,28 @@ class Sponsors extends React.Component{
         <div className="below-header-content">
           <Grid fluid>
             <br/><br/><br/><br/>
+                <Row>
+                  <Col xs={12} md={12} lg={10} lgOffset={1}>
+                    <Fade delay={200}>
+                      <Card className="contact-card hvr-underline-reveal reveal-green" style={{background:'#232323',color:'#fff'}}>
+                        <CardText
+                          color='#fff'
+                          style={{textAlign:'center'}}
+                          >
+                            <h1 className="center card-heading">Title Sponsor</h1>
+                            <hr className="zigzag mini"/>
+                            <Row>
+                              <Col xs={12} md={12}>
+                                <Fade delay={300}>
+                                  <img src={title} className="sponsor-img"/>
+                                </Fade>
+                              </Col>
+                            </Row>
+                          </CardText>
+                        </Card>
+                    </Fade>
+                  </Col>
+                </Row>
                 <br/><br/><br/><br/>
                 <Row>
                   <Col xs={12} md={12} lg={10} lgOffset={1}>
@@ -52,14 +74,10 @@ class Sponsors extends React.Component{
                         color='#fff'
                         style={{textAlign:'center'}}
                         >
-                          <h1 className="center card-heading">Other Sponsors</h1>
+                          <h1 className="center card-heading">Previous Sponsors</h1>
                           <hr className="zigzag mini"/>
                           <Row>
-                            <Col xs={12} md={4}>
-                              <Fade delay={300}>
-                                <img src={title} className="sponsor-img"/>
-                              </Fade>
-                            </Col>
+                            
                             <Col xs={12} md={4}>
                               <Fade delay={300}>
                                 <img src={cosponsor} className="sponsor-img"/>

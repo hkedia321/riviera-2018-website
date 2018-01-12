@@ -11,6 +11,7 @@ import * as actions from './../actions';
 import {Helmet} from 'react-helmet'
 import Footer from './Home/Footer';
 
+
 import axios from 'axios'
 
 class Events extends React.Component{
@@ -18,14 +19,17 @@ class Events extends React.Component{
       events:[],
       loading:false,
       event_category:'',
-      redirectToEvent:false
+      redirectToEvent:false,
+      backgroundImage:'../../images/events-bg.jpg'
     }
     componentDidMount(){
-      this.fetchEvents('adventure%20sports')
+      
     }
-    fetchEvents=(category)=>{
+    fetchEvents=(category,image)=>{
+      console.log(image)
       this.setState({
-        loading:true
+        loading:true,
+        backgroundImage:image
       })
       axios({
         method:'get',
@@ -57,7 +61,10 @@ class Events extends React.Component{
                 </Helmet>
                 <Navbar fontColor='#fff'/>
                 {/* Top Portion with cards */}
-                <Categories fetchEvents={this.fetchEvents}/>
+                <Categories
+                  fetchEvents={this.fetchEvents}
+                  backgroundImage={this.state.backgroundImage}
+                />
 
                 {/* List of Events */}
                 <EventsList

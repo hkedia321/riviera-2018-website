@@ -29,6 +29,9 @@ class Categories extends React.Component {
     state={
         phenomenonOpacity:1
     }
+    componentDidMount(){
+      this.props.fetchEvents('adventure%20sports',sports)
+    }
     managePhenomenon(e){
         const scrollPosition=document.getElementById('featured').scrollLeft
         const magnitude=100-scrollPosition
@@ -49,82 +52,93 @@ class Categories extends React.Component {
       })
     }
   render(){
-        console.log('Opacity',this.state.phenomenonOpacity)
+    console.log('Opacity',this.state.phenomenonOpacity)
+    const bgImage=''
+    // if(this.props.backgroundImage!==''){
+    //   bgImage={backgroundImage:`url(${this.props.backgroundImage})`,backgroundSize:'cover'}
+    // }
+    // else{
+    //   bgImage=''
+    // }
     return(
-      <div className='featured-container event-categories' onScroll={(e)=>{this.managePhenomenon(e)}} id="featured">
+      <div className='featured-container event-categories'
+        onScroll={(e)=>{this.managePhenomenon(e)}}
+        id="featured"
+        style={{backgroundImage:`url(${this.props.backgroundImage})`,backgroundSize:'cover'}}
+        >
           <div className="overlay"></div>
         <div className="arrow event-category-arrow left" onClick={()=>{this.scrollRight()}}><FontAwesome name="chevron-left"/></div>
-        <div className="item" onClick={()=>this.props.fetchEvents('adventure%20sports')}>
+        <div className="item" onClick={()=>this.props.fetchEvents('adventure%20sports',sports)}>
         <div className="event-card">
             <img src={sports} className="event-card-img"/>
             <div className='overlay-layer'></div>
             <div className='category-title'>Adventure Sports</div>
       </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('cyber%20engage')}>
+        <div className="item" onClick={()=>this.props.fetchEvents('cyber%20engage',cyber)}>
         <div className="event-card">
             <img src={cyber} className="event-card-img"/>
             <div className='overlay-layer'></div>
             <div className='category-title'>Cyber Engage</div>
       </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('dance')}>
+        <div className="item" onClick={()=>this.props.fetchEvents('dance',dance)}>
         <div className="event-card">
             <img src={dance} className="event-card-img"/>
             <div className='overlay-layer'></div>
             <div className='category-title'>Dance</div>
       </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('drama')}>
+        <div className="item" onClick={()=>this.props.fetchEvents('drama',drama)}>
           <div className="event-card">
               <img src={drama} className="event-card-img"/>
               <div className='overlay-layer'></div>
               <div className='category-title'>Drama</div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('informals')}>
+        <div className="item" onClick={()=>this.props.fetchEvents('informals',informals)}>
           <div className="event-card">
               <img src={informals} className="event-card-img"/>
               <div className='overlay-layer'></div>
               <div className='category-title'>Informals</div>
         </div>
         </div>
-        <div className="item" onClick={()=>this.props.fetchEvents('music')}>
+        <div className="item" onClick={()=>this.props.fetchEvents('music',music)}>
           <div className="event-card">
               <img src={music} className="event-card-img"/>
               <div className='overlay-layer'></div>
               <div className='category-title'>Music</div>
         </div>
         </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('pre_riviera')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('pre_riviera',pre)}>
             <div className="event-card">
                 <img src={pre} className="event-card-img"/>
                 <div className='overlay-layer'></div>
                 <div className='category-title'>Pre-Riviera</div>
           </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('premium')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('premium',premium)}>
             <div className="event-card">
                 <img src={premium} className="event-card-img"/>
                 <div className='overlay-layer'></div>
                 <div className='category-title'>Premium</div>
           </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('quiz%20events')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('quiz%20events',quiz)}>
             <div className="event-card">
                 <img src={quiz} className="event-card-img"/>
                 <div className='overlay-layer'></div>
                 <div className='category-title'>Quiz Events</div>
           </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20english')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20english',english)}>
               <div className="event-card">
                   <img src={english} className="event-card-img"/>
                   <div className='overlay-layer'></div>
                   <div className='category-title'>Words with English</div>
             </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20hindi')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20hindi',hindi)}>
               <div className="event-card">
                 <img src={hindi} className="event-card-img"/>
                 <div className='overlay-layer'></div>
@@ -133,7 +147,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20telegu')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('words%20with%20telegu',telugu)}>
               <div className="event-card">
                 <img src={telugu} className="event-card-img"/>
                 <div className='overlay-layer'></div>
@@ -142,7 +156,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('wordswithtamil')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('wordswithtamil',tamil)}>
               <div className="event-card">
                 <img src={tamil} className="event-card-img"/>
                 <div className='overlay-layer'></div>
@@ -151,7 +165,7 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
-          <div className="item" onClick={()=>this.props.fetchEvents('workshop')}>
+          <div className="item" onClick={()=>this.props.fetchEvents('workshop',workshop)}>
               <div className="event-card">
                 <img src={workshop} className="event-card-img"/>
                 <div className='overlay-layer'></div>

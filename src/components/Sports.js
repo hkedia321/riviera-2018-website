@@ -11,10 +11,15 @@ class Events extends React.Component{
       events:[],
       sports_categories:[],
       redirectToEvent:false,
-      sport:"general"
+      sport:"general",
+      backgroundImage:''
     }
-    fetchSports = (sport)=>{
-        this.setState({sport});
+    fetchSports = (sport,backgroundImage)=>{
+        console.log(backgroundImage)
+        this.setState({
+          sport,
+          backgroundImage
+        });
     }
     render(){
         const {sport} = this.state;
@@ -26,7 +31,10 @@ class Events extends React.Component{
                 </Helmet>
                 <Navbar fontColor='#fff'/>
                 {/* Top Portion with cards */}
-                <Categories fetchSports={this.fetchSports}/>
+                <Categories
+                  fetchSports={this.fetchSports}
+                  backgroundImage={this.state.backgroundImage}
+                />
 
                 {/* List of Events */}
 

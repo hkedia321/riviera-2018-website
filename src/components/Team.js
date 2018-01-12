@@ -135,7 +135,11 @@ class Team extends React.Component{
                     <h1 className="card-heading">Co-Convenors</h1>
                     <hr className="zigzag mini"/>
                     <Row>
-                      <Col xs={12} md={3} className='team-member'>
+                      <Col xs={12} md={1} className='team-member'>
+                        <CardText color='#fff' style={{textAlign:'center'}}>
+                        </CardText>
+                      </Col>
+                      <Col xs={12} md={2} className='team-member'>
                         <CardText color='#fff' style={{textAlign:'center'}}>
 
                           <img src='svg/team/pvg.jpg'/>
@@ -143,14 +147,14 @@ class Team extends React.Component{
                           <h1 className="team-name">Prof. Velmurugan G.</h1>
                         </CardText>
                       </Col>
-                      <Col xs={12} md={3} className='team-member'>
+                      <Col xs={12} md={2} className='team-member'>
                         <CardText color='#fff' style={{textAlign:'center'}}>
-                          <img src='svg/team/deepam.jpg'/>
+                          <img src='svg/team/psr.jpg'/>
                           <br/>
-                          <h1 className="team-name">Prof. Deepa M.</h1>
+                          <h1 className="team-name">Prof. Subashini R.</h1>
                         </CardText>
                       </Col>
-                      <Col xs={12} md={3} className='team-member'>
+                      <Col xs={12} md={2} className='team-member'>
                         <CardText color='#fff' style={{textAlign:'center'}}>
                           <img src='svg/team/psm.jpg'/>
                           <br/>
@@ -158,11 +162,19 @@ class Team extends React.Component{
                         </CardText>
                       </Col>
 
-                      <Col xs={12} md={3} className='team-member'>
+                      <Col xs={12} md={2} className='team-member'>
                         <CardText color='#fff' style={{textAlign:'center'}}>
                           <img src='svg/team/pscv.jpg'/>
                           <br/>
                           <h1 className="team-name">Prof. Sudheer C.V.</h1>
+                        </CardText>
+                      </Col>
+                      <Col xs={12} md={2} className='team-member'>
+                        <CardText color='#fff' style={{textAlign:'center'}}>
+                          {/* FIXME: Get origial image */}
+                          <img src='svg/team/pscv.jpg'/>
+                          <br/>
+                          <h1 className="team-name">Prof. Seenivasan R.</h1>
                         </CardText>
                       </Col>
                     </Row>
