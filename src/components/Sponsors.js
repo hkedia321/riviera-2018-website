@@ -77,7 +77,6 @@ class Sponsors extends React.Component{
                           <h1 className="center card-heading">Previous Sponsors</h1>
                           <hr className="zigzag mini"/>
                           <Row>
-                            
                             <Col xs={12} md={4}>
                               <Fade delay={300}>
                                 <img src={cosponsor} className="sponsor-img"/>
@@ -99,7 +98,6 @@ class Sponsors extends React.Component{
                           </Fade>
                             </Col>
                           </Row>
-
                         </CardText>
                       </Card>
                   </Fade>

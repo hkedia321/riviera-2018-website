@@ -98,6 +98,22 @@ class Contacts extends React.Component{
                                       </Card>
                                     </Fade>
                                   </Col>
+                                  <Col xs={12} md={6} lg={3}>
+                                    <Fade delay={650}>
+                                      <Card className="contact-card hvr-underline-reveal reveal-red" style={{background:'#232323',color:'#fff'}}>
+                                        <CardText
+                                          color="#fff"
+                                          style={{textAlign:'center'}}
+                                          >
+                                            <h1 className="center contactus-card-heading">Sponsorships</h1>
+                                            <hr className="zigzag mini"/>
+                                            <h3 className="contact-name">Abhijit Singh</h3>
+                                            <h4 className="contact-mobile"><FontAwesome name='phone'/><a href="tel:8369078879">8369078879</a></h4>
+                                            <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:sponsorship.riviera@vit.ac.in">sponsorship.riviera@vit.ac.in</a></h4>
+                                          </CardText>
+                                      </Card>
+                                    </Fade>
+                                  </Col>
                     </Row>
                 </Grid>
             )
