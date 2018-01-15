@@ -37,6 +37,7 @@ import shylendarg from '../images/student-members/22.jpg';
 import kiranjomy from '../images/student-members/23.jpg';
 import abhijitsingh from '../images/student-members/24.jpg';
 import tanmaykalra from '../images/student-members/25.jpg';
+import shuffle from 'shuffle-array';
 
 class Team extends React.Component{
   state={
@@ -142,6 +143,11 @@ class Team extends React.Component{
         image:tanmaykalra
       }
     ]
+  }
+  componentDidMount(){
+    this.setState({
+      students:shuffle(this.state.students)
+    })
   }
   render(){
     return(

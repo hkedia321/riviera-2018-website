@@ -31,6 +31,7 @@
     "redux-form": "^6.7.0",
     "redux-form-material-ui": "^4.2.0",
     "redux-thunk": "^2.2.0",
+    "shuffle-array": "^1.0.1",
     "sort-by": "^1.2.0",
     "whatwg-fetch": "^2.0.3"
   },
