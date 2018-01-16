@@ -146,7 +146,10 @@ class Team extends React.Component{
   }
   componentDidMount(){
     this.setState({
-      students:shuffle(this.state.students)
+      students:this.state.students.sort((a,b)=>{
+        if(a.name<b.name) return -1
+        if(a.name>b.name) return 1
+      })
     })
   }
   render(){

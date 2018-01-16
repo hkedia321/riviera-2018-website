@@ -62,7 +62,7 @@ class Categories extends React.Component {
     // }
     return(
       <div className='featured-container event-categories'
-        onScroll={(e)=>{this.managePhenomenon(e)}}
+        onScroll={(e)=>{}}
         id="featured"
         style={{backgroundImage:`url(${this.props.backgroundImage})`,backgroundSize:'cover'}}
         >
