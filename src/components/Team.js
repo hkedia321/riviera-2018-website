@@ -324,7 +324,7 @@ class Team extends React.Component{
               <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
                 <Fade delay={100}>
                   <Card className="contact-card hvr-underline-reveal reveal-red center text-white" style={{background:'#232323'}}>
-                    <h1 className="card-heading">Student Convenors</h1>
+                    <h1 className="card-heading">Student Organizers</h1>
                     <hr className="zigzag mini"/>
                     <Row>
                       {this.state.students.map((student)=>(

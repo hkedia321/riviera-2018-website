@@ -100,11 +100,14 @@ class EventsList extends React.Component {
                           label={`${event['Reg fees After GST']}/ ${event['Team Event (yes/no)']=='yes'?'team':'person'}`}
                           labelStyle={{color:'#fff'}}
                         />
+                        {this.props.event_category==='PREMIUM'
+                        &&
                         <FlatButton disabled
                           label={`Prize: ${event['Prize Money']}`}
                           icon={<FontAwesome name='rupee' style={{color:'#fff'}}/>}
                           labelStyle={{color:'#fff'}}
                         />
+                        }
                         {/* <Link to={`/event/${this.props.event_category}/${event['EVENT NAME']}`}><FlatButton label='View and Share' className="event-card-view-button" labelStyle={{color:'#fff'}} fullWidth={true}/></Link> */}
                       </CardActions>
                     </Card></Link>
