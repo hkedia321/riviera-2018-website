@@ -74,16 +74,18 @@ class SingleEvent extends Component {
                                             <Row>
                                                 <Col xs={12} md={6}>
                                                     <Row>
+				                                              {this.props.event_category==='PREMIUM'&&
+                                                        <div>
                                                         <Col xs={3} md={2}>
                                                             <img src={medal23} alt="medal" className="prize-medal"/>
                                                         </Col>
-                                                        {this.props.event_category==='PREMIUM'&&
                                                         <Col xs={9} md={10}>
                                                             <div className="prize-content-right">
                                                                 <div className="text-light text-bold">Prize Money</div>
                                                                 <div className="text-white text-size-20">Rs. {event['Prize Money']}</div>
                                                             </div>
                                                         </Col>
+                                                        </div>
                                                         }
                                                     </Row>
                                                 </Col>
@@ -136,7 +138,7 @@ class SingleEvent extends Component {
                                         </Col>
                                         <Col xs={12} md={4} style={{borderLeft:"1px solid #323232",padding:"0"}}>
                                             <div className="event-register-div">
-                                                <RaisedButton label="Register" labelStyle={{fontWeight:"bold"}} className="background-white event-register-button text-bold" />
+                                                <a href='https://vtop9.vit.ac.in/riviera/' target="_blank"><RaisedButton label="Register" labelStyle={{fontWeight:"bold"}} className="background-white event-register-button text-bold" /></a>
                                             </div>
                                             <div className="event-right-details">
                                                 <div className="event-right-detail-item">
@@ -196,4 +198,10 @@ function mapStateToProps(state){
     };
 }
 
-export default connect(mapStateToProps,actions)(SingleEvent);
+export default connect(mapStateToProps,actions)(SingleEvent)
+
+/*
+  1. Social Login
+  2. Taxes
+  3. Search for Restaurant.
+*/
