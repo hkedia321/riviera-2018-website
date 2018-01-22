@@ -91,7 +91,7 @@ handleClick = () =>{
             <NavLink to="/events"><span className="main-nav-item">Events</span></NavLink>
             <NavLink to="/sports"><span className="main-nav-item">Sports</span></NavLink>
             {/* <NavLink to="/schedule"><span className="main-nav-item">Schedule</span></NavLink> */}
-            {/* <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink> */}
+            <NavLink to="/proshows"><span className="main-nav-item" >Proshows</span></NavLink>
             <NavLink to="/campus-ambassador"><span className="main-nav-item">Campus Ambassador</span></NavLink>
             <NavLink to="/sponsors"><span className="main-nav-item">Sponsors</span></NavLink>
             {/* <NavLink to="/team"><span className="main-nav-item">Team</span></NavLink> */}
@@ -115,7 +115,7 @@ handleClick = () =>{
               <NavLink to="/events"><span className={`main-nav-item ${this.state.currentPath==="/events"?'active-mobile-nav':''}`}>Events</span></NavLink>
               <NavLink to="/sports"><span className={`main-nav-item ${this.state.currentPath==="/sports"?'active-mobile-nav':''}`}>Sports</span></NavLink>
               {/* <NavLink to="/schedule"><span className={main-nav-item` ${}this.state.active.event?'active}:'Schedule</span></NavLink> */}
-              {/* <NavLink to="/proshows"><span className={main-nav-item` ${}this.state.active.event?'active}:'>Proshows</span></NavLink> */}
+              <NavLink to="/proshows"><span className={`main-nav-item ${this.state.active.proshows?'active':''}`}>Proshows</span></NavLink>
               <NavLink to="/campus-ambassador"><span className={`main-nav-item ${this.state.active.campus?'active':''}`}>Campus Ambassador</span></NavLink>
               <NavLink to="/sponsors"><span className={`main-nav-item ${this.state.active.sponsors?'active':''}`}>Sponsors</span></NavLink>
               {/* <NavLink to="/team"><span className={`main-nav-item${this.state.active.team?'active':''}`}>Team</span></NavLink> */}

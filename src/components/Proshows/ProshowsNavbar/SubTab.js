@@ -12,7 +12,7 @@ import classNames from 'classnames';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import './proshows-navbar.css';
-class ProshowsNavbar extends Component {
+class SubTab extends Component {
     constructor(props) {
         super(props);
 
@@ -35,28 +35,17 @@ class ProshowsNavbar extends Component {
             "proshows-nav-item":true,
             "proshows-nav-item-active":item===3
         });
-        const class4=classNames({
-            "proshows-nav-item":true,
-            "proshows-nav-item-active":item===4
-        });
         return (
-            <div className="proshows-navbar-component">
-                <br/><br/>
-                <Link to='/'>
-                  <RaisedButton primary={true} style={{backgroundColor:"rgba(0,0,0,0)",float:"right"}} label="Go back" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
-                </Link>
+            <div className="proshows-navbar-component center">
                 <br/><br/>
                 <span className={class1} onClick={()=>this.handleTabChange(1)}>
-                    Day 1
+                    Artist 1
                 </span>
                 <span className={class2} onClick={()=>this.handleTabChange(2)}>
-                    Day 2
+                    Artist 2
                 </span>
                 <span className={class3} onClick={()=>this.handleTabChange(3)}>
-                    Day 3
-                </span>
-                <span className={class4} onClick={()=>this.handleTabChange(4)}>
-                    Day 4
+                    Artist 3
                 </span>
             </div>
         );
@@ -69,4 +58,4 @@ function mapStateToProps(state){
     };
 }
 
-export default connect(mapStateToProps,actions)(ProshowsNavbar);
+export default connect(mapStateToProps,actions)(SubTab);

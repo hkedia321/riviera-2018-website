@@ -1,35 +1,39 @@
 .rajat-button{
-      width:150px;
-      height: 50px;
-      background-color: #2297c2;
-      text-align: center;
-      display: inline-block;
-      transition: background-color 0.2s;
-      -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
-      clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
-      padding: 10px;
-      transition: all 0.5s;
-    }
-    .rajat-button-orange{
-        background-color: #ED994E;
-    }
-    .rajat-button:hover{
-      background-color: white;
-      cursor: pointer;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      padding-top: 15px;
-      padding-bottom: 0px;
-      transition: all 0.5s;
-      margin-bottom: 5px;
-    }
-    .rajat-button:hover > span{
-      color: #2297c2;
-    }
-    .rajat-button span{
-      color: white;
-      transition: color 0.2s;
-      line-height: 40px;
-    }
-    .rajat-button-orange:hover >span{
-        color:#ED994E !important;
-    }
+    width:150px;
+    height: 50px;
+    background-color: #2297c2;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.2s;
+    -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 13% 69%);
+    padding: 10px;
+    transition: all 0.5s;
+}
+.rajat-button-orange{
+    background-color: #ED994E;
+}
+.rajat-button:hover{
+    background-color: white;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    padding-top: 15px;
+    padding-bottom: 0px;
+    transition: all 0.5s;
+    margin-bottom: 0px;
+}
+.rajat-button:hover > span{
+    color: #2297c2;
+}
+.rajat-button span{
+    color: white;
+    transition: color 0.2s;
+    line-height: 40px;
+}
+.rajat-button-orange:hover >span{
+    color:#ED994E !important;
+}
+
+
+.proshows-button{
+}
