@@ -39,13 +39,13 @@ class SubTab extends Component {
             <div className="proshows-navbar-component center">
                 <br/><br/>
                 <span className={class1} onClick={()=>this.handleTabChange(1)}>
-                    Artist 1
+                    Shirley Setia
                 </span>
                 <span className={class2} onClick={()=>this.handleTabChange(2)}>
-                    Artist 2
+                    Saindhavi
                 </span>
                 <span className={class3} onClick={()=>this.handleTabChange(3)}>
-                    Artist 3
+                    Vijay Prakash
                 </span>
             </div>
         );

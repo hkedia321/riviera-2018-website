@@ -170,7 +170,6 @@ class SingleEvent extends Component {
                                                     <div className="item-right-detail text-bold">
                                                       <a style={{fontSize:'24px',padding:'10px'}} href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}><FontAwesome className="fa facebook-fa" name='facebook'/></a>
                                                       <a style={{fontSize:'24px',padding:'10px'}} href={`https://twitter.com/home?status=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`}><FontAwesome  className="fa twitter-fa" name='twitter'/></a>
-
                                                       <a style={{fontSize:'24px',padding:'10px'}} href={`whatsapp://send?text=Check%20out%20${event['EVENT NAME']}%20in%20Riviera%20at%20${encodeURIComponent(window.location.href)}`} data-action="share/whatsapp/share"><FontAwesome  className="fa whatsapp-fa" name='whatsapp'/></a>
                                                     </div>
                                                 </div>
