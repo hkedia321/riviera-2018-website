@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.09a2bbd1.css",
   "main.css.map": "static/css/main.09a2bbd1.css.map",
-  "main.js": "static/js/main.397eedfc.js",
-  "main.js.map": "static/js/main.397eedfc.js.map",
+  "main.js": "static/js/main.d95fa4c3.js",
+  "main.js.map": "static/js/main.d95fa4c3.js.map",
   "static/media/1.jpg": "static/media/1.c40201b5.jpg",
   "static/media/10.jpg": "static/media/10.0d6893a6.jpg",
   "static/media/11.jpg": "static/media/11.49f87375.jpg",
@@ -44,12 +44,14 @@
   "static/media/events-bg.jpg": "static/media/events-bg.78407c67.jpg",
   "static/media/events.jpg": "static/media/events.388001bf.jpg",
   "static/media/football.jpg": "static/media/football.058aa464.jpg",
+  "static/media/futsal.jpg": "static/media/futsal.0f04c127.jpg",
   "static/media/handball.jpg": "static/media/handball.16dd61ce.jpg",
   "static/media/header-bg.jpeg": "static/media/header-bg.bcdac453.jpeg",
   "static/media/hindi.jpg": "static/media/hindi.2efa37d5.jpg",
   "static/media/hockey.jpg": "static/media/hockey.a4fce169.jpg",
   "static/media/humanbowling.jpg": "static/media/humanbowling.848471d7.jpg",
   "static/media/informal.jpg": "static/media/informal.987b9513.jpg",
+  "static/media/men-athletic.jpg": "static/media/men-athletic.b3efb198.jpg",
   "static/media/mrriviera.jpg": "static/media/mrriviera.0b215ff5.jpg",
   "static/media/music.jpg": "static/media/music.d6b86159.jpg",
   "static/media/pre.jpg": "static/media/pre.17254662.jpg",
@@ -74,6 +76,7 @@
   "static/media/tt.jpg": "static/media/tt.45a2159e.jpg",
   "static/media/vijay.jpg": "static/media/vijay.bfc39951.jpg",
   "static/media/volleyball.jpg": "static/media/volleyball.b2cafd4a.jpg",
+  "static/media/women-athletic.jpg": "static/media/women-athletic.36b612df.jpg",
   "static/media/workshop.jpg": "static/media/workshop.e3813d6b.jpg",
   "static/media/zaden.jpg": "static/media/zaden.58579659.jpg"
 }
