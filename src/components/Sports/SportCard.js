@@ -287,6 +287,78 @@ class SportCard extends React.Component {
             </ul>
             </div>;
         }
+        else if(sport==="futsal"){
+          title="Futsal"
+          subtitle="Women Only"
+          content=<div className="sport-card-content">
+            <div style={{textAlign:'center'}}>
+              <b>Date: 10th February</b>
+            </div>
+              <b>Rules and Regulations:</b>
+              <ul>
+                <li> From one college, Minimum 5 and maximum 9 participants from each team.</li>
+              <li>
+              Registration fee for a team is <FontAwesome name='rupee' style={{color:'#fff'}}/>2000/- (inclusive of GST).
+            </li>
+          </ul>
+          </div>;
+        }
+        else if(sport==="menAthletic"){
+          title="Men's Athletics"
+          subtitle="Men Only"
+          content=<div className="sport-card-content">
+            <div style={{textAlign:'center'}}>
+              <b>Date: 6th February</b>
+            </div>
+              <b>There are 8 categories available</b>
+              <ol>
+                <li>100m</li>
+                <li>200m</li>
+                <li>400m</li>
+                <li>1500m</li>
+                <li>Shot put</li>
+                <li>Long jump</li>
+                <li>Discuss throw</li>
+                <li>Triple jump</li>
+              </ol>
+              <b>Rules and Regulations:</b>
+              <ul>
+                <li>From one college, Only 2 participants can participate in one event.</li>
+                <li>One participant can participate in maximum 3 events</li>
+                <li>It is an individual event</li>
+              <li>
+              Registration fee is <FontAwesome name='rupee' style={{color:'#fff'}}/>250/- (inclusive of GST).
+            </li>
+          </ul>
+          </div>;
+        }
+        else if(sport==="womenAthletic"){
+          title="Women's Athletics"
+          content=<div className="sport-card-content">
+            <div style={{textAlign:'center'}}>
+              <b>Date: 6th February</b>
+            </div>
+              <b>There are 6 categories available</b>
+              <ol>
+                <li>100m</li>
+                <li>200m</li>
+                <li>400m</li>
+                <li>800m</li>
+                <li>Shot put</li>
+                <li>Long jump</li>
+              </ol>
+              <b>Rules and Regulations:</b>
+              <ul>
+                <li>From one college, Only 2 participants can participate in one event.</li>
+                <li>One participant can participate in maximum 3 events</li>
+                <li>It is an individual event</li>
+              <li>
+              Registration fee is <FontAwesome name='rupee' style={{color:'#fff'}}/>250/- (inclusive of GST).
+            </li>
+          </ul>
+          </div>;
+        }
+
         return(
             <div className='events-list'>
 

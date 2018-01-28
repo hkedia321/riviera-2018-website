@@ -93,7 +93,7 @@ class Contacts extends React.Component{
                                             <br/>
                                             <h3 className="contact-name">V.Jayapriya</h3>
                                             <h4 className="contact-mobile"><FontAwesome name='phone'/> 8056116662</h4>
-                                              <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:gc.riviera1@vit.ac.in" target="_blank">gc.riviera1@vit.ac.in</a></h4>
+                                              <h4 className="contact-email"><FontAwesome name='envelope'/> <a href="mailto:gc.riviera@vit.ac.in" target="_blank">gc.riviera@vit.ac.in</a></h4>
                                           </CardText>
                                       </Card>
                                     </Fade>

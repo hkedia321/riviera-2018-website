@@ -15,6 +15,9 @@ import tt from './../../images/sports-cards/tt.jpg';
 import volleyball from './../../images/sports-cards/volleyball.jpg';
 import mrriviera from './../../images/sports-cards/mrriviera.jpg';
 import general from './../../images/sports-cards/general.jpg';
+import futsal from './../../images/sports-cards/futsal.jpg';
+import menAthletic from './../../images/sports-cards/men-athletic.jpg';
+import womenAthletic from './../../images/sports-cards/women-athletic.jpg'
 
 const styles={
   featuredContainer:{
@@ -230,6 +233,39 @@ class Categories extends React.Component {
                   </div>
               </div>
           </div>
+          <div className="item" onClick={()=>this.fetchSports('futsal',futsal)}>
+            <div className="event-card">
+              <img src={futsal} className="event-card-img"/>
+                    <div className='overlay-layer'></div>
+                <div className="category-title">
+                    Futsal
+                    <br/>
+                    <span className="category-subtitle">(Women only)</span>
+                </div>
+            </div>
+          </div>
+          <div className="item" onClick={()=>this.fetchSports('menAthletic',menAthletic)}>
+            <div className="event-card">
+              <img src={menAthletic} className="event-card-img"/>
+                    <div className='overlay-layer'></div>
+                <div className="category-title">
+                    Men's Athletics
+                    <br/>
+                    <span className="category-subtitle">(Men only)</span>
+                </div>
+            </div>
+          </div>
+          <div className="item" onClick={()=>this.fetchSports('womenAthletic',womenAthletic)}>
+            <div className="event-card">
+              <img src={womenAthletic} className="event-card-img"/>
+                    <div className='overlay-layer'></div>
+                <div className="category-title">
+                    Women's Athletics
+                    <br/>
+                    <span className="category-subtitle">(Women only)</span>
+                </div>
+            </div>
+          </div>
           <div className="arrow event-category-arrow right" onClick={()=>{this.scrollLeft()}}><FontAwesome name="chevron-right"/></div>
         <div>
         </div>
@@ -239,3 +275,9 @@ class Categories extends React.Component {
 }
 
 export default Categories
+
+
+// Add Athletics and Futsal
+// Add a Screenshot of Sponsors from the Brochure. (in previous sponsors)
+
+// Proshows to Single Page. scrolling
