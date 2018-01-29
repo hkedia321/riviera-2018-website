@@ -150,6 +150,10 @@ class SingleEvent extends Component {
                                                     <div className="item-right-detail text-bold">{event['Team Event (yes/no)']}</div>
                                                 </div>
                                                 <div className="event-right-detail-item">
+                                                  <span className="text-light text-bold item-right-tag">Remark</span>
+                                                  <div className="item-right-detail text-bold">{event['remark']}</div>
+                                                </div>
+                                                <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Co-Ordinator 1</span>
                                                     <div className="item-right-detail text-bold">{event['COORDINATOR 1']}</div>
                                                 </div>
