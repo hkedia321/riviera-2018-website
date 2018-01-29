@@ -19,6 +19,8 @@ import other1 from './../images/sponsors/maruti-suzuki.png';
 import other2 from './../images/sponsors/cognizant.png';
 import other3 from './../images/sponsors/talent.png';
 import './sponsors.css';
+import sponsors1 from './../images/sponsors-1.png'
+import sponsors2 from './../images/sponsors-2.png'
 
 class Sponsors extends React.Component{
   state={
@@ -92,10 +94,16 @@ class Sponsors extends React.Component{
                               <img src={other2} className="sponsor-img"/>
                           </Fade>
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={12}>
                                  <Fade delay={600}>
                               <img src={other3} className="sponsor-img"/>
                           </Fade>
+                            </Col>
+                            <Col xs={12} md={12}>
+                                <img src={sponsors1} style={{width:'100%'}}/>
+                            </Col>
+                            <Col xs={12} md={12}>
+                                <img src={sponsors2} style={{width:'100%'}}/>
                             </Col>
                           </Row>
                         </CardText>
