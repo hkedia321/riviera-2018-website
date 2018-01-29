@@ -69,26 +69,27 @@ class SingleEvent extends Component {
                                             <div className="text-light text-bold">Organizer</div>
                                             <div className="">{event['CLUB NAME']}</div>
                                             <br/><br/>
-                                            <div className="text-light text-bold">Prizes</div>
+                                            {/*<div className="text-light text-bold">Prizes</div>*/}
                                             <br/>
+
                                             <Row>
-                                                <Col xs={12} md={6}>
-                                                    <Row>
-				                                              {this.props.event_category==='PREMIUM'&&
-                                                        <div>
-                                                        <Col xs={3} md={2}>
-                                                            <img src={medal23} alt="medal" className="prize-medal"/>
-                                                        </Col>
-                                                        <Col xs={9} md={10}>
-                                                            <div className="prize-content-right">
-                                                                <div className="text-light text-bold">Prize Money</div>
-                                                                <div className="text-white text-size-20">Rs. {event['Prize Money']}</div>
-                                                            </div>
-                                                        </Col>
-                                                        </div>
-                                                        }
-                                                    </Row>
-                                                </Col>
+                                                {/*<Col xs={12} md={6}>*/}
+                                                    {/*<Row>*/}
+				                                              {/*{this.props.event_category==='PREMIUM'&&*/}
+                                                        {/*<div>*/}
+                                                        {/*<Col xs={3} md={2}>*/}
+                                                            {/*<img src={medal23} alt="medal" className="prize-medal"/>*/}
+                                                        {/*</Col>*/}
+                                                        {/*<Col xs={9} md={10}>*/}
+                                                            {/*<div className="prize-content-right">*/}
+                                                                {/*<div className="text-light text-bold">Prize Money</div>*/}
+                                                                {/*<div className="text-white text-size-20">Rs. {event['Prize Money']}</div>*/}
+                                                            {/*</div>*/}
+                                                        {/*</Col>*/}
+                                                        {/*</div>*/}
+                                                        {/*}*/}
+                                                    {/*</Row>*/}
+                                                {/*</Col>*/}
                                                 {/* <Col xs={12} md={6}>
                                                     <Row>
                                                         <Col xs={3} md={2}>
