@@ -22,6 +22,8 @@
     "react-fullpage": "^0.1.18",
     "react-google-maps": "^9.4.3",
     "react-helmet": "^5.2.0",
+    "react-mfb": "^0.6.0",
+    "react-pdf-js": "^3.0.4",
     "react-redux": "^5.0.5",
     "react-reveal": "^0.7.3",
     "react-router": "^2.0.0",

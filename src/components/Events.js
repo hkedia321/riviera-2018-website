@@ -10,6 +10,9 @@ import { connect } from 'react-redux';
 import * as actions from './../actions';
 import {Helmet} from 'react-helmet'
 import Footer from './Home/Footer';
+import FloatingActionButton from 'material-ui/FloatingActionButton'
+import ContentAdd from 'material-ui/svg-icons/action/help'
+import PDF from 'react-pdf-js'
 
 
 import axios from 'axios'
@@ -21,9 +24,6 @@ class Events extends React.Component{
       event_category:'',
       redirectToEvent:false,
       backgroundImage:'../../images/events-bg.jpg'
-    }
-    componentDidMount(){
-      
     }
     fetchEvents=(category,image)=>{
       console.log(image)
@@ -54,8 +54,29 @@ class Events extends React.Component{
     }
 
     render(){
+        const style={
+          position:'fixed',
+          bottom:'10px',
+          right:'20px',
+          zIndex:10
+        }
+        let pagination = null;
+        if (this.state.pages) {
+          pagination = this.renderPagination(this.state.page, this.state.pages);
+        }
+
         return(
             <div className="events">
+              <a href="https://drive.google.com/file/d/0B_vwzr8jXSpyTHIzTGdNWEVhczBvdkRleVFZOTFJbzB3Mmhz/view?usp=sharing" target='_blank'>
+                <FloatingActionButton
+                  style={style}
+                  onClick={()=>{
+
+                  }}
+                  >
+                  <ContentAdd />
+                </FloatingActionButton>
+              </a>
                 <Helmet>
                   <title>Events - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
                 </Helmet>
