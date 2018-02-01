@@ -46,18 +46,18 @@ class ProshowsNavbar extends Component {
                   <RaisedButton primary={true} style={{backgroundColor:"rgba(0,0,0,0)",float:"right"}} label="Go back" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
                 </Link>
                 <br/><br/>
-                <span className={class1} onClick={()=>this.handleTabChange(1)}>
-                    Day 1
-                </span>
-                <span className={class2} onClick={()=>this.handleTabChange(2)}>
-                    Day 2
-                </span>
-                <span className={class3} onClick={()=>this.handleTabChange(3)}>
-                    Day 3
-                </span>
-                <span className={class4} onClick={()=>this.handleTabChange(4)}>
-                    Day 4
-                </span>
+                {/*<span className={class1} onClick={()=>this.handleTabChange(1)}>*/}
+                    {/*Day 1*/}
+                {/*</span>*/}
+                {/*<span className={class2} onClick={()=>this.handleTabChange(2)}>*/}
+                    {/*Day 2*/}
+                {/*</span>*/}
+                {/*<span className={class3} onClick={()=>this.handleTabChange(3)}>*/}
+                    {/*Day 3*/}
+                {/*</span>*/}
+                {/*<span className={class4} onClick={()=>this.handleTabChange(4)}>*/}
+                    {/*Day 4*/}
+                {/*</span>*/}
             </div>
         );
     }

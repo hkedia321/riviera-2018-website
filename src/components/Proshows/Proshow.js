@@ -45,31 +45,17 @@ class Proshows extends Component {
             <div className="proshows-component">
                 <Grid fluid className="padding-0">
                     <Row>
-                        <Col className="padding-0 hide-on-mobile-only" xs={12} md={6}>
-                            {this.state.currentTab===1 &&
-                                <img src={Badshah} alt="" className="proshow-star-img" />
-                            }
-                            {this.state.currentTab===2 && this.state.subTab===1 &&
-                                <img src={Shirley} alt="" className="proshow-star-img" />
-                            }
-                            {this.state.currentTab===2 && this.state.subTab===2 &&
-                                <img src={Saindhavi} alt="" className="proshow-star-img" />
-                            }
-                            {this.state.currentTab===2 && this.state.subTab===3 &&
-                                <img src={Vijay} alt="" className="proshow-star-img" />
-                            }
-                            {this.state.currentTab===3 &&
-                                <img src={Amit} alt="" className="proshow-star-img" />
-                            }
-                            {this.state.currentTab===4 &&
-                                <img src={Zaeden} alt="" className="proshow-star-img" />
-                            }
-                        </Col>
-                        <Col xs={12} md={6} className="proshow-col">
+                        <Col xs={12} md={12} className="proshow-col">
                             <ProshowsNavbar handleTabChange={this.handleTabChange} tab={this.state.currentTab} />
-                            {this.state.currentTab===1 &&
+                            {true &&
+                                <Row>
+                                <Col md={6} xs={12}>
+                                    <img src={Badshah} alt="" className="proshow-star-img" />
+                                </Col>
+                                <Col md={6} xs={12}>
                                 <div>
                                     <h1 className="proshow-star-name">Badshah</h1>
+                                    <h4>Day 1</h4>
                                     <p className="proshow-para text-white">
                                         Gear up people because <i>"abhi toh party shuru hui hai"</i>.
                                         All of us have tapped our feet to his Punjabi beats.
@@ -82,13 +68,22 @@ class Proshows extends Component {
                                         soundtracks for films such as the 2014 film Humpty Sharma Ki Dulhania, and Sonam Kapoor starrer Khoobsurat.
                                     </p>
                                 </div>
+                                </Col>
+                                </Row>
                             }
-                            {this.state.currentTab===2 &&
+                            {true &&
+                                <Row>
                                 <div>
-                                    <SubTab handleTabChange={this.handleSubTabChange} tab={this.state.subTab}/>
-                                    {this.state.subTab===1 &&
+                                    {/*<SubTab handleTabChange={this.handleSubTabChange} tab={this.state.subTab}/>*/}
+                                    {true &&
+                                        <Row>
+                                        <Col xs={12} md={6}>
+                                            <img src={Shirley} alt="" className="proshow-star-img" />
+                                        </Col>
+                                        <Col xs={12} md={6}>
                                         <div>
                                             <h1 className="proshow-star-name">Shirley Setia</h1>
+                                            <h4>Day 2</h4>
                                             <p className="proshow-para text-white">
                                                 We all have heard her amazing voice and enjoyed her creative mashups.
                                                 Her YouTube channel has over a million subscribers.
@@ -101,10 +96,18 @@ class Proshows extends Component {
                                                 "Bollywood's Next Big Singing Sensation Just Might Be This Tiny Kiwi".
                                             </p>
                                         </div>
+                                        </Col>
+                                        </Row>
                                     }
-                                    {this.state.subTab===2 &&
+                                    {true &&
+                                        <Row>
+                                        <Col xs={12} md={6}>
+                                            <img src={Saindhavi} alt="" className="proshow-star-img" />
+                                        </Col>
+                                        <Col xs={12} md={6}>
                                         <div>
                                             <h1 className="proshow-star-name">Saindhavi</h1>
+                                            <h4>Day 2</h4>
                                             <p className="proshow-para text-white">
                                                 Riviera'18 is going to take us back to our roots with some outstanding classical music.
                                                 And to help us do that we have <b>Saindhavi</b> with her melodious voice and ever so beautiful smile!
@@ -117,53 +120,80 @@ class Proshows extends Component {
                                                 performed in over 1500 concerts all over the world.
                                             </p>
                                         </div>
+                                        </Col>
+                                        </Row>
                                     }
-                                    {this.state.subTab===3 &&
+                                    {true &&
+                                        <Row>
+                                            <Col xs={12} md={6}>
+                                                <img src={Vijay} alt="" className="proshow-star-img" />
+                                            </Col>
+                                            <Col xs={12} md={6}>
+                                                <div>
+                                                    <h1 className="proshow-star-name">Vijay Prakash</h1>
+                                                    <h4>Day 2</h4>
+                                                    <p className="proshow-para text-white">
+                                                        He is an immensely talented singer who has captured the country's attention with his rhythm.
+                                                        He can sing not in one, not in two but in five different languages!
+                                                        Get ready people, because <b>Vijay Prakash</b> is coming to Riviera'18.
+                                                        <br/><br/>
+                                                        Vijay Prakash is an Indian music composer from Mysore, Karnataka. He has also performed in Kannada, Tamil, Telugu, Malayalam and Marathi movies.
+                                                        He is one of the judges for the Kannada reality show Sa Re Ga Ma Pa on Zee Kannada and has also performed shows with Zakir Hussain.
+                                                        He won the Karnataka Government's 'Best Playback Singer' award for the year 2016 for the song 'Nammooralli Chaligaladalli' from the
+                                                        film Beautiful Manasugalu.
+                                                    </p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    }
+                                </div>
+                                </Row>
+                            }
+                            {true &&
+                                <Row>
+                                    <Col xs={12} md={6}>
+                                        <img src={Amit} alt="" className="proshow-star-img" />
+                                    </Col>
+                                    <Col xs={12} md={6}>
                                         <div>
-                                            <h1 className="proshow-star-name">Vijay Prakash</h1>
+                                            <h1 className="proshow-star-name">Amit Trivedi</h1>
+                                            <h2>Day 3</h2>
                                             <p className="proshow-para text-white">
-                                                He is an immensely talented singer who has captured the country's attention with his rhythm.
-                                                He can sing not in one, not in two but in five different languages!
-                                                Get ready people, because <b>Vijay Prakash</b> is coming to Riviera'18.
+                                                He has won our hearts with his beautiful voice and brilliant music compositions. He is one of India's most
+                                                beloved and respected musicians.
+                                                From 'Nayan Taarse' to 'Love You Zindagi', he has done it all.
+                                                Riviera'18 brings to you <b>Amit Trivedi</b>!
                                                 <br/><br/>
-                                                Vijay Prakash is an Indian music composer from Mysore, Karnataka. He has also performed in Kannada, Tamil, Telugu, Malayalam and Marathi movies.
-                                                He is one of the judges for the Kannada reality show Sa Re Ga Ma Pa on Zee Kannada and has also performed shows with Zakir Hussain.
-                                                He won the Karnataka Government's 'Best Playback Singer' award for the year 2016 for the song 'Nammooralli Chaligaladalli' from the
-                                                film Beautiful Manasugalu.
+                                                <b>Amit Trivedi</b> is an Indian film composer, musician, singer and lyricist, working in Bollywood.
+                                                After working as a theatre and jingle composer and composing for non-film albums, he debuted as a film
+                                                composer in the 2008 Hindi film Aamir, and shot to fame in the Hindi film music scene with his critically
+                                                acclaimed work in the more popular Dev.D, which earned him several accolades, including the 2010
+                                                National Film Award for Best Music Direction for Dev.D
                                             </p>
                                         </div>
-                                    }
-                                </div>
+                                    </Col>
+                                </Row>
                             }
-                            {this.state.currentTab===3 &&
-                                <div>
-                                    <h1 className="proshow-star-name">Amit Trivedi</h1>
-                                    <p className="proshow-para text-white">
-                                        He has won our hearts with his beautiful voice and brilliant music compositions. He is one of India's most
-                                        beloved and respected musicians.
-                                        From 'Nayan Taarse' to 'Love You Zindagi', he has done it all.
-                                        Riviera'18 brings to you <b>Amit Trivedi</b>!
-                                        <br/><br/>
-                                        <b>Amit Trivedi</b> is an Indian film composer, musician, singer and lyricist, working in Bollywood.
-                                        After working as a theatre and jingle composer and composing for non-film albums, he debuted as a film
-                                        composer in the 2008 Hindi film Aamir, and shot to fame in the Hindi film music scene with his critically
-                                        acclaimed work in the more popular Dev.D, which earned him several accolades, including the 2010
-                                        National Film Award for Best Music Direction for Dev.D
-                                    </p>
-                                </div>
-                            }
-                            {this.state.currentTab===4 &&
-                                <div>
-                                    <h1 className="proshow-star-name">DJ Zaeden</h1>
-                                    <p className="proshow-para text-white">
-                                        Get set VITians because you wouldn't want the night to end when he starts playing his beats!
-                                        He is one of the most talented DJs that the country has seen so far.
-                                        All praise the lord because <b>DJ Zaeden</b> is on his way to Riviera'18!
-                                        <br/><br/>
-                                        Sahil Sharma, better known by his stage name <b>Zaeden</b>, is an Indian DJ and record producer.
-                                         He is best known for his remixes of Coldplay's Magic, Maroon 5's Animals and Don't Wanna Know, and Justin Bieber's Love Yourself.
-                                    </p>
-                                </div>
+                            {true &&
+                                <Row>
+                                    <Col xs={12} md={6}>
+                                        <img src={Zaeden} alt="" className="proshow-star-img" />
+                                    </Col>
+                                    <Col xs={12} md={6}>
+                                        <div>
+                                            <h1 className="proshow-star-name">DJ Zaeden</h1>
+                                            <h4>Day 4</h4>
+                                            <p className="proshow-para text-white">
+                                                Get set VITians because you wouldn't want the night to end when he starts playing his beats!
+                                                He is one of the most talented DJs that the country has seen so far.
+                                                All praise the lord because <b>DJ Zaeden</b> is on his way to Riviera'18!
+                                                <br/><br/>
+                                                Sahil Sharma, better known by his stage name <b>Zaeden</b>, is an Indian DJ and record producer.
+                                                 He is best known for his remixes of Coldplay's Magic, Maroon 5's Animals and Don't Wanna Know, and Justin Bieber's Love Yourself.
+                                            </p>
+                                        </div>
+                                    </Col>
+                                </Row>
                             }
                         </Col>
                         <Col className="padding-0 display-on-mobile-only" xs={12} md={6}>
