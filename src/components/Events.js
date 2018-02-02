@@ -67,16 +67,16 @@ class Events extends React.Component{
 
         return(
             <div className="events">
-              <a href="https://drive.google.com/file/d/0B_vwzr8jXSpyTHIzTGdNWEVhczBvdkRleVFZOTFJbzB3Mmhz/view?usp=sharing" target='_blank'>
-                <FloatingActionButton
-                  style={style}
-                  onClick={()=>{
+                <a href="https://drive.google.com/file/d/0B_vwzr8jXSpyTHIzTGdNWEVhczBvdkRleVFZOTFJbzB3Mmhz/view?usp=sharing" target='_blank'>
+                  <FloatingActionButton
+                    style={style}
+                    onClick={()=>{
 
-                  }}
-                  >
-                  <ContentAdd />
-                </FloatingActionButton>
-              </a>
+                    }}
+                    >
+                    <ContentAdd />
+                  </FloatingActionButton>
+                </a>
                 <Helmet>
                   <title>Events - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
                 </Helmet>

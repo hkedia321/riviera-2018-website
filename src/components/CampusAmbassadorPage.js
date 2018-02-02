@@ -14,11 +14,29 @@ import Footer from './Home/Footer';
 import {Table,TableBody,TableRow,TableHeaderColumn,TableRowColumn} from 'material-ui/Table'
 import Button from './Button'
 import {Helmet} from 'react-helmet'
+import FloatingActionButton from 'material-ui/FloatingActionButton'
+import ContentAdd from 'material-ui/svg-icons/action/help'
 
 class CampusAmbassadorPage extends React.Component{
   render(){
+    const style={
+      position:'fixed',
+      bottom:'10px',
+      right:'20px',
+      zIndex:10
+    }
     return(
       <div className='campus-ambassador-page'>
+      <a href="https://drive.google.com/file/d/0B_vwzr8jXSpyTHIzTGdNWEVhczBvdkRleVFZOTFJbzB3Mmhz/view?usp=sharing" target='_blank'>
+        <FloatingActionButton
+          style={style}
+          onClick={()=>{
+
+          }}
+          >
+          <ContentAdd />
+        </FloatingActionButton>
+      </a>
           <Helmet>
             <title>Campus Ambassador - VIT Riviera | 15th-18th February, 2018 | Vellore Institute of Technology</title>
           </Helmet>
