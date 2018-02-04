@@ -229,4 +229,4 @@ function mapStateToProps(state){
     };
 }
 
-export default connect(mapStateToProps,actions)(Proshows);
+export default connect(mapStateToProps,actions)(Proshows)

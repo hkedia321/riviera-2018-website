@@ -69,6 +69,12 @@ class SingleEvent extends Component {
                                             <div className="text-light text-bold">Organizer</div>
                                             <div className="">{event['CLUB NAME']}</div>
                                             <br/><br/>
+                                            {event['rules']!==''&&
+                                                <div>
+                                                    <div className="text-light text-bold">Rules</div>
+                                                    <div className="">{event['rules']}</div>
+                                                </div>
+                                            }
                                             {/*<div className="text-light text-bold">Prizes</div>*/}
                                             <br/>
 
@@ -156,11 +162,19 @@ class SingleEvent extends Component {
                                                 </div>
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Co-Ordinator 1</span>
-                                                    <div className="item-right-detail text-bold">{event['COORDINATOR 1']}</div>
+                                                    {event['COORDINATOR 1']==='Ayswarya '?
+                                                        <span style={{color:'yellow'}}>Ayswariya Kannan</span>
+                                                        :
+                                                        <div className="item-right-detail text-bold">{event['COORDINATOR 1']}</div>
+                                                    }
                                                 </div>
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Co-Ordinator 2</span>
-                                                    <div className="item-right-detail text-bold">{event['COORDINATOR 2']}</div>
+                                                    {event['COORDINATOR 2']==='Ayswarya '?
+                                                        <div className="item-right-detail text-bold" style={{color:'yellow'}}>Ayswariya Kannan</div>
+                                                        :
+                                                        <div className="item-right-detail text-bold">{event['COORDINATOR 2']}</div>
+                                                    }
                                                 </div>
                                                 <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Phone</span>
