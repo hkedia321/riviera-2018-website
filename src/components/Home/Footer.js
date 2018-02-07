@@ -28,7 +28,7 @@ class Footer extends React.Component {
                                     <a href='https://www.instagram.com/rivieraVITUniversity/' target="_blank"><FontAwesome className="fa instagram-fa" name='instagram' style={{fontSize:'24px'}}/></a>
                                     {/* <a href='https://www.instagram.com/rivieraVITUniversity/'><img src='/instagram.png' style={{width:'50px'}}/></a> */}
                                 </h4>
-                                {/* <RaisedButton onClick={()=>this.setState({dialogOpen:true})} primary={true} style={{backgroundColor:"rgba(0,0,0,0)"}} label="View Developers" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} /> */}
+                                <RaisedButton onClick={()=>this.setState({dialogOpen:true})} primary={true} style={{backgroundColor:"rgba(0,0,0,0)"}} label="View Developers" backgroundColor="rgba(0,0,0,0)" buttonStyle={{backgroundColor:"rgba(0,0,0,0)"}} labelStyle={{color:"#fff",textTransform:"capitalize"}} />
                             </Col>
                         </Row>
                         <Row className="copyright-row">
