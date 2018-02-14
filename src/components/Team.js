@@ -75,7 +75,7 @@ class Team extends React.Component{
         image:rishavraghav
       },
       {
-        name:'Kushal Raghoria',
+        name:'Kushal Rajoria',
         image:kushalraghoria
       },
       {
@@ -326,14 +326,6 @@ class Team extends React.Component{
                           <br/>
                           <h1 className="team-name">Dr. Anand A. Samuel</h1>
                           <h2 className="team-title">Vice Chancellor, VIT</h2>
-                        </CardText>
-                      </Col>
-                      <Col xs={12} md={4} className='team-member'>
-                        <CardText color='#fff' style={{textAlign:'center'}}>
-                          <img src='svg/team/VR.png'/>
-                          <br/>
-                          <h1 className="team-name">Dr. V. Raju</h1>
-                          <h2 className="team-title">Pro-Vice Chancellor, VIT</h2>
                         </CardText>
                       </Col>
                       <Col xs={12} md={4} className='team-member'>

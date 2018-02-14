@@ -177,6 +177,14 @@ class SingleEvent extends Component {
                                                     }
                                                 </div>
                                                 <div className="event-right-detail-item">
+                                                    <span className="text-light text-bold item-right-tag">Time</span>
+                                                    <div className="item-right-detail text-bold">{event['TIME']}</div>
+                                                </div>
+                                                <div className="event-right-detail-item">
+                                                    <span className="text-light text-bold item-right-tag">Venue</span>
+                                                    <div className="item-right-detail text-bold">{event['VENUE']}</div>
+                                                </div>
+                                                <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Phone</span>
                                                     <div className="item-right-detail text-bold"><a href={`tel:${event['PHONE']}`}>{event['PHONE']}</a></div>
                                                 </div>
