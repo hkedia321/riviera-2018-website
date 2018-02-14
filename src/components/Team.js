@@ -37,7 +37,27 @@ import shylendarg from '../images/student-members/22.jpg';
 import kiranjomy from '../images/student-members/23.jpg';
 import abhijitsingh from '../images/student-members/24.jpg';
 import tanmaykalra from '../images/student-members/25.jpg';
-import shuffle from 'shuffle-array';
+
+//Importing Teachers
+import archanat from '../images/faculty-members/Prof Aarchana T.jpg'
+import rajesh from '../images/faculty-members/Dr. Rajesh M..jpg'
+import gaffar from '../images/faculty-members/Prof. Abdul Gaffar H..jpg'
+import devendranath from '../images/faculty-members/Prof.Devendranath Ramkumar K.jpg'
+import mangaarkarasi from '../images/faculty-members/Prof. Mangayarkarasi Arun P.jpg'
+import monica from '../images/faculty-members/Prof. Monica Subashini M..JPG'
+import naiju from '../images/faculty-members/Prof. Naiju C. D..jpeg'
+import priti from '../images/faculty-members/Prof. Priti Talwar.JPG'
+import raju from '../images/faculty-members/Prof. Raju J..png'
+import rameshbabu from '../images/faculty-members/Prof. Rameshbabu K.jpeg'
+import ramesh from '../images/faculty-members/Prof. Ramesh N.jpg'
+import sasikumar from '../images/faculty-members/Prof. Sasikumar P.png'
+import sharan from '../images/faculty-members/Prof. Sharan Chandran M.jpg'
+import sharmila from '../images/faculty-members/Prof. Sharmila N..JPG'
+import thiagachanthan from '../images/faculty-members/Prof. Thiagachanthan N. V..PNG'
+import velmurugan from '../images/faculty-members/Prof. Velmurugan V..jpg'
+import bangalore from '../images/faculty-members/Prof Bangalore Morarji.png'
+import gokul from '../images/faculty-members/Prof Gokul Kumar K.jpg'
+import venu from '../images/faculty-members/Prof. Pullidindi Venugopal.JPG'
 
 class Team extends React.Component{
   state={
@@ -142,6 +162,84 @@ class Team extends React.Component{
         name:'Tanmay Kalra',
         image:tanmaykalra
       }
+    ],
+    teachers:[
+        {
+          name:'Aarchana T',
+          image:archanat
+        },
+        {
+          name:'Dr. Rajesh M',
+          image:rajesh
+        },
+        {
+          name:'Prof. Abdul Gaffar H',
+          image:gaffar
+        },
+        {
+          name:'Prof. Devendranath Ramkumar K',
+          image:devendranath
+        },
+        {
+          name:'Prof. Mangayarkarasi Arun P',
+          image:mangaarkarasi
+        },
+        {
+          name:'Prof. Monica Subashini M',
+          image:monica
+        },
+        {
+          name:'Prof. Naiju C.D',
+          image:naiju
+        },
+        {
+          name:'Prof. Priti Talwar',
+          image:priti
+        },
+        {
+          name:'Prof. Raju J',
+          image:raju
+        },
+        {
+          name:'Prof. Rameshbabu K',
+          image:rameshbabu
+        },
+        {
+          name:'Prof. Ramesh N',
+          image:ramesh
+        },
+        {
+          name:'Prof. Sasikumar P',
+          image:sasikumar
+        },
+        {
+          name:'Prof. Sharan Chandran',
+          image:sharan
+        },
+        {
+          name:'Prof. Sharmila N',
+          image:sharmila
+        },
+        {
+          name:'Prof. Thiagachanthan N. V.',
+          image:thiagachanthan
+        },
+        {
+          name:'Prof. Velmurugan V',
+          image:velmurugan
+        },
+        {
+          name:'Prof. Bangalore Morarji',
+          image:bangalore
+        },
+        {
+          name:'Prof. Gokul Kumar K',
+          image:gokul
+        },
+        {
+          name:'Prof. Pullidindi Venugopal',
+          image:venu
+        }
     ]
   }
   componentDidMount(){
@@ -319,6 +417,27 @@ class Team extends React.Component{
                   </Card>
                 </Fade>
               </Col>
+            </Row>
+            <Row>
+                <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
+                    <Fade delay={100}>
+                        <Card className="contact-card hvr-underline-reveal reveal-red center text-white" style={{background:'#232323'}}>
+                            <h1 className="card-heading">Faculty Organizers</h1>
+                            <hr className="zigzag mini"/>
+                            <Row>
+                                {this.state.teachers.map((teacher)=>(
+                                    <Col xs={12} md={3} className='team-member'>
+                                        <CardText color='#fff' style={{textAlign:'center'}}>
+                                            <img src={teacher.image}/>
+                                            <br/>
+                                            <h1 className="team-name">{teacher.name}</h1>
+                                        </CardText>
+                                    </Col>
+                                ))}
+                            </Row>
+                        </Card>
+                    </Fade>
+                </Col>
             </Row>
             <Row>
               <Col xs={12} xsOffset={0} md={12} mdOffset={0}>

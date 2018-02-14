@@ -19,9 +19,9 @@ class GMap extends React.Component{
 
     }
     static defaultProps = {
-    center: {lat: 12.9723913, lng: 79.15767519999997},
-    zoom: 14
-  };
+        center: {lat: 12.9723913, lng: 79.15767519999997},
+        zoom: 14
+    };
     componentDidMount(){
     }
     render(){
