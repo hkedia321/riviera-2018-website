@@ -181,6 +181,15 @@ class SingleEvent extends Component {
                                                     <div className="item-right-detail text-bold">{event['TIME']}</div>
                                                 </div>
                                                 <div className="event-right-detail-item">
+                                                    <span className="text-light text-bold item-right-tag">Days</span>
+                                                    <div className="item-right-detail text-bold">
+                                                        {event['DAY1']?'Day 1 | ':''}
+                                                        {event['DAY2']?'Day 2 | ':''}
+                                                        {event['DAY3']?'Day 3 | ':''}
+                                                        {event['DAY4']?'Day 4 | ':''}
+                                                    </div>
+                                                </div>
+                                                <div className="event-right-detail-item">
                                                     <span className="text-light text-bold item-right-tag">Venue</span>
                                                     <div className="item-right-detail text-bold">{event['VENUE']}</div>
                                                 </div>
